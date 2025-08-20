@@ -85,7 +85,7 @@ const HomePage = () => {
               <div className="text-2xl font-bold text-emerald-600">AIRMANA</div>
             </div>
             
-            <div className="hidden md:flex space-x-8">
+            <div className="hidden md:flex space-x-8 justify-center flex-1">
               <a href="#about" className="text-gray-700 hover:text-emerald-600 transition-colors">About</a>
               <a href="#services" className="text-gray-700 hover:text-emerald-600 transition-colors">Services</a>
               <a href="#timetable" className="text-gray-700 hover:text-emerald-600 transition-colors">Timetable</a>
