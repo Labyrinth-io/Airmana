@@ -89,7 +89,7 @@ const HeadsetHire = () => {
                 alt="Airmana Logo" 
                 className="w-10 h-10 rounded-full object-cover bg-white/20"
               />
-              <div className="text-2xl font-bold text-emerald-600">Airmana</div>
+              <div className="text-2xl font-bold text-emerald-600">AIRMANA</div>
             </div>
             
             <div className="hidden md:flex space-x-8">

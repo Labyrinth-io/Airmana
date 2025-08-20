@@ -116,7 +116,7 @@ const HomePage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center gap-3">
-              <div className="text-2xl font-bold text-emerald-600">Airmana</div>
+              <div className="text-2xl font-bold text-emerald-600">AIRMANA</div>
             </div>
             
             <div className="hidden md:flex space-x-8">
