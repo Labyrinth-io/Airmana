@@ -84,11 +84,6 @@ const HeadsetHire = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center gap-3">
-              <img 
-                src="https://images.pexels.com/photos/4056723/pexels-photo-4056723.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop" 
-                alt="Airmana Logo" 
-                className="w-10 h-10 rounded-full object-cover bg-white/20"
-              />
               <div className="text-2xl font-bold text-emerald-600">AIRMANA</div>
             </div>
             
