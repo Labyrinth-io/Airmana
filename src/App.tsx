@@ -11,7 +11,7 @@ const HomePage = () => {
     {
       title: "Group Fitness",
       icon: Zap,
-      image: "/images/breathwork.jpg",
+      image: "https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg",
       description: "Strength, conditioning, and movement training that builds both physical power and mental resilience.",
       benefits: ["Functional strength training", "Metabolic conditioning", "Movement mobility", "Community support"],
       cta: "Start Your Fitness Journey"
@@ -19,7 +19,7 @@ const HomePage = () => {
     {
       title: "Breathwork",
       icon: Heart,
-      image: "/images/Meditation man.jpg",
+      image: "https://images.pexels.com/photos/3822622/pexels-photo-3822622.jpeg",
       description: "Guided breathing sessions for nervous system regulation, energy activation, and deep healing.",
       benefits: ["Stress & anxiety relief", "Enhanced energy levels", "Nervous system regulation", "Emotional release"],
       cta: "Experience Breathwork"
