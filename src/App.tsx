@@ -139,8 +139,7 @@ const HomePage = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a href="https://passm8.com/airmana#upcoming-classes" className="bg-gradient-to-r from-emerald-500 to-teal-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:from-emerald-600 hover:to-teal-700 transition-all transform hover:scale-105 flex items-center gap-2">
-              Start Your Journey - $15 Trial
-              <ArrowRight className="w-5 h-5" />
+              Start Your Journey
             </a>
           </div>
         </div>
