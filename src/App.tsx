@@ -112,7 +112,7 @@ const HomePage = () => {
             <img 
              src="/images/Airmanalogotransparent.png"
               alt="Airmana Logo"
-              className="w-full h-full object-contain opacity-20"
+              className="w-full h-full object-contain opacity-40"
               style={{ maxWidth: '70%', maxHeight: '70%' }}
             />
           </div>
