@@ -25,17 +25,9 @@ const HomePage = () => {
       cta: "Experience Breathwork"
     },
     {
-      title: "Meditation",
-      icon: Brain,
-      image: "https://images.pexels.com/photos/3822906/pexels-photo-3822906.jpeg",
-      description: "Mindfulness and stillness practices that bring clarity, focus, and inner peace to your daily life.",
-      benefits: ["Mental clarity & focus", "Emotional balance", "Stress reduction", "Mindful awareness"],
-      cta: "Find Your Center"
-    },
-    {
       title: "Dance",
       icon: Users,
-      image: "https://images.pexels.com/photos/3822864/pexels-photo-3822864.jpeg",
+      image: "https://images.pexels.com/photos/1701194/pexels-photo-1701194.jpeg",
       description: "Ecstatic dance, rhythm, and movement expression that unleashes your creative spirit and joy.",
       benefits: ["Creative expression", "Emotional freedom", "Body confidence", "Community connection"],
       cta: "Move Your Soul"
@@ -211,7 +203,6 @@ const HomePage = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {services.map((service, index) => (
               <div 
                 key={index}
