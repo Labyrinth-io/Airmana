@@ -203,6 +203,7 @@ const HomePage = () => {
             </p>
           </div>
 
+          <div className="grid md:grid-cols-3 gap-8">
             {services.map((service, index) => (
               <div 
                 key={index}
