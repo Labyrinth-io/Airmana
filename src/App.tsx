@@ -111,7 +111,7 @@ const HomePage = () => {
           <div 
             className="absolute inset-0 bg-contain bg-center bg-no-repeat opacity-20 z-20"
             style={{
-              backgroundImage: "url('/Aimana logo/Airmana logo transparent.png')"
+              backgroundImage: "url('/Aimana logo/Airmanalogotransparent.svg')"
             }}
           ></div>
           
