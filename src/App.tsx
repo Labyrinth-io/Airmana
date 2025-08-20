@@ -5,16 +5,7 @@ import HeadsetHire from './components/HeadsetHire';
 
 const HomePage = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [showPopup, setShowPopup] = useState(false);
   const [activeService, setActiveService] = useState(0);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowPopup(true);
-    }, 30000);
-
-    return () => clearTimeout(timer);
-  }, []);
 
   const services = [
     {
@@ -85,31 +76,6 @@ const HomePage = () => {
       <a href="https://passm8.com/airmana#upcoming-classes" className="fixed bottom-6 right-6 bg-gradient-to-r from-emerald-500 to-teal-600 text-white px-6 py-3 rounded-full shadow-lg z-50 font-semibold hover:from-emerald-600 hover:to-teal-700 transition-all transform hover:scale-105">
         Book Now
       </a>
-
-      {/* Pop-up Offer */}
-      {showPopup && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
-          <div className="bg-white rounded-2xl p-8 max-w-md w-full text-center relative">
-            <button 
-              onClick={() => setShowPopup(false)}
-              className="absolute top-4 right-4 text-gray-400 hover:text-gray-600"
-            >
-              ×
-            </button>
-            <Heart className="w-16 h-16 text-emerald-500 mx-auto mb-4" />
-            <h3 className="text-2xl font-bold mb-4">Welcome to Airmana!</h3>
-            <p className="text-gray-600 mb-6">Ready to transform your wellness journey?</p>
-            <div className="bg-gradient-to-r from-emerald-50 to-teal-50 p-6 rounded-xl mb-6">
-              <h4 className="text-xl font-bold text-emerald-600 mb-2">Special Offer</h4>
-              <p className="text-3xl font-bold">$15</p>
-              <p className="text-gray-600">7 Days Unlimited Classes</p>
-            </div>
-            <a href="https://passm8.com/airmana#upcoming-classes" className="w-full bg-gradient-to-r from-emerald-500 to-teal-600 text-white py-3 rounded-xl font-semibold hover:from-emerald-600 hover:to-teal-700 transition-all block text-center">
-              Claim Your Trial
-            </a>
-          </div>
-        </div>
-      )}
 
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-emerald-50 bg-opacity-95 backdrop-blur-sm z-40 border-b border-gray-100">
