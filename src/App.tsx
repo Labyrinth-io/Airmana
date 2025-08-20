@@ -109,7 +109,10 @@ const HomePage = () => {
           
           {/* Airmana logo as background */}
           <div 
-            className="absolute inset-0 bg-contain bg-center bg-no-repeat opacity-40 z-20"
+            className="absolute inset-0 bg-contain bg-center bg-no-repeat opacity-20 z-20"
+            style={{
+              backgroundImage: "url('/Aimana logo/Airmana logo transparent.png')"
+            }}
           ></div>
           
           {/* Subtle particle effects */}
