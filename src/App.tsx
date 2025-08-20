@@ -97,7 +97,7 @@ const HomePage = () => {
                 Headset Hire
               </Link>
               <a href="https://passm8.com/airmana#upcoming-classes" className="bg-gradient-to-r from-emerald-500 to-teal-600 text-white px-6 py-2 rounded-full hover:from-emerald-600 hover:to-teal-700 transition-all">
-                $15 Trial
+                Join Today
               </a>
             </div>
           </div>
