@@ -27,7 +27,7 @@ const HomePage = () => {
     {
       title: "Dance",
       icon: Users,
-      image: "https://images.pexels.com/photos/1701194/pexels-photo-1701194.jpeg",
+      image: "/images/pauldancecop.png",
       description: "Ecstatic dance, rhythm, and movement expression that unleashes your creative spirit and joy.",
       benefits: ["Creative expression", "Emotional freedom", "Body confidence", "Community connection"],
       cta: "Move Your Soul"
