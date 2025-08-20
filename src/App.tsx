@@ -217,7 +217,7 @@ const HomePage = () => {
               >
                 <div className="relative h-48 overflow-hidden">
                   <img 
-                    src="/images/breathwork.jpg"
+                    src={service.image}
                     alt={service.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                   />
