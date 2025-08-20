@@ -85,7 +85,7 @@ const HeadsetHire = () => {
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center gap-3">
               <img 
-                src="/Aimana logo/Airmana logo transparent.png" 
+                src="https://images.pexels.com/photos/4056723/pexels-photo-4056723.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop" 
                 alt="Airmana Logo" 
                 className="w-10 h-10 rounded-full object-cover bg-white/20"
               />
@@ -168,7 +168,7 @@ const HeadsetHire = () => {
             
             <div className="relative">
               <img 
-                src="/src/Headset hire image/Silent disco.png"
+                src="https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg"
                 alt="Professional Headsets"
                 className="rounded-2xl shadow-xl"
               />

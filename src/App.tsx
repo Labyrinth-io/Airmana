@@ -28,7 +28,7 @@ const HomePage = () => {
     {
       title: "Breathwork",
       icon: Heart,
-      image: "/Activities /Breath boss.png",
+      image: "https://images.pexels.com/photos/3822622/pexels-photo-3822622.jpeg",
       description: "Guided breathing sessions for nervous system regulation, energy activation, and deep healing.",
       benefits: ["Stress & anxiety relief", "Enhanced energy levels", "Nervous system regulation", "Emotional release"],
       cta: "Experience Breathwork"
@@ -36,7 +36,7 @@ const HomePage = () => {
     {
       title: "Meditation",
       icon: Brain,
-      image: "/Activities /Meditation man.jpg",
+      image: "https://images.pexels.com/photos/3822906/pexels-photo-3822906.jpeg",
       description: "Mindfulness and stillness practices that bring clarity, focus, and inner peace to your daily life.",
       benefits: ["Mental clarity & focus", "Emotional balance", "Stress reduction", "Mindful awareness"],
       cta: "Find Your Center"
@@ -44,7 +44,7 @@ const HomePage = () => {
     {
       title: "Dance",
       icon: Users,
-      image: "/Activities /Paul Blart, Dance cop.png",
+      image: "https://images.pexels.com/photos/3822864/pexels-photo-3822864.jpeg",
       description: "Ecstatic dance, rhythm, and movement expression that unleashes your creative spirit and joy.",
       benefits: ["Creative expression", "Emotional freedom", "Body confidence", "Community connection"],
       cta: "Move Your Soul"
@@ -117,7 +117,7 @@ const HomePage = () => {
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center gap-3">
               <img 
-                src="/Aimana logo/Airmana logo transparent.png" 
+                src="https://images.pexels.com/photos/4056723/pexels-photo-4056723.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop" 
                 alt="Airmana Logo" 
                 className="w-10 h-10 rounded-full object-cover bg-white/20"
               />
@@ -157,11 +157,6 @@ const HomePage = () => {
           {/* Airmana logo as background */}
           <div 
             className="absolute inset-0 bg-contain bg-center bg-no-repeat opacity-40 z-20"
-            style={{
-              backgroundImage: "url('/Aimana logo/Airmana logo transparent.png')",
-              backgroundSize: '45% auto',
-              backgroundPosition: 'center 75%'
-            }}
           ></div>
           
           {/* Subtle particle effects */}
