@@ -19,7 +19,7 @@ const HomePage = () => {
     {
       title: "Breathwork",
       icon: Heart,
-      image: "https://images.pexels.com/photos/3822622/pexels-photo-3822622.jpeg",
+      image: "/images/Meditation man.jpg",
       description: "Guided breathing sessions for nervous system regulation, energy activation, and deep healing.",
       benefits: ["Stress & anxiety relief", "Enhanced energy levels", "Nervous system regulation", "Emotional release"],
       cta: "Experience Breathwork"
