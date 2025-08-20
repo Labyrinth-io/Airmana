@@ -110,10 +110,10 @@ const HomePage = () => {
           {/* Airmana logo as background */}
           <div className="absolute inset-0 flex items-center justify-center z-20">
             <img 
-              src="/Airmana-logo/Airmana-logo-transparent.png"
+              src="/Assets/Airmana.svg"
               alt="Airmana Logo"
-              className="max-w-full max-h-full object-contain opacity-20"
-              style={{ maxWidth: '80%', maxHeight: '80%' }}
+              className="w-full h-full object-contain opacity-20"
+              style={{ maxWidth: '70%', maxHeight: '70%' }}
             />
           </div>
           
