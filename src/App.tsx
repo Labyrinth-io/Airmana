@@ -341,53 +341,6 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Intro Offer Section */}
-      <section className="py-20 bg-gradient-to-r from-emerald-600 to-teal-700 text-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold mb-6">Limited Time Intro Offer</h2>
-          <p className="text-xl mb-8 text-emerald-100">
-            Experience the full Airmana journey with unlimited access to all our classes
-          </p>
-          
-          <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-8 mb-8">
-            <div className="text-6xl font-bold mb-2">$15</div>
-            <div className="text-2xl mb-4">7 Days Unlimited Classes</div>
-            <ul className="text-left max-w-md mx-auto space-y-2 text-emerald-100">
-              <li className="flex items-center gap-2">
-                <ChevronRight className="w-4 h-4" />
-                All group fitness classes
-              </li>
-              <li className="flex items-center gap-2">
-                <ChevronRight className="w-4 h-4" />
-                Breathwork sessions
-              </li>
-              <li className="flex items-center gap-2">
-                <ChevronRight className="w-4 h-4" />
-                Meditation classes
-              </li>
-              <li className="flex items-center gap-2">
-                <ChevronRight className="w-4 h-4" />
-                Dance sessions
-              </li>
-              <li className="flex items-center gap-2">
-                <ChevronRight className="w-4 h-4" />
-                Community events access
-              </li>
-            </ul>
-          </div>
-          
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="https://passm8.com/airmana#upcoming-classes" className="bg-white text-emerald-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-all transform hover:scale-105">
-              Claim Your $15 Trial Now
-            </a>
-            <a href="https://passm8.com/airmana#upcoming-classes" className="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-emerald-600 transition-all">
-              Learn More
-            </a>
-          </div>
-          
-          <p className="text-emerald-100 mt-4 text-sm">*New members only. Valid for 7 consecutive days from signup.</p>
-        </div>
-      </section>
 
       {/* Contact Section */}
       <section id="contact" className="py-20">
