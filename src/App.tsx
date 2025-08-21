@@ -96,7 +96,7 @@ const HomePage = () => {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center text-white overflow-hidden">
+      <section className="relative h-screen lg:h-[120vh] flex items-center justify-center text-white overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-black/30"></div>
         <div className="absolute inset-0 bg-gradient-to-br from-purple-900 via-indigo-900 to-emerald-900">
           {/* Galactic energy effects */}
@@ -125,7 +125,7 @@ const HomePage = () => {
         </div>
         
         <div className="relative z-30 text-center max-w-4xl px-4 sm:px-6">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 md:mb-6 leading-tight mt-32">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 md:mb-6 leading-tight mt-16">
             Breathe. Move.<br />
             Connect. Transform.
           </h1>
