@@ -96,7 +96,7 @@ const HomePage = () => {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative h-screen lg:h-[120vh] flex items-center justify-center text-white overflow-hidden">
+      <section className="relative h-[110vh] lg:h-[130vh] flex items-center justify-center text-white overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-black/30"></div>
         <div className="absolute inset-0 bg-gradient-to-br from-purple-900 via-indigo-900 to-emerald-900">
           {/* Galactic energy effects */}
@@ -107,12 +107,22 @@ const HomePage = () => {
           </div>
           
           {/* Airmana logo as background */}
-          <div className="absolute inset-0 flex flex-col items-center justify-center z-20">
+          <div className="absolute inset-0 flex flex-col items-center justify-center z-20 py-20">
             <img 
               src="/images/Airmanalogotransparent.png"
               alt="Airmana Logo"
-              className="w-80 md:w-96 lg:w-[500px] h-auto object-contain opacity-90"
+              className="w-80 md:w-96 lg:w-[500px] h-auto object-contain opacity-90 mb-12"
             />
+            
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-12 leading-tight tracking-wider">
+              BREATHWORK · FITNESS · DANCE
+            </h1>
+            
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <a href="https://passm8.com/airmana#upcoming-classes" className="bg-gradient-to-r from-pink-500 to-purple-600 text-white px-8 md:px-12 py-4 md:py-5 rounded-full text-lg md:text-xl font-semibold hover:from-pink-600 hover:to-purple-700 transition-all transform hover:scale-105">
+                Get Started
+              </a>
+            </div>
           </div>
           
           {/* Subtle particle effects */}
@@ -124,23 +134,6 @@ const HomePage = () => {
           </div>
         </div>
         
-        <div className="relative z-30 text-center max-w-4xl px-4 sm:px-6">
-          <img 
-            src="/images/Airmanalogotransparent.png"
-            alt="Airmana Logo"
-            className="w-80 md:w-96 lg:w-[500px] h-auto object-contain opacity-90 mx-auto mb-16"
-          />
-          
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-12 leading-tight tracking-wider">
-            BREATHWORK · FITNESS · DANCE
-          </h1>
-          
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <a href="https://passm8.com/airmana#upcoming-classes" className="bg-gradient-to-r from-pink-500 to-purple-600 text-white px-8 md:px-12 py-4 md:py-5 rounded-full text-lg md:text-xl font-semibold hover:from-pink-600 hover:to-purple-700 transition-all transform hover:scale-105">
-              Get Started
-            </a>
-          </div>
-        </div>
       </section>
 
       {/* About Section */}
