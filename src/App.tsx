@@ -186,20 +186,6 @@ const HomePage = () => {
                 </div>
               </div>
             </div>
-            <div>
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 md:mb-6 leading-tight mt-16">
-                Breathe. Move.<br />
-                Connect. Transform.
-              </h1>
-              <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-6 md:mb-8 text-gray-200 max-w-2xl mx-auto leading-relaxed">
-                Discover the power of holistic wellness where fitness, breathwork, meditation, and dance unite to transform your body, mind, and spirit.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <a href="https://passm8.com/airmana#upcoming-classes" className="bg-gradient-to-r from-emerald-500 to-teal-600 text-white px-6 md:px-8 py-3 md:py-4 rounded-full text-base md:text-lg font-semibold hover:from-emerald-600 hover:to-teal-700 transition-all transform hover:scale-105 flex items-center gap-2">
-                  Start Your Journey
-                </a>
-              </div>
-            </div>
           </div>
         </div>
       </section>
