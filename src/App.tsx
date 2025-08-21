@@ -107,12 +107,11 @@ const HomePage = () => {
           </div>
           
           {/* Airmana logo as background */}
-          <div className="absolute inset-0 flex items-center justify-center z-20">
+          <div className="absolute inset-0 flex flex-col items-center justify-center z-20">
             <img 
-             src="/images/Airmanalogotransparent.png"
+              src="/images/Airmanalogotransparent.png"
               alt="Airmana Logo"
-              className="w-56 md:w-72 lg:w-96 h-full object-contain opacity-40"
-              style={{ maxWidth: '60%', maxHeight: '60%' }}
+              className="w-80 md:w-96 lg:w-[500px] h-auto object-contain opacity-90 mb-8"
             />
           </div>
           
