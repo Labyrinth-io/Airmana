@@ -96,7 +96,7 @@ const HomePage = () => {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative text-white overflow-hidden" style={{ minHeight: 'calc(100vh - 88px)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+      <section className="relative text-white overflow-hidden" style={{ minHeight: 'calc(120vh - 88px)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
         <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-black/30"></div>
         <div className="absolute inset-0 bg-gradient-to-br from-purple-900 via-indigo-900 to-emerald-900">
           {/* Galactic energy effects */}
