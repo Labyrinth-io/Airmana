@@ -65,7 +65,7 @@ const HomePage = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Sticky Book Now Button */}
-      <a href="https://passm8.com/airmana#upcoming-classes" className="fixed bottom-6 right-6 bg-gradient-to-r from-emerald-500 to-teal-600 text-white px-6 py-3 rounded-full shadow-lg z-50 font-semibold hover:from-emerald-600 hover:to-teal-700 transition-all transform hover:scale-105">
+      <a href="https://passm8.com/airmana#upcoming-classes" className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 bg-gradient-to-r from-emerald-500 to-teal-600 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-full shadow-lg z-50 text-sm sm:text-base font-semibold hover:from-emerald-600 hover:to-teal-700 transition-all transform hover:scale-105">
         Book Now
       </a>
 
@@ -77,18 +77,18 @@ const HomePage = () => {
               <div className="text-2xl font-bold text-emerald-600">AIRMANA</div>
             </div>
             
-            <div className="hidden md:flex space-x-8 justify-center flex-1">
+            <div className="hidden lg:flex space-x-8 justify-center flex-1">
               <a href="#about" className="text-gray-700 hover:text-emerald-600 transition-colors">About</a>
               <a href="#services" className="text-gray-700 hover:text-emerald-600 transition-colors">Services</a>
               <a href="#timetable" className="text-gray-700 hover:text-emerald-600 transition-colors">Timetable</a>
               <a href="#contact" className="text-gray-700 hover:text-emerald-600 transition-colors">Contact</a>
             </div>
 
-            <div className="flex items-center gap-4">
-              <Link to="/headset-hire" className="bg-gradient-to-r from-purple-500 to-indigo-600 text-white px-6 py-2 rounded-full hover:from-purple-600 hover:to-indigo-700 transition-all">
+            <div className="flex items-center gap-2 sm:gap-4">
+              <Link to="/headset-hire" className="bg-gradient-to-r from-purple-500 to-indigo-600 text-white px-3 sm:px-6 py-2 rounded-full hover:from-purple-600 hover:to-indigo-700 transition-all text-sm sm:text-base">
                 Headset Hire
               </Link>
-              <a href="https://passm8.com/airmana#upcoming-classes" className="bg-gradient-to-r from-emerald-500 to-teal-600 text-white px-6 py-2 rounded-full hover:from-emerald-600 hover:to-teal-700 transition-all">
+              <a href="https://passm8.com/airmana#upcoming-classes" className="bg-gradient-to-r from-emerald-500 to-teal-600 text-white px-3 sm:px-6 py-2 rounded-full hover:from-emerald-600 hover:to-teal-700 transition-all text-sm sm:text-base">
                 Join Today
               </a>
             </div>
@@ -97,14 +97,14 @@ const HomePage = () => {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center text-white overflow-hidden">
+      <section className="relative min-h-screen flex items-center justify-center text-white overflow-hidden px-4">
         <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-black/30"></div>
         <div className="absolute inset-0 bg-gradient-to-br from-purple-900 via-indigo-900 to-emerald-900">
           {/* Galactic energy effects */}
           <div className="absolute inset-0 opacity-30">
-            <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-500 rounded-full blur-3xl animate-pulse"></div>
-            <div className="absolute top-3/4 right-1/4 w-80 h-80 bg-emerald-500 rounded-full blur-3xl animate-pulse delay-1000"></div>
-            <div className="absolute top-1/2 left-1/2 w-64 h-64 bg-indigo-500 rounded-full blur-3xl animate-pulse delay-500"></div>
+            <div className="absolute top-1/4 left-1/4 w-48 h-48 sm:w-96 sm:h-96 bg-purple-500 rounded-full blur-3xl animate-pulse"></div>
+            <div className="absolute top-3/4 right-1/4 w-40 h-40 sm:w-80 sm:h-80 bg-emerald-500 rounded-full blur-3xl animate-pulse delay-1000"></div>
+            <div className="absolute top-1/2 left-1/2 w-32 h-32 sm:w-64 sm:h-64 bg-indigo-500 rounded-full blur-3xl animate-pulse delay-500"></div>
           </div>
           
           {/* Airmana logo as background */}
@@ -112,7 +112,7 @@ const HomePage = () => {
             <img 
              src="/images/Airmanalogotransparent.png"
               alt="Airmana Logo"
-              className="w-full h-full object-contain opacity-40"
+              className="w-full h-full object-contain opacity-40 max-w-xs sm:max-w-md lg:max-w-lg xl:max-w-xl"
               style={{ maxWidth: '70%', maxHeight: '70%' }}
             />
           </div>
@@ -127,15 +127,15 @@ const HomePage = () => {
         </div>
         
         <div className="relative z-30 text-center max-w-4xl px-4">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+          <h1 className="text-3xl sm:text-5xl lg:text-7xl font-bold mb-6 leading-tight">
             Breathe. Move.<br />
             Connect. Transform.
           </h1>
-          <p className="text-xl md:text-2xl mb-8 text-gray-200 max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl lg:text-2xl mb-8 text-gray-200 max-w-2xl mx-auto leading-relaxed">
             Discover the power of holistic wellness where fitness, breathwork, meditation, and dance unite to transform your body, mind, and spirit.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <a href="https://passm8.com/airmana#upcoming-classes" className="bg-gradient-to-r from-emerald-500 to-teal-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:from-emerald-600 hover:to-teal-700 transition-all transform hover:scale-105 flex items-center gap-2">
+            <a href="https://passm8.com/airmana#upcoming-classes" className="bg-gradient-to-r from-emerald-500 to-teal-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold hover:from-emerald-600 hover:to-teal-700 transition-all transform hover:scale-105 flex items-center gap-2">
               Start Your Journey
             </a>
           </div>
@@ -143,45 +143,45 @@ const HomePage = () => {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20 bg-gray-50">
+      <section id="about" className="py-12 sm:py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl font-bold mb-6 text-gray-900">Welcome to Airmana</h2>
-              <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+              <h2 className="text-2xl sm:text-4xl font-bold mb-6 text-gray-900">Welcome to Airmana</h2>
+              <p className="text-base sm:text-lg text-gray-600 mb-6 leading-relaxed">
                 Located in the heart of Labyrinth Central, Airmana is more than just a wellness studio—we're a transformative community where ancient wisdom meets modern movement.
               </p>
-              <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+              <p className="text-base sm:text-lg text-gray-600 mb-8 leading-relaxed">
                 Our holistic approach integrates four powerful pillars: dynamic group fitness, transformative breathwork, mindful meditation, and expressive dance. Each element works in harmony to create a complete wellness experience that nourishes your body, calms your mind, and ignites your spirit.
               </p>
               
-              <div className="grid sm:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                 <div className="text-center p-6 bg-white rounded-xl shadow-sm">
                   <div className="bg-emerald-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                     <Zap className="w-8 h-8 text-emerald-600" />
                   </div>
-                  <h3 className="font-semibold text-gray-900 mb-2">High Energy</h3>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">High Energy</h3>
                   <p className="text-sm text-gray-600">Dynamic workouts that energize your body</p>
                 </div>
                 <div className="text-center p-6 bg-white rounded-xl shadow-sm">
                   <div className="bg-emerald-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                     <Heart className="w-8 h-8 text-emerald-600" />
                   </div>
-                  <h3 className="font-semibold text-gray-900 mb-2">Deep Healing</h3>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">Deep Healing</h3>
                   <p className="text-sm text-gray-600">Breathwork and meditation for inner peace</p>
                 </div>
                 <div className="text-center p-6 bg-white rounded-xl shadow-sm">
                   <div className="bg-emerald-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                     <Brain className="w-8 h-8 text-emerald-600" />
                   </div>
-                  <h3 className="font-semibold text-gray-900 mb-2">Mindful Focus</h3>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">Mindful Focus</h3>
                   <p className="text-sm text-gray-600">Meditation practices for clarity and awareness</p>
                 </div>
                 <div className="text-center p-6 bg-white rounded-xl shadow-sm">
                   <div className="bg-emerald-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                     <Users className="w-8 h-8 text-emerald-600" />
                   </div>
-                  <h3 className="font-semibold text-gray-900 mb-2">Creative Expression</h3>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">Creative Expression</h3>
                   <p className="text-sm text-gray-600">Dance and movement for joyful self-expression</p>
                 </div>
               </div>
@@ -199,23 +199,23 @@ const HomePage = () => {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-20">
+      <section id="services" className="py-12 sm:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-6 text-gray-900">Our Four Pillars of Wellness</h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <h2 className="text-2xl sm:text-4xl font-bold mb-6 text-gray-900">Our Four Pillars of Wellness</h2>
+            <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
               Each pillar is designed to work in harmony, creating a complete transformation of body, mind, and spirit.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {services.map((service, index) => (
               <div 
                 key={index}
                 className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
                 onMouseEnter={() => setActiveService(index)}
               >
-                <div className="relative h-48 overflow-hidden">
+                <div className="relative h-48 sm:h-56 overflow-hidden">
                   <img 
                     src={service.image}
                     alt={service.title}
@@ -227,7 +227,7 @@ const HomePage = () => {
                 </div>
                 
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-3 text-gray-900">{service.title}</h3>
+                  <h3 className="text-lg sm:text-xl font-bold mb-3 text-gray-900">{service.title}</h3>
                   <p className="text-gray-600 mb-4 text-sm leading-relaxed">{service.description}</p>
                   
                   <ul className="space-y-2 mb-6">
@@ -250,39 +250,39 @@ const HomePage = () => {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-20 bg-gradient-to-r from-emerald-50 to-teal-50">
+      <section className="py-12 sm:py-20 bg-gradient-to-r from-emerald-50 to-teal-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-6 text-gray-900">Why Choose Airmana?</h2>
-            <p className="text-lg text-gray-600">Join hundreds of members who have transformed their lives with our holistic approach</p>
+            <h2 className="text-2xl sm:text-4xl font-bold mb-6 text-gray-900">Why Choose Airmana?</h2>
+            <p className="text-base sm:text-lg text-gray-600">Join hundreds of members who have transformed their lives with our holistic approach</p>
           </div>
 
-          <div className="grid lg:grid-cols-3 gap-8 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
             <div className="text-center">
               <div className="bg-white w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
                 <Users className="w-10 h-10 text-emerald-600" />
               </div>
-              <h3 className="text-xl font-bold mb-4 text-gray-900">Supportive Community</h3>
-              <p className="text-gray-600">Join a welcoming community where everyone supports each other's wellness journey.</p>
+              <h3 className="text-lg sm:text-xl font-bold mb-4 text-gray-900">Supportive Community</h3>
+              <p className="text-sm sm:text-base text-gray-600">Join a welcoming community where everyone supports each other's wellness journey.</p>
             </div>
             <div className="text-center">
               <div className="bg-white w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
                 <Brain className="w-10 h-10 text-emerald-600" />
               </div>
-              <h3 className="text-xl font-bold mb-4 text-gray-900">Holistic Integration</h3>
-              <p className="text-gray-600">Our four pillars work together to create complete mind-body transformation.</p>
+              <h3 className="text-lg sm:text-xl font-bold mb-4 text-gray-900">Holistic Integration</h3>
+              <p className="text-sm sm:text-base text-gray-600">Our four pillars work together to create complete mind-body transformation.</p>
             </div>
             <div className="text-center">
               <div className="bg-white w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
                 <Star className="w-10 h-10 text-emerald-600" />
               </div>
-              <h3 className="text-xl font-bold mb-4 text-gray-900">Proven Results</h3>
-              <p className="text-gray-600">See real transformations in strength, flexibility, mental clarity, and emotional wellbeing.</p>
+              <h3 className="text-lg sm:text-xl font-bold mb-4 text-gray-900">Proven Results</h3>
+              <p className="text-sm sm:text-base text-gray-600">See real transformations in strength, flexibility, mental clarity, and emotional wellbeing.</p>
             </div>
           </div>
 
           {/* Testimonials */}
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {testimonials.map((testimonial, index) => (
               <div key={index} className="bg-white p-6 rounded-2xl shadow-lg">
                 <div className="flex items-center gap-1 mb-4">
@@ -299,26 +299,26 @@ const HomePage = () => {
       </section>
 
       {/* Timetable Section */}
-      <section id="timetable" className="py-20">
+      <section id="timetable" className="py-12 sm:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-6 text-gray-900">Weekly Timetable</h2>
-            <p className="text-lg text-gray-600">Find the perfect class time that fits your schedule</p>
+            <h2 className="text-2xl sm:text-4xl font-bold mb-6 text-gray-900">Weekly Timetable</h2>
+            <p className="text-base sm:text-lg text-gray-600">Find the perfect class time that fits your schedule</p>
           </div>
 
-          <div className="grid lg:grid-cols-7 gap-4 mb-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-4 mb-12">
             {schedule.map((day, index) => (
               <div key={index} className="bg-white rounded-xl shadow-lg p-4 hover:shadow-xl transition-shadow">
-                <h3 className="font-bold text-center mb-4 text-gray-900 py-2 bg-emerald-50 rounded-lg">
+                <h3 className="text-sm sm:text-base font-bold text-center mb-4 text-gray-900 py-2 bg-emerald-50 rounded-lg">
                   {day.day}
                 </h3>
                 <div className="space-y-3">
                   {day.classes.map((classTime, idx) => (
                     <div key={idx} className="text-sm bg-gray-50 p-3 rounded-lg">
-                      <div className="font-semibold text-emerald-600 mb-1">
+                      <div className="text-xs sm:text-sm font-semibold text-emerald-600 mb-1">
                         {classTime.split(' ')[0]}
                       </div>
-                      <div className="text-gray-600">
+                      <div className="text-xs sm:text-sm text-gray-600">
                         {classTime.substring(classTime.indexOf(' ') + 1)}
                       </div>
                     </div>
@@ -329,7 +329,7 @@ const HomePage = () => {
           </div>
 
           <div className="text-center">
-            <a href="https://passm8.com/airmana#upcoming-classes" className="inline-flex items-center gap-2 bg-gradient-to-r from-emerald-500 to-teal-600 text-white px-6 py-3 rounded-full text-lg font-semibold hover:from-emerald-600 hover:to-teal-700 transition-all transform hover:scale-105">
+            <a href="https://passm8.com/airmana#upcoming-classes" className="inline-flex items-center gap-2 bg-gradient-to-r from-emerald-500 to-teal-600 text-white px-4 sm:px-6 py-3 rounded-full text-base sm:text-lg font-semibold hover:from-emerald-600 hover:to-teal-700 transition-all transform hover:scale-105">
               <Calendar className="w-5 h-5" />
               Book Your Classes
             </a>
@@ -339,12 +339,12 @@ const HomePage = () => {
 
 
       {/* Contact Section */}
-      <section id="contact" className="py-20">
+      <section id="contact" className="py-12 sm:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12">
             <div>
-              <h2 className="text-4xl font-bold mb-6 text-gray-900">Visit Us at Labyrinth Central</h2>
-              <p className="text-lg text-gray-600 mb-8">
+              <h2 className="text-2xl sm:text-4xl font-bold mb-6 text-gray-900">Visit Us at Labyrinth Central</h2>
+              <p className="text-base sm:text-lg text-gray-600 mb-8">
                 Located in the heart of Labyrinth Central, Bundaberg, Airmana is easily accessible and perfectly positioned for your wellness journey.
               </p>
               
@@ -392,7 +392,7 @@ const HomePage = () => {
             </div>
             
             <div className="bg-gray-50 rounded-2xl p-8">
-              <h3 className="text-2xl font-bold mb-6 text-gray-900">Get Started Today</h3>
+              <h3 className="text-xl sm:text-2xl font-bold mb-6 text-gray-900">Get Started Today</h3>
               <form className="space-y-4" onSubmit={(e) => {
                 e.preventDefault();
                 // Here you would integrate with Google Sheets
@@ -442,7 +442,7 @@ const HomePage = () => {
       <footer className="bg-gray-900 text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <div className="text-3xl font-bold mb-4 text-emerald-400">Airmana</div>
+            <div className="text-2xl sm:text-3xl font-bold mb-4 text-emerald-400">Airmana</div>
             <p className="text-gray-400 mb-6">Breathe. Move. Connect. Transform.</p>
             <div className="flex justify-center gap-6 mb-8">
               <a href="https://www.instagram.com/airmana_/?hl=en" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-emerald-400 transition-colors">
