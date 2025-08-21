@@ -58,8 +58,7 @@ const HomePage = () => {
     { day: "Wednesday", classes: ["6:00am Group Fitness", "7:00am Group Fitness"] },
     { day: "Thursday", classes: ["5:00am Group Fitness", "6:00am Group Fitness", "7:00am Group Fitness"] },
     { day: "Friday", classes: ["5:00am Group Fitness", "6:10pm Forex & Crypto Trading", "7:10pm Breathwork"] },
-    { day: "Saturday", classes: ["8:00am Dance", "9:10am Meditation"] },
-    { day: "Sunday", classes: [] }
+    { day: "Saturday", classes: ["8:00am Dance", "9:10am Meditation"] }
   ];
 
   return (
@@ -299,7 +298,7 @@ const HomePage = () => {
             <p className="text-base md:text-lg text-gray-600">Find the perfect class time that fits your schedule</p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-3 md:gap-4 mb-8 md:mb-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 md:gap-4 mb-8 md:mb-12">
             {schedule.map((day, index) => (
               <div key={index} className="bg-white rounded-xl shadow-lg p-3 md:p-4 hover:shadow-xl transition-shadow">
                 <h3 className="text-sm md:text-base font-bold text-center mb-3 md:mb-4 text-gray-900 py-2 bg-emerald-50 rounded-lg">
