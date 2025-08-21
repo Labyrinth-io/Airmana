@@ -87,12 +87,12 @@ const HeadsetHire = () => {
               <div className="text-2xl font-bold text-emerald-600">AIRMANA</div>
             </div>
             
-            <div className="hidden lg:flex space-x-8">
+            <div className="hidden md:flex space-x-8">
               <a href="/" className="text-gray-700 hover:text-emerald-600 transition-colors">Home</a>
               <a href="/headset-hire" className="text-emerald-600 font-semibold">Headset Hire</a>
             </div>
 
-            <a href="https://passm8.com/airmana#upcoming-classes" className="bg-gradient-to-r from-emerald-500 to-teal-600 text-white px-3 sm:px-6 py-2 rounded-full hover:from-emerald-600 hover:to-teal-700 transition-all text-sm sm:text-base">
+            <a href="https://passm8.com/airmana#upcoming-classes" className="bg-gradient-to-r from-emerald-500 to-teal-600 text-white px-6 py-2 rounded-full hover:from-emerald-600 hover:to-teal-700 transition-all">
               $15 Trial
             </a>
           </div>
@@ -100,32 +100,32 @@ const HeadsetHire = () => {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center text-white overflow-hidden px-4">
+      <section className="relative h-screen flex items-center justify-center text-white overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-black/30"></div>
         <div className="absolute inset-0 bg-gradient-to-br from-purple-900 via-indigo-900 to-emerald-900">
           {/* Energy effects */}
           <div className="absolute inset-0 opacity-30">
-            <div className="absolute top-1/4 left-1/4 w-48 h-48 sm:w-96 sm:h-96 bg-purple-500 rounded-full blur-3xl animate-pulse"></div>
-            <div className="absolute top-3/4 right-1/4 w-40 h-40 sm:w-80 sm:h-80 bg-emerald-500 rounded-full blur-3xl animate-pulse delay-1000"></div>
-            <div className="absolute top-1/2 left-1/2 w-32 h-32 sm:w-64 sm:h-64 bg-indigo-500 rounded-full blur-3xl animate-pulse delay-500"></div>
+            <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-500 rounded-full blur-3xl animate-pulse"></div>
+            <div className="absolute top-3/4 right-1/4 w-80 h-80 bg-emerald-500 rounded-full blur-3xl animate-pulse delay-1000"></div>
+            <div className="absolute top-1/2 left-1/2 w-64 h-64 bg-indigo-500 rounded-full blur-3xl animate-pulse delay-500"></div>
           </div>
           
           {/* Headphone icon as background */}
           <div className="absolute inset-0 flex items-center justify-center opacity-20">
-            <Headphones className="w-48 h-48 sm:w-96 sm:h-96 text-white" />
+            <Headphones className="w-96 h-96 text-white" />
           </div>
         </div>
         
         <div className="relative z-30 text-center max-w-4xl px-4">
-          <h1 className="text-3xl sm:text-5xl lg:text-7xl font-bold mb-6 leading-tight">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
             Premium Headset<br />
             Hire Service
           </h1>
-          <p className="text-lg sm:text-xl lg:text-2xl mb-8 text-gray-200 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-xl md:text-2xl mb-8 text-gray-200 max-w-2xl mx-auto">
             Professional wireless headsets for your events, workshops, and fitness classes. Crystal clear audio for unforgettable experiences.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <a href="#contact" className="bg-gradient-to-r from-emerald-500 to-teal-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold hover:from-emerald-600 hover:to-teal-700 transition-all transform hover:scale-105">
+            <a href="#contact" className="bg-gradient-to-r from-emerald-500 to-teal-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:from-emerald-600 hover:to-teal-700 transition-all transform hover:scale-105">
               Get Quote Now
             </a>
           </div>
@@ -133,11 +133,11 @@ const HeadsetHire = () => {
       </section>
 
       {/* Service Explanation */}
-      <section className="py-12 sm:py-20 bg-gray-50">
+      <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-2xl sm:text-4xl font-bold mb-6 text-gray-900">Professional Headset Hire</h2>
-            <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto">
+            <h2 className="text-4xl font-bold mb-6 text-gray-900">Professional Headset Hire</h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               Transform your events with our premium wireless headset rental service. Perfect for silent discos, 
               headset dance parties, fitness classes, meditation sessions, workshops, and corporate events where clear audio is essential.
             </p>
@@ -145,7 +145,7 @@ const HeadsetHire = () => {
 
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
             <div>
-              <h3 className="text-xl sm:text-3xl font-bold mb-6 text-gray-900">Why Choose Our Headsets?</h3>
+              <h3 className="text-3xl font-bold mb-6 text-gray-900">Why Choose Our Headsets?</h3>
               <div className="space-y-6">
                 {features.map((feature, index) => (
                   <div key={index} className="flex items-start gap-4">
@@ -153,8 +153,8 @@ const HeadsetHire = () => {
                       <feature.icon className="w-6 h-6 text-emerald-600" />
                     </div>
                     <div>
-                      <h4 className="text-lg sm:text-xl font-semibold mb-2 text-gray-900">{feature.title}</h4>
-                      <p className="text-sm sm:text-base text-gray-600">{feature.description}</p>
+                      <h4 className="text-xl font-semibold mb-2 text-gray-900">{feature.title}</h4>
+                      <p className="text-gray-600">{feature.description}</p>
                     </div>
                   </div>
                 ))}
@@ -174,18 +174,18 @@ const HeadsetHire = () => {
       </section>
 
       {/* Contact Form */}
-      <section id="contact" className="py-12 sm:py-20">
+      <section id="contact" className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-2xl sm:text-4xl font-bold mb-6 text-gray-900">Get Your Quote</h2>
-            <p className="text-base sm:text-lg text-gray-600">
+            <h2 className="text-4xl font-bold mb-6 text-gray-900">Get Your Quote</h2>
+            <p className="text-lg text-gray-600">
               Tell us about your event and we'll provide a custom quote within 24 hours
             </p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12">
             <div>
-              <h3 className="text-xl sm:text-2xl font-bold mb-6 text-gray-900">Contact Information</h3>
+              <h3 className="text-2xl font-bold mb-6 text-gray-900">Contact Information</h3>
               
               <div className="space-y-6 mb-8">
                 <div className="flex items-center gap-4">
@@ -227,7 +227,7 @@ const HeadsetHire = () => {
             </div>
             
             <div className="bg-gray-50 rounded-2xl p-8">
-              <h3 className="text-xl sm:text-2xl font-bold mb-6 text-gray-900">Request Quote</h3>
+              <h3 className="text-2xl font-bold mb-6 text-gray-900">Request Quote</h3>
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
@@ -346,7 +346,7 @@ const HeadsetHire = () => {
       <footer className="bg-gray-900 text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <div className="text-2xl sm:text-3xl font-bold mb-4 text-emerald-400">Airmana</div>
+            <div className="text-3xl font-bold mb-4 text-emerald-400">Airmana</div>
             <p className="text-gray-400 mb-6">Premium Headset Hire Service</p>
             <p className="text-gray-500 text-sm">© 2025 Airmana. All rights reserved.</p>
           </div>
