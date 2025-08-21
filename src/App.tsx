@@ -126,6 +126,7 @@ const HomePage = () => {
         
         <div className="relative z-30 text-center max-w-4xl px-4 sm:px-6">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 md:mb-6 leading-tight mt-8">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 md:mb-6 leading-tight mt-32">
             Breathe. Move.<br />
             Connect. Transform.
           </h1>
