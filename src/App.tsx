@@ -106,24 +106,26 @@ const HomePage = () => {
             <div className="absolute top-1/2 left-1/2 w-32 h-32 md:w-64 md:h-64 bg-indigo-500 rounded-full blur-3xl animate-pulse delay-500"></div>
           </div>
           
-          {/* Airmana logo as background */}
-          <div className="absolute inset-0 flex flex-col items-center justify-center z-20" style={{ gap: 'clamp(10px, 2vh, 20px)', paddingTop: 'clamp(40px, 8vh, 80px)', paddingBottom: 'clamp(24px, 6vh, 56px)' }}>
+          {/* Hero content */}
+          <div className="relative z-20 flex flex-col items-center justify-center h-full px-4" style={{ gap: 'clamp(16px, 3vh, 32px)', paddingTop: 'clamp(60px, 10vh, 100px)', paddingBottom: 'clamp(40px, 8vh, 80px)' }}>
+            {/* Logo at top */}
             <img 
               src="/images/Airmanalogotransparent.png"
               alt="Airmana Logo"
               className="opacity-90"
               style={{ 
-                maxWidth: 'min(80vw, 680px)', 
-                maxHeight: 'min(42vh, 520px)', 
+                maxWidth: 'min(70vw, 400px)', 
+                maxHeight: 'min(30vh, 300px)', 
                 objectFit: 'contain',
-                marginTop: 'clamp(10px, 2vh, 24px)'
               }}
             />
             
+            {/* Text below logo */}
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight tracking-wider">
               BREATHWORK · FITNESS · DANCE
             </h1>
             
+            {/* Button below text */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a href="https://passm8.com/airmana#upcoming-classes" className="bg-gradient-to-r from-pink-500 to-purple-600 text-white px-8 md:px-12 py-4 md:py-5 rounded-full text-lg md:text-xl font-semibold hover:from-pink-600 hover:to-purple-700 transition-all transform hover:scale-105">
                 Get Started
