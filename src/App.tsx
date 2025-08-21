@@ -191,7 +191,7 @@ const HomePage = () => {
               <img 
                 src="https://images.pexels.com/photos/3822622/pexels-photo-3822622.jpeg"
                 alt="Airmana Community"
-                className="rounded-2xl shadow-xl"
+                className="rounded-2xl shadow-xl w-64 ml-auto"
               />
             </div>
           </div>
