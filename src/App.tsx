@@ -274,7 +274,7 @@ const HomePage = () => {
           </div>
 
           {/* Testimonials */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 md:gap-8">
             {testimonials.map((testimonial, index) => (
               <div key={index} className="bg-white p-4 md:p-6 rounded-2xl shadow-lg">
                 <div className="flex items-center gap-1 mb-4">
