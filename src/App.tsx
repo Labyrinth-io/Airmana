@@ -96,7 +96,7 @@ const HomePage = () => {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center text-white overflow-hidden">
+      <section className="relative text-white overflow-hidden" style={{ minHeight: 'calc(100vh - 88px)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
         <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-black/30"></div>
         <div className="absolute inset-0 bg-gradient-to-br from-purple-900 via-indigo-900 to-emerald-900">
           {/* Galactic energy effects */}
@@ -107,14 +107,20 @@ const HomePage = () => {
           </div>
           
           {/* Airmana logo as background */}
-          <div className="absolute inset-0 flex flex-col items-center justify-center z-20">
+          <div className="absolute inset-0 flex flex-col items-center justify-center z-20" style={{ gap: 'clamp(10px, 2vh, 20px)', paddingTop: 'clamp(40px, 8vh, 80px)', paddingBottom: 'clamp(24px, 6vh, 56px)' }}>
             <img 
               src="/images/Airmanalogotransparent.png"
               alt="Airmana Logo"
-              className="w-80 md:w-96 lg:w-[500px] h-auto object-contain opacity-90 mb-8"
+              className="opacity-90"
+              style={{ 
+                maxWidth: 'min(80vw, 680px)', 
+                maxHeight: 'min(42vh, 520px)', 
+                objectFit: 'contain',
+                marginTop: 'clamp(10px, 2vh, 24px)'
+              }}
             />
             
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-8 leading-tight tracking-wider">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight tracking-wider">
               BREATHWORK · FITNESS · DANCE
             </h1>
             
