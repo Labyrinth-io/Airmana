@@ -1,11 +1,29 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { Heart, Users, Zap, Brain, MapPin, Phone, Mail, Instagram, Facebook, Clock, Star, ArrowRight, Play, Calendar, ChevronRight } from 'lucide-react';
+import { AdminProvider } from './contexts/AdminContext';
+import { AdminLoginModal } from './components/AdminLoginModal';
+import { AdminToolbar } from './components/AdminToolbar';
+import { LoginPage } from './components/LoginPage';
+import { EditableElement } from './components/EditableElement';
+import { useKeySequence } from './hooks/useKeySequence';
+import { useAdmin } from './contexts/AdminContext';
 import HeadsetHire from './components/HeadsetHire';
 
 const HomePage = () => {
+  const { session, toggleEditMode } = useAdmin();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeService, setActiveService] = useState(0);
+  const [showLoginModal, setShowLoginModal] = useState(false);
+
+  // Secret key sequence handler
+  useKeySequence('147258369', () => {
+    if (session.isAuthenticated) {
+      toggleEditMode();
+    } else {
+      setShowLoginModal(true);
+    }
+  });
 
   const services = [
     {
@@ -108,27 +126,45 @@ const HomePage = () => {
           
           {/* Airmana logo as background */}
           <div className="absolute inset-0 flex flex-col items-center justify-center z-20" style={{ gap: 'clamp(10px, 2vh, 20px)', paddingTop: 'clamp(40px, 8vh, 80px)', paddingBottom: 'clamp(24px, 6vh, 56px)' }}>
-            <img 
-              src="/images/Airmanalogotransparent.png"
-              alt="Airmana Logo"
-              className="opacity-90"
-              style={{ 
-                maxWidth: 'min(80vw, 680px)', 
-                maxHeight: 'min(42vh, 520px)', 
-                objectFit: 'contain',
-                marginTop: 'clamp(10px, 2vh, 24px)'
-              }}
-            />
+            <EditableElement
+              id="hero.logo"
+              defaultPosition={{ x: 0, y: 0 }}
+              defaultSize={{ width: 'auto', height: 'auto' }}
+            >
+              <img 
+                src="/images/Airmanalogotransparent.png"
+                alt="Airmana Logo"
+                className="opacity-90"
+                style={{ 
+                  maxWidth: 'min(80vw, 680px)', 
+                  maxHeight: 'min(42vh, 520px)', 
+                  objectFit: 'contain',
+                  marginTop: 'clamp(10px, 2vh, 24px)'
+                }}
+              />
+            </EditableElement>
             
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight tracking-wider">
-              BREATHWORK · FITNESS · DANCE
-            </h1>
+            <EditableElement
+              id="hero.text"
+              defaultPosition={{ x: 0, y: 0 }}
+              defaultSize={{ width: 'auto', height: 'auto' }}
+            >
+              <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight tracking-wider text-center">
+                BREATHWORK · FITNESS · DANCE
+              </h1>
+            </EditableElement>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <a href="https://passm8.com/airmana#upcoming-classes" className="bg-gradient-to-r from-pink-500 to-purple-600 text-white px-8 md:px-12 py-4 md:py-5 rounded-full text-lg md:text-xl font-semibold hover:from-pink-600 hover:to-purple-700 transition-all transform hover:scale-105">
-                Get Started
-              </a>
-            </div>
+            <EditableElement
+              id="hero.cta"
+              defaultPosition={{ x: 0, y: 0 }}
+              defaultSize={{ width: 'auto', height: 'auto' }}
+            >
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="https://passm8.com/airmana#upcoming-classes" className="bg-gradient-to-r from-pink-500 to-purple-600 text-white px-8 md:px-12 py-4 md:py-5 rounded-full text-lg md:text-xl font-semibold hover:from-pink-600 hover:to-purple-700 transition-all transform hover:scale-105">
+                  Get Started
+                </a>
+              </div>
+            </EditableElement>
           </div>
           
           {/* Subtle particle effects */}
@@ -448,18 +484,27 @@ const HomePage = () => {
           </div>
         </div>
       </footer>
+
+      <AdminLoginModal 
+        isOpen={showLoginModal} 
+        onClose={() => setShowLoginModal(false)} 
+      />
+      <AdminToolbar />
     </div>
   );
 };
 
 const App = () => {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/headset-hire" element={<HeadsetHire />} />
-      </Routes>
-    </Router>
+    <AdminProvider>
+      <Router>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/headset-hire" element={<HeadsetHire />} />
+          <Route path="/login" element={<LoginPage />} />
+        </Routes>
+      </Router>
+    </AdminProvider>
   );
 };
 
