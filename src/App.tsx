@@ -91,7 +91,7 @@ const HomePage = () => {
               <a href="#about" className="text-gray-700 hover:text-emerald-600 transition-colors">About</a>
               <a href="#services" className="text-gray-700 hover:text-emerald-600 transition-colors">Services</a>
               <a href="#timetable" className="text-gray-700 hover:text-emerald-600 transition-colors">Timetable</a>
-              <a href="#contact" className="text-gray-700 hover:text-emerald-600 transition-colors">Contact</a>
+              <a href="#contact" className="text-gray-700 hover:text-bg-blue-800 transition-colors">Contact</a>
             </div>
 
             <div className="flex items-center gap-2 md:gap-4">
