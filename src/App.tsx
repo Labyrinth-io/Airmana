@@ -308,12 +308,12 @@ const HomePage = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 md:gap-4 mb-8 md:mb-12">
             {schedule.map((day, index) => (
               <div key={index} className="bg-white rounded-xl shadow-lg p-3 md:p-4 hover:shadow-xl transition-shadow">
-                <h3 className="text-sm md:text-base font-bold text-center mb-3 md:mb-4 text-gray-900 py-2 bg-emerald-50 rounded-lg">
+                <h3 className="text-sm md:text-base font-bold text-center mb-3 md:mb-4 text-white py-2 bg-blue-800 rounded-lg">
                   {day.day}
                 </h3>
-                <div className="space-y-3">
+                <div className="space-y-2 md:space-y-3">
                   {day.classes.map((classTime, idx) => (
-                    <div key={idx} className="text-xs md:text-sm bg-gray-50 p-2 md:p-3 rounded-lg">
+                    <div key={idx} className="text-xs md:text-sm bg-white p-2 md:p-3 rounded-lg border border-gray-100">
                       <div className="font-semibold text-emerald-600 mb-1 text-xs md:text-sm">
                         {classTime.split(' ')[0]}
                       </div>
