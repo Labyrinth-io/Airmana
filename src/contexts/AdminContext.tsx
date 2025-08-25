@@ -1,6 +1,7 @@
 import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
 import { AdminSession, LayoutData } from '../types/admin';
 import Cookies from 'js-cookie';
+import { api } from '../lib/api';
 
 interface AdminContextType {
   session: AdminSession;
@@ -42,9 +43,7 @@ export const AdminProvider: React.FC<AdminProviderProps> = ({ children }) => {
 
   const checkSession = async () => {
     try {
-      const response = await fetch('/api/auth/verify', {
-        credentials: 'include'
-      });
+      const response = await api('/auth/verify');
       if (response.ok) {
         const data = await response.json();
         setSession({ isAuthenticated: true, username: data.username });
@@ -56,12 +55,8 @@ export const AdminProvider: React.FC<AdminProviderProps> = ({ children }) => {
 
   const login = async (username: string, password: string): Promise<boolean> => {
     try {
-      const response = await fetch('/api/auth/login', {
+      const response = await api('/auth/login', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        credentials: 'include',
         body: JSON.stringify({ username, password }),
       });
 
@@ -79,9 +74,8 @@ export const AdminProvider: React.FC<AdminProviderProps> = ({ children }) => {
 
   const logout = async () => {
     try {
-      await fetch('/api/auth/logout', {
+      await api('/auth/logout', {
         method: 'POST',
-        credentials: 'include',
       });
     } catch (error) {
       console.error('Logout failed:', error);
@@ -100,12 +94,10 @@ export const AdminProvider: React.FC<AdminProviderProps> = ({ children }) => {
   const loadLayout = async () => {
     try {
       const endpoint = session.isAuthenticated && isEditMode 
-        ? '/api/layout/draft' 
-        : '/api/layout/published';
+        ? '/layout/draft' 
+        : '/layout/published';
       
-      const response = await fetch(endpoint, {
-        credentials: 'include'
-      });
+      const response = await api(endpoint);
       
       if (response.ok) {
         const data = await response.json();
@@ -131,12 +123,8 @@ export const AdminProvider: React.FC<AdminProviderProps> = ({ children }) => {
     if (!session.isAuthenticated) return;
     
     try {
-      const response = await fetch('/api/layout/save', {
+      const response = await api('/layout/save', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        credentials: 'include',
         body: JSON.stringify({ layout: layoutData }),
       });
       
@@ -152,9 +140,8 @@ export const AdminProvider: React.FC<AdminProviderProps> = ({ children }) => {
     if (!session.isAuthenticated) return;
     
     try {
-      const response = await fetch('/api/layout/publish', {
+      const response = await api('/layout/publish', {
         method: 'POST',
-        credentials: 'include',
       });
       
       if (!response.ok) {
@@ -169,9 +156,8 @@ export const AdminProvider: React.FC<AdminProviderProps> = ({ children }) => {
     if (!session.isAuthenticated) return;
     
     try {
-      const response = await fetch('/api/layout/revert', {
+      const response = await api('/layout/revert', {
         method: 'POST',
-        credentials: 'include',
       });
       
       if (response.ok) {
