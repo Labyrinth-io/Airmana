@@ -91,7 +91,7 @@ const HomePage = () => {
               <a href="#about" className="text-gray-700 hover:text-emerald-600 transition-colors">About</a>
               <a href="#services" className="text-gray-700 hover:text-emerald-600 transition-colors">Services</a>
               <a href="#timetable" className="text-gray-700 hover:text-emerald-600 transition-colors">Timetable</a>
-              <a href="#contact" className="text-gray-700 hover:text-blue-800 transition-colors">Contact</a>
+              <a href="#contact" className="text-gray-700 hover:text-emerald-600 transition-colors">Contact</a>
             </div>
 
             <div className="flex items-center gap-2 md:gap-4">
@@ -201,7 +201,7 @@ const HomePage = () => {
       <section id="services" className="py-12 md:py-16 lg:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 md:mb-16">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-6 text-gray-900">Our Four Pillars of Wellness</h2>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-6 text-gray-900">Our Three Pillars of Wellness</h2>
             <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto">
               Each pillar is designed to work in harmony, creating a complete transformation of body, mind, and spirit.
             </p>
@@ -269,7 +269,7 @@ const HomePage = () => {
                 <Brain className="w-8 h-8 md:w-10 md:h-10 text-emerald-600" />
               </div>
               <h3 className="text-lg md:text-xl font-bold mb-3 md:mb-4 text-gray-900">Holistic Integration</h3>
-              <p className="text-sm md:text-base text-gray-600">Our four pillars work together to create complete mind-body transformation.</p>
+              <p className="text-sm md:text-base text-gray-600">Our three pillars work together to create complete mind-body transformation.</p>
             </div>
             <div className="text-center">
               <div className="bg-white w-16 h-16 md:w-20 md:h-20 rounded-full flex items-center justify-center mx-auto mb-4 md:mb-6 shadow-lg">
@@ -380,10 +380,10 @@ const HomePage = () => {
               <div className="mt-6 md:mt-8">
                 <p className="text-sm md:text-base text-gray-600 mb-4">Stay connected with our community</p>
                 <div className="flex gap-4">
-                  <a href="https://www.instagram.com/airmana_/?hl=en" target="_blank" rel="noopener noreferrer" className="bg-emerald-600 text-white p-3 rounded-full hover:bg-emerald-700 transition-colors">
+                  <a href="https://www.instagram.com/airmana_/?hl=en" target="_blank" rel="noopener noreferrer" className="bg- blue-800-white p-3 rounded-full hover:bg-emerald-700 transition-colors">
                     <Instagram className="w-5 h-5 md:w-6 md:h-6" />
                   </a>
-                  <a href="https://www.facebook.com/airmanaenergy/" target="_blank" rel="noopener noreferrer" className="bg-emerald-600 text-white p-3 rounded-full hover:bg-emerald-700 transition-colors">
+                  <a href="https://www.facebook.com/airmanaenergy/" target="_blank" rel="noopener noreferrer" className="bg- text-whiteblue-800 p-3 rounded-full hover:bg-emerald-700 transition-colors">
                     <Facebook className="w-5 h-5 md:w-6 md:h-6" />
                   </a>
                 </div>
