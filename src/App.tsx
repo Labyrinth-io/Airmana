@@ -131,10 +131,6 @@ const HomePage = () => {
               }}
             />
             
-            <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold leading-tight tracking-wider text-center">
-              BREATHWORK · FITNESS · DANCE
-            </h1>
-            
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a href="https://passm8.com/airmana#upcoming-classes" className="bg-gradient-to-r from-pink-500 to-purple-600 text-white px-8 md:px-12 py-4 md:py-5 rounded-full text-lg md:text-xl font-semibold hover:from-pink-600 hover:to-purple-700 transition-all transform hover:scale-105">
                 Get Started
