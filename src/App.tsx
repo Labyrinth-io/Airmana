@@ -75,7 +75,7 @@ const HomePage = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Sticky Book Now Button */}
-      <a href="https://passm8.com/airmana#upcoming-classes" className="fixed bottom-4 right-4 md:bottom-6 md:right-6 bg-blue-800 px-4 md:px-6 py-2 md:py-3 text-sm md:text-base rounded-full shadow-lg z-50 font-semibold hover:bg-blue-700 transition-all transform hover:scale-105">
+      <a href="https://passm8.com/airmana#upcoming-classes" className="fixed bottom-4 right-4 md:bottom-6 md:right-6 bg-blue-800 px-4 md:px-6 py-2 md:py-3 text-sm md:text-base rounded-full shadow-lg z-50 font-semibold hover:bg-blue-700 transition-all transform hover:scale-105 text-white">
         <span className="airmana-logo">Book Now</span>
       </a>
 
@@ -95,10 +95,10 @@ const HomePage = () => {
             </div>
 
             <div className="flex items-center gap-2 md:gap-4">
-              <a href="/headset-hire" className="hidden sm:block bg-blue-800 px-3 md:px-6 py-2 rounded-full hover:bg-blue-700 transition-all text-sm md:text-base">
+              <a href="/headset-hire" className="hidden sm:block bg-blue-800 px-3 md:px-6 py-2 rounded-full hover:bg-blue-700 transition-all text-sm md:text-base text-white">
                 <span className="airmana-logo">Headset Hire</span>
               </a>
-              <a href="https://passm8.com/airmana#upcoming-classes" className="bg-gradient-to-r from-blue-800 to-blue-900 px-4 md:px-6 py-2 rounded-full hover:from-blue-700 hover:to-blue-800 transition-all text-sm md:text-base shadow-lg">
+              <a href="https://passm8.com/airmana#upcoming-classes" className="bg-gradient-to-r from-blue-800 to-blue-900 px-4 md:px-6 py-2 rounded-full hover:from-blue-700 hover:to-blue-800 transition-all text-sm md:text-base shadow-lg text-white">
                 <span className="airmana-logo">Join Today</span>
               </a>
             </div>
@@ -132,7 +132,7 @@ const HomePage = () => {
             />
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <a href="https://passm8.com/airmana#upcoming-classes" className="bg-blue-800 px-8 md:px-12 py-4 md:py-5 rounded-full text-lg md:text-xl font-semibold hover:bg-blue-700 transition-all transform hover:scale-105">
+              <a href="https://passm8.com/airmana#upcoming-classes" className="bg-blue-800 px-8 md:px-12 py-4 md:py-5 rounded-full text-lg md:text-xl font-semibold hover:bg-blue-700 transition-all transform hover:scale-105 text-white">
                 <span className="airmana-logo">Get Started</span>
               </a>
             </div>
@@ -238,7 +238,7 @@ const HomePage = () => {
                     ))}
                   </ul>
                   
-                  <a href="https://passm8.com/airmana#upcoming-classes" className="w-full bg-blue-800 py-2 md:py-3 rounded-xl text-sm md:text-base font-semibold hover:bg-blue-700 transition-all block text-center">
+                  <a href="https://passm8.com/airmana#upcoming-classes" className="w-full bg-blue-800 py-2 md:py-3 rounded-xl text-sm md:text-base font-semibold hover:bg-blue-700 transition-all block text-center text-white">
                     <span className="airmana-logo">{service.cta}</span>
                   </a>
                 </div>
@@ -328,7 +328,7 @@ const HomePage = () => {
           </div>
 
           <div className="text-center">
-            <a href="https://passm8.com/airmana#upcoming-classes" className="inline-flex items-center gap-2 bg-blue-800 px-4 md:px-6 py-2 md:py-3 rounded-full text-base md:text-lg font-semibold hover:bg-blue-700 transition-all transform hover:scale-105">
+            <a href="https://passm8.com/airmana#upcoming-classes" className="inline-flex items-center gap-2 bg-blue-800 px-4 md:px-6 py-2 md:py-3 rounded-full text-base md:text-lg font-semibold hover:bg-blue-700 transition-all transform hover:scale-105 text-white">
               <Calendar className="w-4 h-4 md:w-5 md:h-5" />
               <span className="airmana-logo">Book Your Classes</span>
             </a>
@@ -428,7 +428,7 @@ const HomePage = () => {
                     className="w-full px-3 md:px-4 py-2 md:py-3 text-sm md:text-base rounded-xl border border-gray-200 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-200 outline-none transition-all"
                   ></textarea>
                 </div>
-                <button type="submit" className="w-full bg-blue-800 py-2 md:py-3 text-sm md:text-base rounded-xl font-semibold hover:bg-blue-700 transition-all">
+                <button type="submit" className="w-full bg-blue-800 py-2 md:py-3 text-sm md:text-base rounded-xl font-semibold hover:bg-blue-700 transition-all text-white">
                   <span className="airmana-logo">Start My Wellness Journey</span>
                 </button>
               </form>
