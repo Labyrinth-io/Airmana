@@ -96,6 +96,7 @@ const HomePage = () => {
 
             <div className="flex items-center gap-2 md:gap-4">
               <a href="/headset-hire" className="hidden sm:block bg-gradient-to-r from-purple-500 to-indigo-600 text-white px-3 md:px-6 py-2 rounded-full hover:from-purple-600 hover:to-indigo-700 transition-all text-sm md:text-base">
+              <a href="/headset-hire" className="hidden sm:block bg-blue-800 px-3 md:px-6 py-2 rounded-full hover:bg-blue-700 transition-all text-sm md:text-base">
                 <span className="airmana-logo">Headset Hire</span>
               </a>
               <a href="https://passm8.com/airmana#upcoming-classes" className="bg-gradient-to-r from-blue-800 to-blue-900 px-4 md:px-6 py-2 rounded-full hover:from-blue-700 hover:to-blue-800 transition-all text-sm md:text-base shadow-lg">
