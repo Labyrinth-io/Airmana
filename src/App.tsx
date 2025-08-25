@@ -1,11 +1,22 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Heart, Users, Zap, Brain, MapPin, Phone, Mail, Instagram, Facebook, Clock, Star, ArrowRight, Play, Calendar, ChevronRight } from 'lucide-react';
+import { AdminProvider } from './contexts/AdminContext';
+import { AdminToolbar } from './components/AdminToolbar';
+import { AdminLoginModal } from './components/AdminLoginModal';
+import { LoginPage } from './components/LoginPage';
+import { useKeySequence } from './hooks/useKeySequence';
 import HeadsetHire from './components/HeadsetHire';
 
 const HomePage = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeService, setActiveService] = useState(0);
+  const [showLoginModal, setShowLoginModal] = useState(false);
+
+  // Admin access via key sequence
+  useKeySequence('admin', () => {
+    setShowLoginModal(true);
+  });
 
   const services = [
     {
@@ -448,18 +459,30 @@ const HomePage = () => {
           </div>
         </div>
       </footer>
+
+      {/* Admin Login Modal */}
+      <AdminLoginModal 
+        isOpen={showLoginModal} 
+        onClose={() => setShowLoginModal(false)} 
+      />
+
+      {/* Admin Toolbar */}
+      <AdminToolbar />
     </div>
   );
 };
 
 const App = () => {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/headset-hire" element={<HeadsetHire />} />
-      </Routes>
-    </Router>
+    <AdminProvider>
+      <Router>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/headset-hire" element={<HeadsetHire />} />
+          <Route path="/admin/login" element={<LoginPage />} />
+        </Routes>
+      </Router>
+    </AdminProvider>
   );
 };
 
