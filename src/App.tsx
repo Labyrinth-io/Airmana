@@ -113,8 +113,8 @@ const HomePage = () => {
               alt="Airmana Logo"
               className="opacity-90"
               style={{ 
-                maxWidth: 'min(80vw, 680px)', 
-                maxHeight: 'min(42vh, 520px)', 
+                maxWidth: 'min(90vw, 1200px)', 
+                maxHeight: 'min(65vh, 800px)', 
                 objectFit: 'contain',
                 marginTop: 'clamp(10px, 2vh, 24px)'
               }}
