@@ -164,29 +164,29 @@ const HomePage = () => {
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
                 <div className="text-center p-4 md:p-6 bg-white rounded-xl shadow-sm">
-                  <div className="bg-emerald-100 w-12 h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center mx-auto mb-3 md:mb-4">
-                    <Zap className="w-6 h-6 md:w-8 md:h-8 text-emerald-600" />
+                  <div className="bg-blue-800 w-12 h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center mx-auto mb-3 md:mb-4">
+                    <Zap className="w-6 h-6 md:w-8 md:h-8" style={{ color: '#E9BDC7' }} />
                   </div>
                   <h3 className="text-sm md:text-base font-semibold text-gray-900 mb-2">High Energy</h3>
                   <p className="text-xs md:text-sm text-gray-600">Dynamic workouts that energize your body</p>
                 </div>
                 <div className="text-center p-4 md:p-6 bg-white rounded-xl shadow-sm">
-                  <div className="bg-emerald-100 w-12 h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center mx-auto mb-3 md:mb-4">
-                    <Heart className="w-6 h-6 md:w-8 md:h-8 text-emerald-600" />
+                  <div className="bg-blue-800 w-12 h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center mx-auto mb-3 md:mb-4">
+                    <Heart className="w-6 h-6 md:w-8 md:h-8" style={{ color: '#E9BDC7' }} />
                   </div>
                   <h3 className="text-sm md:text-base font-semibold text-gray-900 mb-2">Deep Healing</h3>
                   <p className="text-xs md:text-sm text-gray-600">Breathwork and meditation for inner peace</p>
                 </div>
                 <div className="text-center p-4 md:p-6 bg-white rounded-xl shadow-sm">
-                  <div className="bg-emerald-100 w-12 h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center mx-auto mb-3 md:mb-4">
-                    <Brain className="w-6 h-6 md:w-8 md:h-8 text-emerald-600" />
+                  <div className="bg-blue-800 w-12 h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center mx-auto mb-3 md:mb-4">
+                    <Brain className="w-6 h-6 md:w-8 md:h-8" style={{ color: '#E9BDC7' }} />
                   </div>
                   <h3 className="text-sm md:text-base font-semibold text-gray-900 mb-2">Mindful Focus</h3>
                   <p className="text-xs md:text-sm text-gray-600">Meditation practices for clarity and awareness</p>
                 </div>
                 <div className="text-center p-4 md:p-6 bg-white rounded-xl shadow-sm">
-                  <div className="bg-emerald-100 w-12 h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center mx-auto mb-3 md:mb-4">
-                    <Users className="w-6 h-6 md:w-8 md:h-8 text-emerald-600" />
+                  <div className="bg-blue-800 w-12 h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center mx-auto mb-3 md:mb-4">
+                    <Users className="w-6 h-6 md:w-8 md:h-8" style={{ color: '#E9BDC7' }} />
                   </div>
                   <h3 className="text-sm md:text-base font-semibold text-gray-900 mb-2">Creative Expression</h3>
                   <p className="text-xs md:text-sm text-gray-600">Dance and movement for joyful self-expression</p>
