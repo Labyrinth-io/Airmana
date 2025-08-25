@@ -96,10 +96,10 @@ const HomePage = () => {
 
             <div className="flex items-center gap-2 md:gap-4">
               <a href="/headset-hire" className="hidden sm:block bg-gradient-to-r from-purple-500 to-indigo-600 text-white px-3 md:px-6 py-2 rounded-full hover:from-purple-600 hover:to-indigo-700 transition-all text-sm md:text-base">
-                Headset Hire
+                <span className="airmana-logo">Headset Hire</span>
               </a>
-              <a href="https://passm8.com/airmana#upcoming-classes" className="bg-gradient-to-r from-emerald-500 to-teal-600 text-white px-4 md:px-6 py-2 rounded-full hover:from-emerald-600 hover:to-teal-700 transition-all text-sm md:text-base">
-                Join Today
+              <a href="https://passm8.com/airmana#upcoming-classes" className="bg-gradient-to-r from-blue-800 to-blue-900 px-4 md:px-6 py-2 rounded-full hover:from-blue-700 hover:to-blue-800 transition-all text-sm md:text-base shadow-lg">
+                <span className="airmana-logo">Join Today</span>
               </a>
             </div>
           </div>
