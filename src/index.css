@@ -7,7 +7,6 @@
 .airmana-logo {
   font-family: 'Glacial Indifference', sans-serif;
   color: #E9BDC7;
-- text-transform: uppercase;
-+ text-transform: capitalize;
+  text-transform: capitalize;   /* Title Case: “Get Started”, “Join Today” */
   letter-spacing: 0.1em;
 }
