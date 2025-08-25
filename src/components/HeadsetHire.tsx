@@ -93,7 +93,7 @@ const HeadsetHire = () => {
             </div>
 
             <a href="https://passm8.com/airmana#upcoming-classes" className="bg-gradient-to-r from-emerald-500 to-teal-600 text-white px-6 py-2 rounded-full hover:from-emerald-600 hover:to-teal-700 transition-all">
-              $15 Trial
+              <span className="airmana-logo">$15 Trial</span>
             </a>
           </div>
         </div>
@@ -125,8 +125,8 @@ const HeadsetHire = () => {
             Professional wireless headsets for your events, workshops, and fitness classes. Crystal clear audio for unforgettable experiences.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <a href="#contact" className="bg-gradient-to-r from-emerald-500 to-teal-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:from-emerald-600 hover:to-teal-700 transition-all transform hover:scale-105">
-              Get Quote Now
+            <a href="#contact" className="bg-blue-800 px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-700 transition-all transform hover:scale-105">
+              <span className="airmana-logo">Get Quote Now</span>
             </a>
           </div>
         </div>
@@ -332,9 +332,9 @@ const HeadsetHire = () => {
                 </div>
                 <button 
                   type="submit" 
-                  className="w-full bg-gradient-to-r from-emerald-500 to-teal-600 text-white py-3 rounded-xl font-semibold hover:from-emerald-600 hover:to-teal-700 transition-all"
+                  className="w-full bg-blue-800 py-3 rounded-xl font-semibold hover:bg-blue-700 transition-all"
                 >
-                  Request Quote
+                  <span className="airmana-logo">Request Quote</span>
                 </button>
               </form>
             </div>
