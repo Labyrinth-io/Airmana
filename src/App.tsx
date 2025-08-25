@@ -80,7 +80,7 @@ const HomePage = () => {
       </a>
 
       {/* Navigation */}
-      <nav className="fixed top-0 w-full bg-emerald-50 bg-opacity-95 backdrop-blur-sm z-40 border-b border-gray-100">
+      <nav className="fixed top-0 w-full bg-slate-900 bg-opacity-95 backdrop-blur-sm z-40 border-b border-slate-700">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-3 md:py-4">
             <div className="flex items-center gap-3">
