@@ -136,6 +136,21 @@ const HomePage = () => {
                 <span className="airmana-logo">Get Started</span>
               </a>
             </div>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                position: "absolute",
+                top: "561px",
+                left: "224px",
+                width: "auto",
+                height: "auto",
+              }}
+            >
+              Builder.io test
+              <br />
+              <br />
+            </div>
           </div>
           
           {/* Subtle particle effects */}
