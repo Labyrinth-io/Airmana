@@ -147,7 +147,7 @@ const HomePage = () => {
                 height: "auto",
               }}
             >
-              Builder.io test
+              Made by Labyrinth
               <br />
               <br />
             </div>
