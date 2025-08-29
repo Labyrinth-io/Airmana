@@ -147,8 +147,7 @@ const HomePage = () => {
                 height: "auto",
               }}
             >
-              Made by Labyrinth
-              <br />
+                            <br />
               <br />
             </div>
           </div>
