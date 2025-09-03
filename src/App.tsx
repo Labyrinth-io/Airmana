@@ -260,7 +260,7 @@ const HomePage = () => {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-12 md:py-16 lg:py-20 bg-gradient-to-r from-emerald-50 to-teal-50">
+      <section className="py-12 md:py-16 lg:py-20 bg-[#8A8AEC]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 md:mb-16">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-6 text-gray-900">Why Choose Airmana?</h2>
@@ -270,21 +270,21 @@ const HomePage = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-12 md:mb-16">
             <div className="text-center">
               <div className="bg-white w-16 h-16 md:w-20 md:h-20 rounded-full flex items-center justify-center mx-auto mb-4 md:mb-6 shadow-lg">
-                <Users className="w-8 h-8 md:w-10 md:h-10 text-emerald-600" />
+                <Users className="w-8 h-8 md:w-10 md:h-10 text-[#1E40AF]" />
               </div>
               <h3 className="text-lg md:text-xl font-bold mb-3 md:mb-4 text-gray-900">Supportive Community</h3>
               <p className="text-sm md:text-base text-gray-600">Join a welcoming community where everyone supports each other's wellness journey.</p>
             </div>
             <div className="text-center">
               <div className="bg-white w-16 h-16 md:w-20 md:h-20 rounded-full flex items-center justify-center mx-auto mb-4 md:mb-6 shadow-lg">
-                <Brain className="w-8 h-8 md:w-10 md:h-10 text-emerald-600" />
+                <Brain className="w-8 h-8 md:w-10 md:h-10 text-[#1E40AF]" />
               </div>
               <h3 className="text-lg md:text-xl font-bold mb-3 md:mb-4 text-gray-900">Holistic Integration</h3>
               <p className="text-sm md:text-base text-gray-600">Our three pillars work together to create complete mind-body transformation.</p>
             </div>
             <div className="text-center">
               <div className="bg-white w-16 h-16 md:w-20 md:h-20 rounded-full flex items-center justify-center mx-auto mb-4 md:mb-6 shadow-lg">
-                <Star className="w-8 h-8 md:w-10 md:h-10 text-emerald-600" />
+                <Star className="w-8 h-8 md:w-10 md:h-10 text-[#1E40AF]" />
               </div>
               <h3 className="text-lg md:text-xl font-bold mb-3 md:mb-4 text-gray-900">Proven Results</h3>
               <p className="text-sm md:text-base text-gray-600">See real transformations in strength, flexibility, mental clarity, and emotional wellbeing.</p>
@@ -319,13 +319,13 @@ const HomePage = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 md:gap-4 mb-8 md:mb-12">
             {schedule.map((day, index) => (
               <div key={index} className="bg-white rounded-xl shadow-lg p-3 md:p-4 hover:shadow-xl transition-shadow">
-                <h3 className="text-sm md:text-base font-bold text-center mb-3 md:mb-4 text-white py-2 bg-blue-800 rounded-lg">
+                <h3 className="text-sm md:text-base font-bold text-center mb-3 md:mb-4 text-[#E9BDC7] py-2 bg-blue-800 rounded-lg">
                   {day.day}
                 </h3>
                 <div className="space-y-2 md:space-y-3">
                   {day.classes.map((classTime, idx) => (
                     <div key={idx} className="text-xs md:text-sm bg-white p-2 md:p-3 rounded-lg border border-gray-100">
-                      <div className="font-semibold text-emerald-600 mb-1 text-xs md:text-sm">
+                      <div className="font-semibold text-[#4A90E2] mb-1 text-xs md:text-sm">
                         {classTime.split(' ')[0]}
                       </div>
                       <div className="text-gray-600 text-xs">
@@ -354,28 +354,28 @@ const HomePage = () => {
               
               <div className="space-y-4 md:space-y-6">
                 <div className="flex items-center gap-4">
-                  <MapPin className="w-5 h-5 md:w-6 md:h-6 text-emerald-600 flex-shrink-0" />
+                  <MapPin className="w-5 h-5 md:w-6 md:h-6 text-[#4A90E2] flex-shrink-0" />
                   <div>
                     <p className="text-sm md:text-base font-semibold text-gray-900">Location</p>
-                    <a href="https://maps.app.goo.gl/WxHD3qw6mBxAAYoW8" target="_blank" rel="noopener noreferrer" className="text-sm md:text-base text-emerald-600 hover:text-emerald-700 transition-colors">
+                    <a href="https://maps.app.goo.gl/WxHD3qw6mBxAAYoW8" target="_blank" rel="noopener noreferrer" className="text-sm md:text-base text-[#4A90E2] hover:text-[#3B78C1] transition-colors">
                       Labyrinth Central, Bundaberg, Australia
                     </a>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
-                  <Phone className="w-5 h-5 md:w-6 md:h-6 text-emerald-600 flex-shrink-0" />
+                  <Phone className="w-5 h-5 md:w-6 md:h-6 text-[#4A90E2] flex-shrink-0" />
                   <div>
                     <p className="text-sm md:text-base font-semibold text-gray-900">Phone</p>
-                    <a href="tel:+61413428182" className="text-sm md:text-base text-emerald-600 hover:text-emerald-700 transition-colors">
+                    <a href="tel:+61413428182" className="text-sm md:text-base text-[#4A90E2] hover:text-[#3B78C1] transition-colors">
                       +61 413 428 182
                     </a>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
-                  <Mail className="w-5 h-5 md:w-6 md:h-6 text-emerald-600 flex-shrink-0" />
+                  <Mail className="w-5 h-5 md:w-6 md:h-6 text-[#4A90E2] flex-shrink-0" />
                   <div>
                     <p className="text-sm md:text-base font-semibold text-gray-900">Email</p>
-                    <a href="mailto:info@airmana.com.au" className="text-sm md:text-base text-emerald-600 hover:text-emerald-700 transition-colors">
+                    <a href="mailto:info@airmana.com.au" className="text-sm md:text-base text-[#4A90E2] hover:text-[#3B78C1] transition-colors">
                       info@airmana.com.au
                     </a>
                   </div>
@@ -446,7 +446,7 @@ const HomePage = () => {
       <footer className="bg-gray-900 text-white py-8 md:py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <div className="text-2xl md:text-3xl font-bold mb-3 md:mb-4 text-emerald-400">Airmana</div>
+            <div className="text-2xl md:text-3xl font-bold mb-3 md:mb-4 text-[#E9BDC7]">Airmana</div>
             <p className="text-sm md:text-base text-gray-400 mb-4 md:mb-6">Breathe. Move. Connect. Transform.</p>
             <div className="flex justify-center gap-4 md:gap-6 mb-6 md:mb-8">
               <a href="https://www.instagram.com/airmana_/?hl=en" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-emerald-400 transition-colors">
