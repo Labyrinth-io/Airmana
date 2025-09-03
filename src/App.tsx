@@ -117,11 +117,12 @@ const HomePage = () => {
               src="/images/Airmanalogotransparent.png"
               alt="Airmana Logo"
               className="opacity-90"
-              style={{ 
-                maxWidth: 'min(90vw, 1200px)', 
-                maxHeight: 'min(65vh, 800px)', 
+              style={{
+                maxWidth: '1600px',
+                minHeight: '694px',
+                paddingTop: '54px',
                 objectFit: 'contain',
-                marginTop: 'clamp(10px, 2vh, 24px)'
+                margin: '24px auto 0'
               }}
             />
             
@@ -165,7 +166,7 @@ const HomePage = () => {
               <p className="text-base md:text-lg text-gray-600 mb-6 md:mb-8 leading-relaxed">
                 Our holistic approach integrates four powerful pillars: dynamic group fitness, transformative breathwork, mindful meditation, and expressive dance. Each element works in harmony to create a complete wellness experience that nourishes your body, calms your mind, and ignites your spirit.
               </p>
-              
+
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
                 <div className="text-center p-4 md:p-6 bg-white rounded-xl shadow-sm">
                   <div className="bg-blue-800 w-12 h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center mx-auto mb-3 md:mb-4">
@@ -196,6 +197,12 @@ const HomePage = () => {
                   <p className="text-xs md:text-sm text-gray-600">Dance and movement for joyful self-expression</p>
                 </div>
               </div>
+            </div>
+            <div className="flex lg:justify-center lg:items-end">
+              <a href="https://passm8.com/airmana#upcoming-classes" className="inline-flex items-center bg-blue-800 text-white rounded-full px-6 py-3 font-semibold gap-2 hover:bg-blue-700 transition-all">
+                <Calendar className="w-5 h-5" />
+                <span className="airmana-logo">Book Your Classes</span>
+              </a>
             </div>
           </div>
         </div>
@@ -331,12 +338,6 @@ const HomePage = () => {
             ))}
           </div>
 
-          <div className="text-center">
-            <a href="https://passm8.com/airmana#upcoming-classes" className="inline-flex items-center gap-2 bg-blue-800 px-4 md:px-6 py-2 md:py-3 rounded-full text-base md:text-lg font-semibold hover:bg-blue-700 transition-all transform hover:scale-105 text-white">
-              <Calendar className="w-4 h-4 md:w-5 md:h-5" />
-              <span className="airmana-logo">Book Your Classes</span>
-            </a>
-          </div>
         </div>
       </section>
 
