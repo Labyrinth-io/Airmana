@@ -49,6 +49,9 @@ export const AdminProvider: React.FC<AdminProviderProps> = ({ children }) => {
         setSession({ isAuthenticated: true, username: data.username });
       }
     } catch (error) {
+      if (error instanceof Error && error.message.includes('401')) {
+        return;
+      }
       console.error('Session check failed:', error);
     }
   };
