@@ -64,11 +64,11 @@ const HomePage = () => {
   ];
 
   const schedule = [
-    { day: "Monday", classes: ["6:00am Group Fitness", "6:10pm Forex & Crypto Trading", "7:10pm Breathwork"] },
+    { day: "Monday", classes: ["5:00am Group Fitness", "7:00am Group Fitness", "6:10pm Forex & Crypto Trading"] },
     { day: "Tuesday", classes: ["5:00am Group Fitness", "6:00am Group Fitness", "10:00am Group Fitness"] },
-    { day: "Wednesday", classes: ["6:00am Group Fitness", "7:00am Group Fitness"] },
+    { day: "Wednesday", classes: ["5:00am Group Fitness", "7:00am Group Fitness"] },
     { day: "Thursday", classes: ["5:00am Group Fitness", "6:00am Group Fitness", "7:00am Group Fitness"] },
-    { day: "Friday", classes: ["5:00am Group Fitness", "6:10pm Forex & Crypto Trading", "7:10pm Breathwork"] },
+    { day: "Friday", classes: ["6:00am Group Fitness", "7:00am Group Fitness", "10:00am Group Fitness", "6:10pm Forex & Crypto Trading"] },
     { day: "Saturday", classes: ["8:00am Dance", "9:10am Meditation"] }
   ];
 
@@ -87,13 +87,7 @@ const HomePage = () => {
               <div className="text-xl md:text-2xl font-bold airmana-logo">AIRMANA</div>
             </div>
             
-            <div className="hidden lg:flex space-x-6 xl:space-x-8 justify-center flex-1">
-              <a href="#about" className="text-gray-700 hover:text-emerald-600 transition-colors">About</a>
-              <a href="#services" className="text-gray-700 hover:text-emerald-600 transition-colors">Services</a>
-              <a href="#timetable" className="text-gray-700 hover:text-emerald-600 transition-colors">Timetable</a>
-              <a href="#contact" className="text-gray-700 hover:text-emerald-600 transition-colors">Contact</a>
-            </div>
-
+  
             <div className="flex items-center gap-2 md:gap-4">
               <a href="/headset-hire" className="hidden sm:block bg-blue-800 px-3 md:px-6 py-2 rounded-full hover:bg-blue-700 transition-all text-sm md:text-base text-white">
                 <span className="airmana-logo">Headset Hire</span>
@@ -131,11 +125,7 @@ const HomePage = () => {
               }}
             />
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <a href="https://passm8.com/airmana#upcoming-classes" className="bg-blue-800 px-8 md:px-12 py-4 md:py-5 rounded-full text-lg md:text-xl font-semibold hover:bg-blue-700 transition-all transform hover:scale-105 text-white">
-                <span className="airmana-logo">Get Started</span>
-              </a>
-            </div>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center"></div>
             <div
               style={{
                 display: "flex",
