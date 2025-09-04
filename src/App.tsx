@@ -108,53 +108,76 @@ const HomePage = () => {
       </nav>
 
       {/* Hero Section */}
-      <section
-        className="relative isolate text-white overflow-hidden bg-[#0b0f1a]"
-        style={{
-          minHeight: 'calc(120vh - 88px)',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-        }}
-      >
-        {/* Particles ONLY (hero-scoped) */}
-        <div className="absolute inset-0 -z-10 pointer-events-none">
-          <Particles
-            particleColors={['#4AB1D3']}   // Airmana teal
-            particleCount={120}
-            particleSpread={12}
-            speed={0.05}
-            particleBaseSize={2}           // small dots like the ReactBits demo
-            moveParticlesOnHover={true}
-            alphaParticles={true}
-            disableRotation={false}
-            className="w-full h-full"
-          />
-        </div>
-
-        {/* Content */}
-        <div className="relative z-10 flex flex-col items-center justify-center gap-6 py-16">
-          <img
-            src="/images/Airmanalogotransparent.png"
-            alt="Airmana Logo"
-            className="opacity-90"
-            style={{
-              maxWidth: 'min(90vw, 1200px)',
-              maxHeight: 'min(65vh, 800px)',
-              objectFit: 'contain',
-              marginTop: 'clamp(10px, 2vh, 24px)',
-            }}
-          />
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <a
-              href="https://passm8.com/airmana#upcoming-classes"
-              className="bg-blue-800 px-8 md:px-12 py-4 md:py-5 rounded-full text-lg md:text-xl font-semibold hover:bg-blue-700 transition-all transform hover:scale-105 text-white"
+      <section className="relative text-white overflow-hidden" style={{ minHeight: 'calc(120vh - 88px)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-black/30"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-purple-900 via-indigo-900 to-emerald-900">
+          {/* Particles Background */}
+          <div className="absolute inset-0">
+            <Particles
+              particleColors={['#E9BDC7', '#ffffff', '#a855f7', '#10b981']}
+              particleCount={150}
+              particleSpread={12}
+              speed={0.05}
+              particleBaseSize={80}
+              moveParticlesOnHover={true}
+              alphaParticles={true}
+              disableRotation={false}
+              className="w-full h-full"
+            />
+          </div>
+          
+          {/* Galactic energy effects */}
+          <div className="absolute inset-0 opacity-20">
+            <div className="absolute top-1/4 left-1/4 w-48 h-48 md:w-96 md:h-96 bg-purple-500 rounded-full blur-3xl animate-pulse"></div>
+            <div className="absolute top-3/4 right-1/4 w-40 h-40 md:w-80 md:h-80 bg-emerald-500 rounded-full blur-3xl animate-pulse delay-1000"></div>
+            <div className="absolute top-1/2 left-1/2 w-32 h-32 md:w-64 md:h-64 bg-indigo-500 rounded-full blur-3xl animate-pulse delay-500"></div>
+          </div>
+          
+          {/* Airmana logo as background */}
+          <div className="absolute inset-0 flex flex-col items-center justify-center z-30" style={{ gap: 'clamp(10px, 2vh, 20px)', paddingTop: 'clamp(40px, 8vh, 80px)', paddingBottom: 'clamp(24px, 6vh, 56px)' }}>
+            <img 
+              src="/images/Airmanalogotransparent.png"
+              alt="Airmana Logo"
+              className="opacity-90"
+              style={{ 
+                maxWidth: 'min(90vw, 1200px)', 
+                maxHeight: 'min(65vh, 800px)', 
+                objectFit: 'contain',
+                marginTop: 'clamp(10px, 2vh, 24px)'
+              }}
+            />
+            
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <a href="https://passm8.com/airmana#upcoming-classes" className="bg-blue-800 px-8 md:px-12 py-4 md:py-5 rounded-full text-lg md:text-xl font-semibold hover:bg-blue-700 transition-all transform hover:scale-105 text-white">
+                <span className="airmana-logo">Get Started</span>
+              </a>
+            </div>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                position: "absolute",
+                top: "561px",
+                left: "224px",
+                width: "auto",
+                height: "auto",
+              }}
             >
-              <span className="airmana-logo">Get Started</span>
-            </a>
+              Made by Labyrinth
+              <br />
+              <br />
+            </div>
+          </div>
+          
+          {/* Subtle particle effects */}
+          <div className="absolute inset-0 z-20">
+            <div className="absolute top-1/3 left-1/5 w-2 h-2 bg-white rounded-full animate-ping delay-300"></div>
+            <div className="absolute top-2/3 right-1/3 w-1 h-1 bg-emerald-300 rounded-full animate-ping delay-700"></div>
+            <div className="absolute top-1/4 right-1/4 w-1.5 h-1.5 bg-purple-300 rounded-full animate-ping delay-1000"></div>
+            <div className="absolute bottom-1/3 left-1/3 w-1 h-1 bg-indigo-300 rounded-full animate-ping delay-500"></div>
           </div>
         </div>
+        
       </section>
 
       {/* About Section */}
