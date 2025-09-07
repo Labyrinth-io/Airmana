@@ -275,6 +275,7 @@ const HomePage = () => {
               <p className="text-sm md:text-base text-gray-600">See real transformations in strength, flexibility, mental clarity, and emotional wellbeing.</p>
             </div>
           </div>
+      </section>
 
       {/* Timetable Section */}
       <section id="timetable" className="py-12 md:py-16 lg:py-20">
