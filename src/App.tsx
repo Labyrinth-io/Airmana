@@ -294,23 +294,6 @@ const HomePage = () => {
             </div>
           </div>
 
-          {/* Testimonials */}
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 md:gap-8">
-            {testimonials.map((testimonial, index) => (
-              <div key={index} className="bg-white p-4 md:p-6 rounded-2xl shadow-lg">
-                <div className="flex items-center gap-1 mb-4">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-                  ))}
-                </div>
-                <p className="text-sm md:text-base text-gray-600 mb-4 italic">"{testimonial.text}"</p>
-                <p className="text-sm md:text-base font-semibold text-gray-900">{testimonial.name}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Timetable Section */}
       <section id="timetable" className="py-12 md:py-16 lg:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
