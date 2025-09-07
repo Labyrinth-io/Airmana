@@ -1,0 +1,309 @@
+/* Design Tokens - Single Source of Truth */
+:root {
+  /* Light Theme (Default) */
+  /* 60% - Light neutral backgrounds */
+  --bg: #F7F8FA;
+  --surface: #FFFFFF;
+  --surface-elevated: #FFFFFF;
+  
+  /* Text colors */
+  --ink: #0F1720;            /* main text - AAA contrast on light backgrounds */
+  --muted-ink: #334155;      /* secondary text - AA contrast minimum */
+  --subtle-ink: #64748B;     /* tertiary text */
+  
+  /* 30% - Deep indigo family for sections and large UI */
+  --primary: #243B53;        /* primary brand color */
+  --primary-surface: #334E68; /* surface-dark */
+  --primary-tint: #E5EAF0;   /* light tint */
+  --primary-ink-on: #FFFFFF; /* text on primary - AAA contrast */
+  
+  /* 10% - Accent for CTAs/highlights */
+  --accent: #2BAA8A;         /* emerald accent */
+  --accent-hover: #259B7E;   /* hover state */
+  --accent-active: #228A70;  /* active state */
+  --accent-ink-on: #FFFFFF;  /* text on accent - AAA contrast */
+  
+  /* UI elements */
+  --border: #E6E8EC;
+  --border-subtle: #F1F3F5;
+  --focus: #1E90FF;          /* visible focus ring */
+  --shadow: rgba(15, 23, 32, 0.08);
+  --shadow-elevated: rgba(15, 23, 32, 0.12);
+  
+  /* Status colors */
+  --success: #10B981;
+  --warning: #F59E0B;
+  --error: #EF4444;
+  
+  /* Typography scale */
+  --font-size-base: 18px;
+  --line-height-base: 1.7;
+  --font-size-sm: 16px;
+  --font-size-lg: 20px;
+  --font-size-xl: 24px;
+  --font-size-2xl: 32px;
+  --font-size-3xl: 40px;
+  --font-size-4xl: 48px;
+  
+  /* Line heights */
+  --line-height-tight: 1.2;
+  --line-height-snug: 1.25;
+  --line-height-normal: 1.3;
+  --line-height-relaxed: 1.4;
+  --line-height-loose: 1.7;
+  
+  /* Spacing scale */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+  
+  /* Border radius */
+  --radius-sm: 6px;
+  --radius: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-full: 9999px;
+}
+
+/* Dark Theme */
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* 60% - Dark neutral backgrounds */
+    --bg: #0F1720;
+    --surface: #1A2332;
+    --surface-elevated: #243142;
+    
+    /* Text colors - ensuring AAA contrast */
+    --ink: #F8FAFC;            /* main text */
+    --muted-ink: #CBD5E1;      /* secondary text */
+    --subtle-ink: #94A3B8;     /* tertiary text */
+    
+    /* 30% - Lighter indigo for dark theme */
+    --primary: #4A6B85;        /* lighter primary for dark backgrounds */
+    --primary-surface: #3A5A75; /* surface variant */
+    --primary-tint: #2A3B4D;   /* dark tint */
+    --primary-ink-on: #FFFFFF; /* text on primary */
+    
+    /* 10% - Brighter accent for dark theme */
+    --accent: #34D399;         /* brighter emerald for dark backgrounds */
+    --accent-hover: #6EE7B7;   /* hover state */
+    --accent-active: #10B981;  /* active state */
+    --accent-ink-on: #0F1720;  /* dark text on bright accent */
+    
+    /* UI elements */
+    --border: #374151;
+    --border-subtle: #2D3748;
+    --shadow: rgba(0, 0, 0, 0.25);
+    --shadow-elevated: rgba(0, 0, 0, 0.35);
+  }
+}
+
+/* Base typography improvements */
+body {
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  color: var(--ink);
+  background-color: var(--bg);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Heading scale with improved contrast */
+h1 {
+  font-size: var(--font-size-3xl);
+  line-height: var(--line-height-tight);
+  font-weight: 700;
+  color: var(--ink);
+}
+
+h2 {
+  font-size: var(--font-size-2xl);
+  line-height: var(--line-height-snug);
+  font-weight: 600;
+  color: var(--ink);
+}
+
+h3 {
+  font-size: var(--font-size-xl);
+  line-height: var(--line-height-normal);
+  font-weight: 600;
+  color: var(--ink);
+}
+
+h4 {
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-relaxed);
+  font-weight: 600;
+  color: var(--ink);
+}
+
+/* Improved paragraph spacing and line length */
+p {
+  max-width: 75ch;
+  color: var(--muted-ink);
+  margin-bottom: var(--space-4);
+}
+
+/* Focus states for accessibility */
+*:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+/* Button base styles */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-6);
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  font-size: var(--font-size-base);
+  line-height: 1;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  border: 2px solid transparent;
+  min-height: 44px; /* Touch target size */
+}
+
+.btn-primary {
+  background-color: var(--accent);
+  color: var(--accent-ink-on);
+  border-color: var(--accent);
+}
+
+.btn-primary:hover {
+  background-color: var(--accent-hover);
+  border-color: var(--accent-hover);
+  transform: translateY(-1px);
+}
+
+.btn-primary:active {
+  background-color: var(--accent-active);
+  border-color: var(--accent-active);
+  transform: translateY(0);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-secondary:hover {
+  background-color: var(--primary-tint);
+  color: var(--primary);
+}
+
+/* Card styles */
+.card {
+  background-color: var(--surface);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 1px 3px var(--shadow);
+  padding: var(--space-6);
+  border: 1px solid var(--border-subtle);
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px var(--shadow-elevated);
+  transform: translateY(-2px);
+}
+
+/* Form styles */
+.form-input {
+  width: 100%;
+  padding: var(--space-3) var(--space-4);
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  font-size: var(--font-size-base);
+  color: var(--ink);
+  background-color: var(--surface);
+  transition: border-color 0.2s ease;
+  min-height: 44px; /* Touch target size */
+}
+
+.form-input:focus {
+  border-color: var(--accent);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(43, 170, 138, 0.1);
+}
+
+.form-label {
+  display: block;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: var(--space-2);
+  font-size: var(--font-size-base);
+}
+
+/* Table/Timetable styles */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--surface);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 1px 3px var(--shadow);
+}
+
+.table th {
+  background-color: var(--primary-tint);
+  color: var(--ink);
+  font-weight: 600;
+  padding: var(--space-4);
+  text-align: left;
+  font-size: var(--font-size-base);
+  min-height: 44px;
+}
+
+.table td {
+  padding: var(--space-4);
+  border-top: 1px solid var(--border-subtle);
+  color: var(--muted-ink);
+  font-size: var(--font-size-base);
+  min-height: 44px;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: var(--primary-tint);
+}
+
+/* Utility classes */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+.font-bold { font-weight: 700; }
+.font-semibold { font-weight: 600; }
+.font-medium { font-weight: 500; }
+
+.text-primary { color: var(--primary); }
+.text-accent { color: var(--accent); }
+.text-muted { color: var(--muted-ink); }
+.text-subtle { color: var(--subtle-ink); }
+
+.bg-surface { background-color: var(--surface); }
+.bg-primary { background-color: var(--primary); }
+.bg-accent { background-color: var(--accent); }
+
+/* Section spacing */
+.section {
+  padding: var(--space-16) 0;
+}
+
+.section-lg {
+  padding: var(--space-20) 0;
+}
+
+.section-xl {
+  padding: var(--space-24) 0;
+}
