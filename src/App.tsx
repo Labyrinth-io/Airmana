@@ -45,24 +45,6 @@ const HomePage = () => {
     }
   ];
 
-  const testimonials = [
-    {
-      name: "Sarah M.",
-      text: "Airmana has transformed not just my body, but my entire approach to wellness. The combination of breathwork and fitness is pure magic.",
-      rating: 5
-    },
-    {
-      name: "James K.",
-      text: "I've never experienced anything like the dance sessions here. It's therapy, fitness, and pure joy all rolled into one.",
-      rating: 5
-    },
-    {
-      name: "Emma L.",
-      text: "The community at Airmana is incredible. Every class feels like coming home to a family that supports your growth.",
-      rating: 5
-    }
-  ];
-
   const schedule = [
     { day: "Monday", classes: ["6:00am Group Fitness", "6:10pm Forex & Crypto Trading", "7:10pm Breathwork"] },
     { day: "Tuesday", classes: ["5:00am Group Fitness", "6:00am Group Fitness", "10:00am Group Fitness"] },
