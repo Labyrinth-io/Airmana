@@ -275,6 +275,7 @@ const HomePage = () => {
               <p className="text-sm md:text-base text-gray-600">See real transformations in strength, flexibility, mental clarity, and emotional wellbeing.</p>
             </div>
           </div>
+        </div>
       </section>
 
       {/* Timetable Section */}
@@ -360,10 +361,10 @@ const HomePage = () => {
               <div className="mt-6 md:mt-8">
                 <p className="text-sm md:text-base text-gray-600 mb-4">Stay connected with our community</p>
                 <div className="flex gap-4">
-                  <a href="https://www.instagram.com/airmana_/?hl=en" target="_blank" rel="noopener noreferrer" className="bg- blue-800-white p-3 rounded-full hover:bg-emerald-700 transition-colors">
+                  <a href="https://www.instagram.com/airmana_/?hl=en" target="_blank" rel="noopener noreferrer" className="bg-blue-800 text-white p-3 rounded-full hover:bg-emerald-700 transition-colors">
                     <Instagram className="w-5 h-5 md:w-6 md:h-6" />
                   </a>
-                  <a href="https://www.facebook.com/airmanaenergy/" target="_blank" rel="noopener noreferrer" className="bg- text-whiteblue-800 p-3 rounded-full hover:bg-emerald-700 transition-colors">
+                  <a href="https://www.facebook.com/airmanaenergy/" target="_blank" rel="noopener noreferrer" className="bg-blue-800 text-white p-3 rounded-full hover:bg-emerald-700 transition-colors">
                     <Facebook className="w-5 h-5 md:w-6 md:h-6" />
                   </a>
                 </div>
