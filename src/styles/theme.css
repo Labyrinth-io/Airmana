@@ -312,13 +312,20 @@ p {
 .grid-container-center {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 2rem;
 }
 
 .grid-container-center > .grid {
   width: 100%;
   max-width: 1200px;
+  justify-items: center;
+}
+
+/* Add spacing between timetable and button */
+.timetable-spacing {
+  margin-bottom: 3rem;
 }
