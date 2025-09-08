@@ -286,7 +286,7 @@ const HomePage = () => {
           </div>
 
           <div className="timetable-container">
-  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 md:gap-4">
+           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 md:gap-4">
             {schedule.map((day, index) => (
               <div key={index} className="bg-white rounded-xl shadow-lg p-3 md:p-4 hover:shadow-xl transition-shadow">
                 <h3 className="text-sm md:text-base font-bold text-center mb-3 md:mb-4 text-white py-2 bg-blue-800 rounded-lg">
