@@ -347,7 +347,8 @@ p {
   display: flex;
   justify-content: center;
   width: 100%;
-  padding-top: 2rem;
+  padding-top: 8rem !important;
+  margin-top: 4rem !important;
 }
 /* Add proper spacing between timetable and button */
 .timetable-section {
