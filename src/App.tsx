@@ -290,17 +290,20 @@ const HomePage = () => {
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
       {schedule.map((day, index) => (
         <div key={index} className="day-column">
-          <div className="bg-white rounded-lg shadow-lg p-3 md:p-4 hover:shadow-xl transition-shadow w-full">
-            <h1 className="text-sm md:text-base font-bold text-center mb-3 md:mb-4 text-white py-2 bg-blue-800 rounded-lg">
+          <div className="bg-white rounded-xl shadow-md p-4 hover:shadow-lg transition-shadow w-full">
+            <h1 className="text-sm md:text-base font-semibold text-center mb-4 text-white py-2 bg-indigo-700 rounded-md">
               {day.day}
             </h1>
-            <div className="space-y-2 md:space-y-3">
+            <div className="space-y-3">
               {day.classes.map((classTime, idx) => (
-                <div key={idx} className="text-xs md:text-sm bg-green-100 p-2 md:p-3 rounded-lg border border-gray-100">
-                  <div className="font-semibold text-emerald-600 mb-1 text-xs md:text-sm">
+                <div
+                  key={idx}
+                  className="rounded-lg border border-slate-200 bg-slate-50 p-3 hover:border-slate-300"
+                >
+                  <div className="font-semibold text-indigo-700 text-sm md:text-base tabular-nums">
                     {classTime.split(' ')[0]}
                   </div>
-                  <div className="text-gray-600 text-xs">
+                  <div className="text-slate-600 text-xs md:text-sm">
                     {classTime.substring(classTime.indexOf(' ') + 1)}
                   </div>
                 </div>
@@ -312,6 +315,7 @@ const HomePage = () => {
     </div>
   </div>
 </div>
+
 
           <div className="text-center">
             <a href="https://passm8.com/airmana#upcoming-classes" className="inline-flex items-center gap-2 bg-blue-800 px-4 md:px-6 py-2 md:py-3 rounded-full text-base md:text-lg font-semibold hover:bg-blue-700 transition-all transform hover:scale-105 text-white">
