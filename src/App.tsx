@@ -46,12 +46,11 @@ const HomePage = () => {
   ];
 
   const schedule = [
-    { day: "Monday", classes: ["6:00am Group Fitness", "6:10pm Forex & Crypto Trading", "7:10pm Breathwork"] },
-    { day: "Tuesday", classes: ["5:00am Group Fitness", "6:00am Group Fitness", "10:00am Group Fitness"] },
-    { day: "Wednesday", classes: ["6:00am Group Fitness", "7:00am Group Fitness"] },
+    { day: "Monday", classes: ["5:00am Group Fitness", "7:00am"] },
+    { day: "Tuesday", classes: ["7:00am Group Fitness", "10:00am Group Fitness"] },
+    { day: "Wednesday", classes: ["5:00am Group Fitness", "7:00am Group Fitness"] },
     { day: "Thursday", classes: ["5:00am Group Fitness", "6:00am Group Fitness", "7:00am Group Fitness"] },
-    { day: "Friday", classes: ["5:00am Group Fitness", "6:10pm Forex & Crypto Trading", "7:10pm Breathwork"] },
-    { day: "Saturday", classes: ["8:00am Dance", "9:10am Meditation"] }
+    { day: "Friday", classes: ["6:00am Group Fitness", "7:00am Group Fitness", "10:00am Group Fitness"] },
   ];
 
   return (
