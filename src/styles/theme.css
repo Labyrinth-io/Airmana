@@ -348,3 +348,15 @@ p {
   width: 100%;
   padding-top: 2rem;
 }
+/* Add proper spacing between timetable and button */
+.timetable-section {
+  margin-bottom: 4rem;
+}
+
+/* Center the booking section */
+.booking-section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 2rem;
+}
