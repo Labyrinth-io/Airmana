@@ -307,3 +307,18 @@ p {
 .section-xl {
   padding: var(--space-24) 0;
 }
+
+/* Timetable Grid Container Centering */
+.grid-container-center {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.grid-container-center > .grid {
+  width: 100%;
+  max-width: 1200px;
+}
