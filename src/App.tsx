@@ -285,26 +285,32 @@ const HomePage = () => {
             <p className="text-base md:text-lg text-gray-600">Find the perfect class time that fits your schedule</p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 md:gap-4 md:max-w-5xl md:mx-12">
-  {schedule.map((day, index) => (
-    <div key={index} className="bg-white rounded-lg shadow-lg p-3 md:p-4 hover:shadow-xl transition-shadow">
-      <h1 className="text-sm md:text-base font-bold text-center mb-3 md:mb-4 text-white py-2 bg-blue-800 rounded-lg">
-        {day.day}
-      </h1>
-      <div className="space-y-2 md:space-y-3">
-        {day.classes.map((classTime, idx) => (
-          <div key={idx} className="text-xs md:text-sm bg-green-100 p-2 md:p-3 rounded-lg border border-gray-100">
-            <div className="font-semibold text-emerald-600 mb-1 text-xs md:text-sm">
-              {classTime.split(' ')[0]}
-            </div>
-            <div className="text-gray-600 text-xs">
-              {classTime.substring(classTime.indexOf(' ') + 1)}
+          <div className="timetable-section">
+  <div className="grid-container-center">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+      {schedule.map((day, index) => (
+        <div key={index} className="day-column">
+          <div className="bg-white rounded-lg shadow-lg p-3 md:p-4 hover:shadow-xl transition-shadow w-full">
+            <h1 className="text-sm md:text-base font-bold text-center mb-3 md:mb-4 text-white py-2 bg-blue-800 rounded-lg">
+              {day.day}
+            </h1>
+            <div className="space-y-2 md:space-y-3">
+              {day.classes.map((classTime, idx) => (
+                <div key={idx} className="text-xs md:text-sm bg-green-100 p-2 md:p-3 rounded-lg border border-gray-100">
+                  <div className="font-semibold text-emerald-600 mb-1 text-xs md:text-sm">
+                    {classTime.split(' ')[0]}
+                  </div>
+                  <div className="text-gray-600 text-xs">
+                    {classTime.substring(classTime.indexOf(' ') + 1)}
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
-        ))}
-      </div>
+        </div>
+      ))}
     </div>
-  ))}
+  </div>
 </div>
 
           <div className="text-center">
