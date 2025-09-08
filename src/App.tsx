@@ -87,8 +87,8 @@ const HomePage = () => {
         </div>
       </nav>
 
-  {/* Hero Section */}
-<section className="relative text-white overflow-hidden" style={{ minHeight: 'calc(100vh - 88px)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+ {/* Hero Section */}
+<section className="relative text-white overflow-hidden" style={{ height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
   <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-black/30"></div>
   <div className="absolute inset-0 bg-gradient-to-br from-purple-900 via-indigo-900 to-emerald-900">
     {/* Galactic energy effects */}
@@ -98,15 +98,15 @@ const HomePage = () => {
       <div className="absolute top-1/2 left-1/2 w-32 h-32 md:w-64 md:h-64 bg-indigo-500 rounded-full blur-3xl animate-pulse delay-500"></div>
     </div>
     
-    {/* Airmana logo as background - EXPANDED */}
-    <div className="absolute inset-0 flex items-center justify-center z-20" style={{ padding: 'clamp(20px, 4vh, 40px)' }}>
+    {/* Airmana logo positioned below header */}
+    <div className="absolute inset-0 flex items-center justify-center z-20" style={{ paddingTop: '88px', paddingBottom: '40px', paddingLeft: '20px', paddingRight: '20px' }}>
       <img 
         src="/images/Airmanalogotransparent.png"
         alt="Airmana Logo"
         className="opacity-90"
         style={{ 
-          maxWidth: '95vw', 
-          maxHeight: '85vh', 
+          maxWidth: '90vw', 
+          maxHeight: 'calc(100vh - 128px)', 
           objectFit: 'contain',
           width: '100%',
           height: 'auto'
