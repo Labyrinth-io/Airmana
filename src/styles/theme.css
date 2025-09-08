@@ -316,16 +316,35 @@ p {
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 1.5rem;
 }
 
 .grid-container-center > .grid {
   width: 100%;
   max-width: 1200px;
   justify-items: center;
+  gap: 1rem;
 }
 
-/* Add spacing between timetable and button */
-.timetable-spacing {
-  margin-bottom: 3rem;
+/* Ensure day columns are perfectly centered */
+.day-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 220px;
+  margin: 0 auto;
+}
+
+/* Add proper spacing between timetable and button */
+.timetable-section {
+  margin-bottom: 4rem;
+}
+
+/* Center the booking section */
+.booking-section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 2rem;
 }
