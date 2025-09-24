@@ -70,10 +70,10 @@ const HomePage = () => {
             </div>
             
             <div className="hidden lg:flex space-x-6 xl:space-x-8 justify-center flex-1">
-              <a href="#about" className="text-gray-700 hover:text-emerald-600 transition-colors">About</a>
-              <a href="#services" className="text-gray-700 hover:text-emerald-600 transition-colors">Services</a>
-              <a href="#timetable" className="text-gray-700 hover:text-emerald-600 transition-colors">Timetable</a>
-              <a href="#contact" className="text-gray-700 hover:text-emerald-600 transition-colors">Contact</a>
+              <a href="#about" className="text-gray-700 hover:text-emerald-600 transition-colors airmana-logo">About</a>
+              <a href="#services" className="text-gray-700 hover:text-emerald-600 transition-colors airmana-logo">Services</a>
+              <a href="#timetable" className="text-gray-700 hover:text-emerald-600 transition-colors airmana-logo">Timetable</a>
+              <a href="#contact" className="text-gray-700 hover:text-emerald-600 transition-colors airmana-logo">Contact</a>
             </div>
 
             <div className="flex items-center gap-2 md:gap-4">
