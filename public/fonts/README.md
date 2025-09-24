@@ -1,13 +1,11 @@
-# Custom Fonts for Airmana
+# Artegra Sans Condensed SC Font for Airmana
 
 ## Font Files Needed
 
 Place your custom font files in this directory with the following names:
 
-- `AirmanaCustom.woff2` (preferred format for modern browsers)
-- `AirmanaCustom.woff` (fallback for older browsers)
-- `AirmanaCustom-Bold.woff2` (bold weight, preferred format)
-- `AirmanaCustom-Bold.woff` (bold weight, fallback)
+- `artegra-sans-condensed-sc-regular.woff2` (preferred format for modern browsers)
+- `artegra-sans-condensed-sc-regular.woff` (fallback for older browsers)
 
 ## Converting Your Font
 
@@ -26,13 +24,12 @@ If your font file is in a different format (like .ttf, .otf), you can convert it
 ## File Naming
 
 Rename your converted files to match the expected names:
-- Your regular font → `AirmanaCustom.woff2` and `AirmanaCustom.woff`
-- Your bold font → `AirmanaCustom-Bold.woff2` and `AirmanaCustom-Bold.woff`
+- Your font file → `artegra-sans-condensed-sc-regular.woff2` and `artegra-sans-condensed-sc-regular.woff`
 
 ## After Adding Files
 
-Once you've placed the font files in this directory, the custom font will automatically be applied to:
-- The Airmana business name/logo
+Once you've placed the font files in this directory, the Artegra Sans Condensed SC font will automatically be applied to:
+- The AIRMANA business name/logo (displayed in uppercase)
 - All headings (h1, h2, h3, h4, h5, h6)
 
 The font sizes and spacing will remain exactly the same - only the font family will change.

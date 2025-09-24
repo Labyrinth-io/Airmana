@@ -1,18 +1,9 @@
 /* Custom font for headings and business name */
 @font-face {
-  font-family: 'AirmanaCustom';
-  src: url('/fonts/AirmanaCustom.woff2') format('woff2'),
-       url('/fonts/AirmanaCustom.woff') format('woff');
+  font-family: 'Artegra Sans Condensed SC';
+  src: url('/fonts/artegra-sans-condensed-sc-regular.woff2') format('woff2'),
+       url('/fonts/artegra-sans-condensed-sc-regular.woff') format('woff');
   font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'AirmanaCustom';
-  src: url('/fonts/AirmanaCustom-Bold.woff2') format('woff2'),
-       url('/fonts/AirmanaCustom-Bold.woff') format('woff');
-  font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
@@ -22,8 +13,8 @@
 @tailwind utilities;
 
 .airmana-logo {
-  font-family: 'AirmanaCustom', 'Inter', sans-serif;
+  font-family: 'Artegra Sans Condensed SC', 'Inter', sans-serif;
   color: #E9BDC7;
-  text-transform: capitalize;   /* Title Case: “Get Started”, “Join Today” */
+  text-transform: uppercase;   /* Uppercase: "AIRMANA", "GET STARTED", "JOIN TODAY" */
   letter-spacing: 0.1em;
 }
