@@ -1,11 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Glacial+Indifference:wght@400;700&display=swap');
+/* Custom font for headings and business name */
+@font-face {
+  font-family: 'AirmanaCustom';
+  src: url('/fonts/AirmanaCustom.woff2') format('woff2'),
+       url('/fonts/AirmanaCustom.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'AirmanaCustom';
+  src: url('/fonts/AirmanaCustom-Bold.woff2') format('woff2'),
+       url('/fonts/AirmanaCustom-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 .airmana-logo {
-  font-family: 'Glacial Indifference', sans-serif;
+  font-family: 'AirmanaCustom', 'Inter', sans-serif;
   color: #E9BDC7;
   text-transform: capitalize;   /* Title Case: “Get Started”, “Join Today” */
   letter-spacing: 0.1em;

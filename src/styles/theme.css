@@ -120,6 +120,7 @@ h1 {
   line-height: var(--line-height-tight);
   font-weight: 700;
   color: var(--ink);
+  font-family: 'AirmanaCustom', 'Inter', sans-serif;
 }
 
 h2 {
@@ -127,6 +128,7 @@ h2 {
   line-height: var(--line-height-snug);
   font-weight: 600;
   color: var(--ink);
+  font-family: 'AirmanaCustom', 'Inter', sans-serif;
 }
 
 h3 {
@@ -134,6 +136,7 @@ h3 {
   line-height: var(--line-height-normal);
   font-weight: 600;
   color: var(--ink);
+  font-family: 'AirmanaCustom', 'Inter', sans-serif;
 }
 
 h4 {
@@ -141,6 +144,7 @@ h4 {
   line-height: var(--line-height-relaxed);
   font-weight: 600;
   color: var(--ink);
+  font-family: 'AirmanaCustom', 'Inter', sans-serif;
 }
 
 /* Improved paragraph spacing and line length */
