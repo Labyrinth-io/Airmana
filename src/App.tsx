@@ -36,10 +36,10 @@ const HomePage = () => {
       cta: "Experience Breathwork"
     },
     {
-      title: "Dance",
+      title: "Martial Arts",
       icon: Users,
       image: "/images/pauldancecop.png",
-      description: "Ecstatic dance, rhythm, and movement expression that unleashes your creative spirit and joy.",
+      description: "Boxing and capoeira training that builds power, speed, and control.",
       benefits: ["Creative expression", "Emotional freedom", "Body confidence", "Community connection"],
       cta: "Move Your Soul"
     }
