@@ -90,7 +90,7 @@ const HomePage = () => {
 
 {/* Hero Section */}
 <section className="relative text-white overflow-hidden" style={{ height: '100vh' }}>
-  <div style={{ width: '100%', height: '100%', position: 'relative' }}>
+  <div style={{ width: '100%', height: '100%', position: 'relative', backgroundColor: '#000000' }}>
     <Prism
       animationType="rotate"
       timeScale={0.5}
@@ -99,8 +99,10 @@ const HomePage = () => {
       scale={3.6}
       hueShift={0}
       colorFrequency={1}
-      noise={0.5}
-      glow={1}
+      noise={0.1}
+      glow={2}
+      transparent={false}
+      bloom={1.5}
     />
     
     {/* Airmana logo positioned below header */}
