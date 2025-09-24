@@ -65,11 +65,7 @@ const HomePage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-3 md:py-4">
             <div className="flex items-center gap-3">
-              <img 
-                src="/images/airmana-logo.png"
-                alt="AIRMANA"
-                className="h-8 md:h-10 w-auto object-contain"
-              />
+              <div className="text-xl md:text-2xl font-bold airmana-logo">AIRMANA</div>
             </div>
             
             <div className="hidden lg:flex space-x-6 xl:space-x-8 justify-center flex-1">
