@@ -136,7 +136,9 @@ const HomePage = () => {
               <p className="text-base md:text-lg text-gray-600 mb-6 md:mb-8 leading-relaxed">
                 Our holistic approach integrates four powerful pillars: dynamic group fitness, transformative breathwork, mindful meditation, and expressive dance. Each element works in harmony to create a complete wellness experience that nourishes your body, calms your mind, and ignites your spirit.
               </p>
+            </div>
               
+            <div>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
                 <div className="text-center p-4 md:p-6 bg-white rounded-xl shadow-sm">
                   <div className="bg-blue-800 w-12 h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center mx-auto mb-3 md:mb-4">
