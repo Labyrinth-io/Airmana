@@ -130,7 +130,7 @@ const HomePage = () => {
             <div>
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-6 text-gray-900">Welcome to Airmana</h2>
               <p className="text-base md:text-lg text-gray-600 mb-4 md:mb-6 leading-relaxed">
-                Located in the heart of Labyrinth Central, Airmana is more than just a wellness studio—we're a transformative community where ancient wisdom meets modern movement.
+                Located in the heart of Bundaberg Central, Airmana is more than just a wellness studio—we're a transformative community where ancient wisdom meets modern movement.
               </p>
               <p className="text-base md:text-lg text-gray-600 mb-6 md:mb-8 leading-relaxed">
                 Our holistic approach integrates four powerful pillars: dynamic group fitness, transformative breathwork, mindful meditation, and expressive dance. Each element works in harmony to create a complete wellness experience that nourishes your body, calms your mind, and ignites your spirit.
@@ -313,9 +313,9 @@ const HomePage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
             <div>
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-6 text-gray-900">Visit Us at Labyrinth Central</h2>
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-6 text-gray-900">Visit Us in Bundaberg</h2>
               <p className="text-base md:text-lg text-gray-600 mb-6 md:mb-8">
-                Located in the heart of Labyrinth Central, Bundaberg, Airmana is easily accessible and perfectly positioned for your wellness journey.
+                Located in Bundaberg Central, easily accessible and perfectly positioned for your wellness journey.
               </p>
               
               <div className="space-y-4 md:space-y-6">
@@ -324,7 +324,7 @@ const HomePage = () => {
                   <div>
                     <p className="text-sm md:text-base font-semibold text-gray-900">Location</p>
                     <a href="https://maps.app.goo.gl/WxHD3qw6mBxAAYoW8" target="_blank" rel="noopener noreferrer" className="text-sm md:text-base text-emerald-600 hover:text-emerald-700 transition-colors">
-                      Labyrinth Central, Bundaberg, Australia
+                      8 Electra Street, Bundaberg, Australia
                     </a>
                   </div>
                 </div>
