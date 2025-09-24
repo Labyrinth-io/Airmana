@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Prism from './components/prism';
 import { Heart, Users, Zap, Brain, MapPin, Phone, Mail, Instagram, Facebook, Clock, Star, ArrowRight, Play, Calendar, ChevronRight } from 'lucide-react';
 import { AdminProvider } from './contexts/AdminContext';
 import { AdminToolbar } from './components/AdminToolbar';
@@ -87,16 +88,20 @@ const HomePage = () => {
         </div>
       </nav>
 
- {/* Hero Section */}
-<section className="relative text-white overflow-hidden" style={{ height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-  <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-black/30"></div>
-  <div className="absolute inset-0 bg-gradient-to-br from-purple-900 via-indigo-900 to-emerald-900">
-    {/* Galactic energy effects */}
-    <div className="absolute inset-0 opacity-30">
-      <div className="absolute top-1/4 left-1/4 w-48 h-48 md:w-96 md:h-96 bg-purple-500 rounded-full blur-3xl animate-pulse"></div>
-      <div className="absolute top-3/4 right-1/4 w-40 h-40 md:w-80 md:h-80 bg-emerald-500 rounded-full blur-3xl animate-pulse delay-1000"></div>
-      <div className="absolute top-1/2 left-1/2 w-32 h-32 md:w-64 md:h-64 bg-indigo-500 rounded-full blur-3xl animate-pulse delay-500"></div>
-    </div>
+{/* Hero Section */}
+<section className="relative text-white overflow-hidden" style={{ height: '100vh' }}>
+  <div style={{ width: '100%', height: '100%', position: 'relative' }}>
+    <Prism
+      animationType="rotate"
+      timeScale={0.5}
+      height={3.5}
+      baseWidth={5.5}
+      scale={3.6}
+      hueShift={0}
+      colorFrequency={1}
+      noise={0.5}
+      glow={1}
+    />
     
     {/* Airmana logo positioned below header */}
     <div className="absolute inset-0 flex items-center justify-center z-20" style={{ paddingTop: '88px', paddingBottom: '40px', paddingLeft: '20px', paddingRight: '20px' }}>
@@ -112,14 +117,6 @@ const HomePage = () => {
           height: 'auto'
         }}
       />
-    </div>
-    
-    {/* Subtle particle effects */}
-    <div className="absolute inset-0 z-10">
-      <div className="absolute top-1/3 left-1/5 w-2 h-2 bg-white rounded-full animate-ping delay-300"></div>
-      <div className="absolute top-2/3 right-1/3 w-1 h-1 bg-emerald-300 rounded-full animate-ping delay-700"></div>
-      <div className="absolute top-1/4 right-1/4 w-1.5 h-1.5 bg-purple-300 rounded-full animate-ping delay-1000"></div>
-      <div className="absolute bottom-1/3 left-1/3 w-1 h-1 bg-indigo-300 rounded-full animate-ping delay-500"></div>
     </div>
   </div>
 </section>
