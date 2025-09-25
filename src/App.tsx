@@ -138,7 +138,7 @@ const HomePage = () => {
             </div>
               
             <div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
                 <div className="text-center p-4 md:p-6 bg-white rounded-xl shadow-sm">
                   <div className="bg-blue-800 w-12 h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center mx-auto mb-3 md:mb-4">
                     <Zap className="w-6 h-6 md:w-8 md:h-8" style={{ color: '#E9BDC7' }} />
