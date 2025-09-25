@@ -395,7 +395,6 @@ const HomePage = () => {
                     className="w-full px-3 md:px-4 py-2 md:py-3 text-sm md:text-base rounded-xl border border-gray-200 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-200 outline-none transition-all"
                   ></textarea>
                 </div>
-                <button type="submit" className="w-full bg-blue-800 py-2 md:py-3 text-sm md:text-base rounded-xl font-semibold hover:bg-blue-700 transition-all text-white">
                 <button type="submit" className="w-full py-2 md:py-3 text-sm md:text-base rounded-xl font-semibold transition-all" style={{ backgroundColor: '#2c2e4d', color: '#f05091' }}>
                   <span className="airmana-logo">Start My Wellness Journey</span>
                 </button>
