@@ -92,7 +92,6 @@ const HeadsetHire = () => {
               <a href="/headset-hire" className="text-emerald-600 font-semibold">Headset Hire</a>
             </div>
 
-            <a href="https://passm8.com/airmana#upcoming-classes" className="bg-gradient-to-r from-emerald-500 to-teal-600 text-white px-6 py-2 rounded-full hover:from-emerald-600 hover:to-teal-700 transition-all">
             <a href="https://passm8.com/airmana#upcoming-classes" className="px-6 py-2 rounded-full transition-all" style={{ backgroundColor: '#2c2e4d', color: '#f05091' }}>
               <span className="airmana-logo">$15 Trial</span>
             </a>
