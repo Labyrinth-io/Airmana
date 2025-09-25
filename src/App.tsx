@@ -126,48 +126,44 @@ const HomePage = () => {
       {/* About Section */}
       <section id="about" className="py-12 md:py-16 lg:py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-            <div>
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-6 text-gray-900">Welcome to Airmana</h2>
-              <p className="text-base md:text-lg text-gray-600 mb-4 md:mb-6 leading-relaxed">
-                Located in the heart of Bundaberg Central, Airmana is more than just a wellness studio—we're a transformative community where ancient wisdom meets modern movement.
-              </p>
-              <p className="text-base md:text-lg text-gray-600 mb-6 md:mb-8 leading-relaxed">
-                Our holistic approach integrates four powerful pillars: dynamic group fitness, transformative breathwork, mindful meditation, and expressive dance. Each element works in harmony to create a complete wellness experience that nourishes your body, calms your mind, and ignites your spirit.
-              </p>
-            </div>
-              
-            <div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
-                <div className="text-center p-4 md:p-6 bg-white rounded-xl shadow-sm">
-                  <div className="bg-blue-800 w-12 h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center mx-auto mb-3 md:mb-4">
-                    <Zap className="w-6 h-6 md:w-8 md:h-8" style={{ color: '#E9BDC7' }} />
-                  </div>
-                  <h3 className="text-sm md:text-base font-semibold text-gray-900 mb-2">High Energy</h3>
-                  <p className="text-xs md:text-sm text-gray-600">Dynamic workouts that energize your body</p>
-                </div>
-                <div className="text-center p-4 md:p-6 bg-white rounded-xl shadow-sm">
-                  <div className="bg-blue-800 w-12 h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center mx-auto mb-3 md:mb-4">
-                    <Heart className="w-6 h-6 md:w-8 md:h-8" style={{ color: '#E9BDC7' }} />
-                  </div>
-                  <h3 className="text-sm md:text-base font-semibold text-gray-900 mb-2">Deep Healing</h3>
-                  <p className="text-xs md:text-sm text-gray-600">Breathwork and meditation for inner peace</p>
-                </div>
-                <div className="text-center p-4 md:p-6 bg-white rounded-xl shadow-sm">
-                  <div className="bg-blue-800 w-12 h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center mx-auto mb-3 md:mb-4">
-                    <Brain className="w-6 h-6 md:w-8 md:h-8" style={{ color: '#E9BDC7' }} />
-                  </div>
-                  <h3 className="text-sm md:text-base font-semibold text-gray-900 mb-2">Mindful Focus</h3>
-                  <p className="text-xs md:text-sm text-gray-600">Meditation practices for clarity and awareness</p>
-                </div>
-                <div className="text-center p-4 md:p-6 bg-white rounded-xl shadow-sm">
-                  <div className="bg-blue-800 w-12 h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center mx-auto mb-3 md:mb-4">
-                    <Users className="w-6 h-6 md:w-8 md:h-8" style={{ color: '#E9BDC7' }} />
-                  </div>
-                  <h3 className="text-sm md:text-base font-semibold text-gray-900 mb-2">Creative Expression</h3>
-                  <p className="text-xs md:text-sm text-gray-600">Dance and movement for joyful self-expression</p>
-                </div>
+          <div className="text-center mb-12 md:mb-16">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-6 text-gray-900">Welcome to Airmana</h2>
+            <p className="text-base md:text-lg text-gray-600 mb-4 md:mb-6 leading-relaxed max-w-4xl mx-auto">
+              Located in the heart of Bundaberg Central, Airmana is more than just a wellness studio—we're a transformative community where ancient wisdom meets modern movement.
+            </p>
+            <p className="text-base md:text-lg text-gray-600 mb-6 md:mb-8 leading-relaxed max-w-4xl mx-auto">
+              Our holistic approach integrates four powerful pillars: dynamic group fitness, transformative breathwork, mindful meditation, and expressive dance. Each element works in harmony to create a complete wellness experience that nourishes your body, calms your mind, and ignites your spirit.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+            <div className="text-center p-4 md:p-6 bg-white rounded-xl shadow-sm">
+              <div className="bg-blue-800 w-12 h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center mx-auto mb-3 md:mb-4">
+                <Zap className="w-6 h-6 md:w-8 md:h-8" style={{ color: '#E9BDC7' }} />
               </div>
+              <h3 className="text-sm md:text-base font-semibold text-gray-900 mb-2">High Energy</h3>
+              <p className="text-xs md:text-sm text-gray-600">Dynamic workouts that energize your body</p>
+            </div>
+            <div className="text-center p-4 md:p-6 bg-white rounded-xl shadow-sm">
+              <div className="bg-blue-800 w-12 h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center mx-auto mb-3 md:mb-4">
+                <Heart className="w-6 h-6 md:w-8 md:h-8" style={{ color: '#E9BDC7' }} />
+              </div>
+              <h3 className="text-sm md:text-base font-semibold text-gray-900 mb-2">Deep Healing</h3>
+              <p className="text-xs md:text-sm text-gray-600">Breathwork and meditation for inner peace</p>
+            </div>
+            <div className="text-center p-4 md:p-6 bg-white rounded-xl shadow-sm">
+              <div className="bg-blue-800 w-12 h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center mx-auto mb-3 md:mb-4">
+                <Brain className="w-6 h-6 md:w-8 md:h-8" style={{ color: '#E9BDC7' }} />
+              </div>
+              <h3 className="text-sm md:text-base font-semibold text-gray-900 mb-2">Mindful Focus</h3>
+              <p className="text-xs md:text-sm text-gray-600">Meditation practices for clarity and awareness</p>
+            </div>
+            <div className="text-center p-4 md:p-6 bg-white rounded-xl shadow-sm">
+              <div className="bg-blue-800 w-12 h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center mx-auto mb-3 md:mb-4">
+                <Users className="w-6 h-6 md:w-8 md:h-8" style={{ color: '#E9BDC7' }} />
+              </div>
+              <h3 className="text-sm md:text-base font-semibold text-gray-900 mb-2">Creative Expression</h3>
+              <p className="text-xs md:text-sm text-gray-600">Dance and movement for joyful self-expression</p>
             </div>
           </div>
         </div>
