@@ -36,7 +36,7 @@ const HomePage = () => {
     {
       title: "Group Fitness",
       icon: Zap,
-      image: "https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg",
+      image: "/images/Group Fitness.webp",
       description: "Strength, conditioning, and movement training that builds both physical power and mental resilience.",
       benefits: ["Functional strength training", "Metabolic conditioning", "Movement mobility", "Community support"],
       cta: "Start Your Fitness Journey"
