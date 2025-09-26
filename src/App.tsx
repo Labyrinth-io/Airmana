@@ -140,22 +140,6 @@ const HomePage = () => {
           decoding="async"
         />
       </picture>
-      <img 
-        src="/images/Airmanalogotransparent.webp"
-        alt="Airmana Logo"
-        className="opacity-90"
-        style={{ 
-          maxWidth: '90vw', 
-          maxHeight: 'calc(100vh - 128px)', 
-          objectFit: 'contain',
-          width: '100%',
-          height: 'auto'
-        }}
-        width="800"
-        height="600"
-        loading="eager"
-        decoding="async"
-      />
     </div>
   </div>
 </section>
