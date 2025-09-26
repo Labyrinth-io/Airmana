@@ -44,7 +44,7 @@ const HomePage = () => {
     {
       title: "Breathwork",
       icon: Heart,
-      image: "/images/breathwork.png",
+      image: "/images/breathwork.webp",
       description: "Guided breathing sessions for nervous system regulation, energy activation, and deep healing.",
       benefits: ["Stress & anxiety relief", "Enhanced energy levels", "Nervous system regulation", "Emotional release"],
       cta: "Experience Breathwork"
@@ -52,7 +52,7 @@ const HomePage = () => {
     {
       title: "Martial Arts",
       icon: Users,
-      image: "/images/pauldancecop.png",
+      image: "/images/pauldancecop.webp",
       description: "Boxing and capoeira training that builds power, speed, and control.",
       benefits: ["Creative expression", "Emotional freedom", "Body confidence", "Community connection"],
       cta: "Move Your Soul"
@@ -121,7 +121,7 @@ const HomePage = () => {
     {/* Airmana logo positioned below header */}
     <div className="absolute inset-0 flex items-center justify-center z-20" style={{ paddingTop: '88px', paddingBottom: '40px', paddingLeft: '20px', paddingRight: '20px' }}>
       <img 
-        src="/images/Airmanalogotransparent.png"
+        src="/images/Airmanalogotransparent.webp"
         alt="Airmana Logo"
         className="opacity-90"
         style={{ 
