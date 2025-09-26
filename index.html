@@ -2,9 +2,93 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    
+    <!-- Critical CSS - Inlined for above-the-fold content -->
+    <style>
+      /* Critical styles for hero and navigation */
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+      
+      /* Navigation critical styles */
+      .fixed { position: fixed; }
+      .top-0 { top: 0; }
+      .w-full { width: 100%; }
+      .z-40 { z-index: 40; }
+      .bg-slate-900 { background-color: rgb(15 23 42); }
+      .bg-opacity-95 { background-color: rgb(15 23 42 / 0.95); }
+      .backdrop-blur-sm { backdrop-filter: blur(4px); }
+      .border-b { border-bottom-width: 1px; }
+      .border-slate-700 { border-color: rgb(51 65 85); }
+      .max-w-7xl { max-width: 80rem; }
+      .mx-auto { margin-left: auto; margin-right: auto; }
+      .px-4 { padding-left: 1rem; padding-right: 1rem; }
+      .py-3 { padding-top: 0.75rem; padding-bottom: 0.75rem; }
+      .py-4 { padding-top: 1rem; padding-bottom: 1rem; }
+      .flex { display: flex; }
+      .justify-between { justify-content: space-between; }
+      .items-center { align-items: center; }
+      .gap-3 { gap: 0.75rem; }
+      .text-xl { font-size: 1.25rem; line-height: 1.75rem; }
+      .text-2xl { font-size: 1.5rem; line-height: 2rem; }
+      .font-bold { font-weight: 700; }
+      .rounded-full { border-radius: 9999px; }
+      .px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
+      .py-2 { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+      .text-sm { font-size: 0.875rem; line-height: 1.25rem; }
+      .text-base { font-size: 1rem; line-height: 1.5rem; }
+      .shadow-lg { box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1); }
+      
+      /* Hero section critical styles */
+      .relative { position: relative; }
+      .text-white { color: rgb(255 255 255); }
+      .overflow-hidden { overflow: hidden; }
+      .h-screen { height: 100vh; }
+      .absolute { position: absolute; }
+      .inset-0 { inset: 0; }
+      .z-20 { z-index: 20; }
+      .opacity-90 { opacity: 0.9; }
+      
+      /* Artegra font class */
+      .airmana-logo {
+        font-family: 'Artegra Sans Condensed SC', 'Inter', sans-serif;
+        color: #E9BDC7;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+      }
+      
+      /* Hide non-critical content initially */
+      .below-fold { opacity: 0; }
+      
+      @media (min-width: 640px) {
+        .sm\\:px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
+        .sm\\:block { display: block; }
+      }
+      
+      @media (min-width: 768px) {
+        .md\\:py-4 { padding-top: 1rem; padding-bottom: 1rem; }
+        .md\\:text-2xl { font-size: 1.5rem; line-height: 2rem; }
+        .md\\:px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
+        .md\\:text-base { font-size: 1rem; line-height: 1.5rem; }
+        .md\\:gap-4 { gap: 1rem; }
+      }
+      
+      @media (min-width: 1024px) {
+        .lg\\:px-8 { padding-left: 2rem; padding-right: 2rem; }
+        .lg\\:flex { display: flex; }
+        .lg\\:space-x-6 > :not([hidden]) ~ :not([hidden]) { margin-left: 1.5rem; }
+      }
+      
+      @media (min-width: 1280px) {
+        .xl\\:space-x-8 > :not([hidden]) ~ :not([hidden]) { margin-left: 2rem; }
+      }
+    </style>
+    
     <!-- Preload critical fonts for faster rendering -->
     <link rel="preload" href="/fonts/artegra_sans-condensed-sc-regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/artegra_sans-condensed-sc-regular.woff" as="font" type="font/woff" crossorigin>
+    
+    <!-- Preload critical images -->
+    <link rel="preload" href="/images/Airmanalogotransparent.webp" as="image" type="image/webp">
     
     <link rel="icon" type="image/png" href="https://i.imgur.com/BCvu1BN.png" />
     <link rel="apple-touch-icon" href="https://i.imgur.com/BCvu1BN.png" />
@@ -18,12 +102,30 @@
     <link rel="dns-prefetch" href="//passm8.com">
     <link rel="dns-prefetch" href="//maps.app.goo.gl">
     
+    <!-- Defer non-critical CSS -->
+    <link rel="preload" href="/src/index.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/src/index.css"></noscript>
+    
     <title>Airmana | Labyrinth Central</title>
     <meta name="description" content="Transform your mind, body & spirit at Airmana Bundaberg – holistic fitness, breathwork, meditation & dance classes to help you feel alive again" />
     <meta name="keywords" content="group fitness Labyrinth Central, breathwork classes Labyrinth Central, meditation studio Labyrinth Central, dance classes Labyrinth Central, wellness studio, holistic fitness" />
+    
+    <!-- Intersection Observer polyfill for older browsers -->
+    <script>
+      // Reveal below-fold content when DOM is ready
+      document.addEventListener('DOMContentLoaded', function() {
+        setTimeout(function() {
+          var elements = document.querySelectorAll('.below-fold');
+          elements.forEach(function(el) {
+            el.style.opacity = '1';
+            el.style.transition = 'opacity 0.3s ease-in-out';
+          });
+        }, 100);
+      });
+    </script>
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <script type="module" src="/src/main.tsx" defer></script>
   </body>
 </html>

@@ -3,6 +3,7 @@ import cookieParser from 'cookie-parser';
 import cors from 'cors';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import compression from 'compression';
 
 // Import API routes
 import loginHandler from './api/auth/login.js';
@@ -21,6 +22,14 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 // Middleware
+app.use(compression({
+  // Enable Brotli compression if available
+  brotli: {
+    enabled: true,
+    zlib: {}
+  }
+}));
+
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
@@ -47,10 +56,33 @@ app.get('/api/layout/published', publishedHandler);
 
 // Serve static files in production
 if (process.env.NODE_ENV === 'production') {
-  app.use(express.static(path.join(__dirname, 'dist')));
+  app.use(express.static(path.join(__dirname, 'dist'), {
+    // Set cache headers for static assets
+    setHeaders: (res, path) => {
+      if (path.endsWith('.html')) {
+        // HTML files - short cache
+        res.setHeader('Cache-Control', 'public, max-age=300'); // 5 minutes
+      } else if (path.match(/\.(js|css|woff2|woff|ttf|eot)$/)) {
+        // JS, CSS, and font files - long cache with hash
+        res.setHeader('Cache-Control', 'public, max-age=31536000, immutable'); // 1 year
+      } else if (path.match(/\.(jpg|jpeg|png|gif|ico|svg|webp)$/)) {
+        // Image files - medium cache
+        res.setHeader('Cache-Control', 'public, max-age=2592000'); // 30 days
+      }
+      
+      // Enable compression for text-based files
+      if (path.match(/\.(html|js|css|json|xml|txt)$/)) {
+        res.setHeader('Content-Encoding', 'gzip');
+      }
+    }
+  }));
   
   app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'dist', 'index.html'));
+    res.sendFile(path.join(__dirname, 'dist', 'index.html'), {
+      headers: {
+        'Cache-Control': 'public, max-age=300' // 5 minutes for HTML
+      }
+    });
   });
 }
 

@@ -1,6 +1,22 @@
 import { useEffect, useRef } from 'react';
 import { Renderer, Triangle, Program, Mesh } from 'ogl';
 
+// Web Worker for heavy computations (if needed)
+const createWebWorker = () => {
+  const workerCode = `
+    self.onmessage = function(e) {
+      const { type, data } = e.data;
+      if (type === 'HEAVY_COMPUTATION') {
+        // Perform heavy computations here
+        const result = data; // Process data
+        self.postMessage({ type: 'COMPUTATION_COMPLETE', result });
+      }
+    };
+  `;
+  const blob = new Blob([workerCode], { type: 'application/javascript' });
+  return new Worker(URL.createObjectURL(blob));
+};
+
 const Prism = ({
   height = 3.5,
   baseWidth = 5.5,
@@ -19,10 +35,16 @@ const Prism = ({
   timeScale = 0.5
 }) => {
   const containerRef = useRef(null);
+  const workerRef = useRef(null);
 
   useEffect(() => {
     const container = containerRef.current;
     if (!container) return;
+
+    // Initialize Web Worker for heavy computations
+    if (typeof Worker !== 'undefined' && !workerRef.current) {
+      workerRef.current = createWebWorker();
+    }
 
     const H = Math.max(0.001, height);
     const BW = Math.max(0.001, baseWidth);
@@ -398,6 +420,13 @@ const Prism = ({
     return () => {
       stopRAF();
       ro.disconnect();
+      
+      // Clean up Web Worker
+      if (workerRef.current) {
+        workerRef.current.terminate();
+        workerRef.current = null;
+      }
+      
       if (animationType === 'hover') {
         if (onPointerMove) window.removeEventListener('pointermove', onPointerMove);
         window.removeEventListener('mouseleave', onLeave);

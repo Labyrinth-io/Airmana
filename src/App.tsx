@@ -7,6 +7,7 @@ import { AdminProvider } from './contexts/AdminContext';
 import { AdminToolbar } from './components/AdminToolbar';
 import { AdminLoginModal } from './components/AdminLoginModal';
 import { useKeySequence } from './hooks/useKeySequence';
+import LazyImage from './components/LazyImage';
 
 // Lazy load components that aren't needed immediately
 const HeadsetHire = React.lazy(() => import('./components/HeadsetHire'));
@@ -120,6 +121,25 @@ const HomePage = () => {
     
     {/* Airmana logo positioned below header */}
     <div className="absolute inset-0 flex items-center justify-center z-20" style={{ paddingTop: '88px', paddingBottom: '40px', paddingLeft: '20px', paddingRight: '20px' }}>
+      <picture>
+        <source srcSet="/images/Airmanalogotransparent.webp" type="image/webp" />
+        <img 
+          src="/images/Airmanalogotransparent.webp"
+          alt="Airmana Logo"
+          className="opacity-90"
+          style={{ 
+            maxWidth: '90vw', 
+            maxHeight: 'calc(100vh - 128px)', 
+            objectFit: 'contain',
+            width: '100%',
+            height: 'auto'
+          }}
+          width="800"
+          height="600"
+          loading="eager"
+          decoding="async"
+        />
+      </picture>
       <img 
         src="/images/Airmanalogotransparent.webp"
         alt="Airmana Logo"
@@ -131,13 +151,17 @@ const HomePage = () => {
           width: '100%',
           height: 'auto'
         }}
+        width="800"
+        height="600"
+        loading="eager"
+        decoding="async"
       />
     </div>
   </div>
 </section>
 
       {/* About Section */}
-      <section id="about" className="py-12 md:py-16 lg:py-20 bg-gray-50">
+      <section id="about" className="below-fold py-12 md:py-16 lg:py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 md:mb-16">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-6 text-gray-900">Welcome to Airmana</h2>
@@ -200,10 +224,13 @@ const HomePage = () => {
                 onMouseEnter={() => setActiveService(index)}
               >
                 <div className="relative h-40 md:h-48 overflow-hidden">
-                  <img 
+                  <LazyImage
                     src={service.image}
                     alt={service.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                    width="400"
+                    height="300"
+                    webpSrc={service.image}
                   />
                   <div className="absolute top-4 left-4 bg-white bg-opacity-90 rounded-full p-3">
                     <service.icon className="w-5 h-5 md:w-6 md:h-6 text-emerald-600" />
@@ -234,7 +261,7 @@ const HomePage = () => {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-12 md:py-16 lg:py-20 bg-gradient-to-r from-emerald-50 to-teal-50">
+      <section className="below-fold py-12 md:py-16 lg:py-20 bg-gradient-to-r from-emerald-50 to-teal-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 md:mb-16">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-6 text-gray-900">Why Choose Airmana?</h2>
@@ -268,7 +295,7 @@ const HomePage = () => {
       </section>
 
       {/* Timetable Section */}
-      <section id="timetable" className="py-12 md:py-16 lg:py-20">
+      <section id="timetable" className="below-fold py-12 md:py-16 lg:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 md:mb-16">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-6 text-gray-900">Weekly Timetable</h2>
@@ -318,7 +345,7 @@ const HomePage = () => {
 
 
       {/* Contact Section */}
-      <section id="contact" className="py-12 md:py-16 lg:py-20">
+      <section id="contact" className="below-fold py-12 md:py-16 lg:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
             <div>
@@ -418,7 +445,7 @@ const HomePage = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-8 md:py-12">
+      <footer className="below-fold bg-gray-900 text-white py-8 md:py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <div className="text-2xl md:text-3xl font-bold mb-3 md:mb-4 text-emerald-400">Airmana</div>

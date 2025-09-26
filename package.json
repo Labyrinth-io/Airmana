@@ -17,6 +17,7 @@
     "@types/bcryptjs": "^2.4.6",
     "@types/js-cookie": "^3.0.6",
     "bcryptjs": "^3.0.2",
+    "compression": "^1.8.1",
     "cookie": "^1.0.2",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",

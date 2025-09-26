@@ -162,10 +162,25 @@ const HeadsetHire = () => {
             </div>
             
             <div className="relative">
+              <picture>
+                <source srcSet="https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg?auto=compress&cs=tinysrgb&w=800" media="(max-width: 768px)" type="image/jpeg" />
+                <source srcSet="https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg?auto=compress&cs=tinysrgb&w=1200" type="image/jpeg" />
+                <img 
+                  src="https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg"
+                  alt="Professional Headsets"
+                  className="rounded-2xl shadow-xl"
+                  loading="lazy"
+                  width="600"
+                  height="400"
+                />
+              </picture>
               <img 
                 src="https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg"
                 alt="Professional Headsets"
                 className="rounded-2xl shadow-xl"
+                loading="lazy"
+                width="600"
+                height="400"
               />
             </div>
           </div>
