@@ -1,13 +1,26 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Suspense } from 'react';
 import Prism from './components/prism';
 import { Heart, Users, Zap, Brain, MapPin, Phone, Mail, Instagram, Facebook, Clock, Star, ArrowRight, Play, Calendar, ChevronRight } from 'lucide-react';
 import { AdminProvider } from './contexts/AdminContext';
 import { AdminToolbar } from './components/AdminToolbar';
 import { AdminLoginModal } from './components/AdminLoginModal';
-import { LoginPage } from './components/LoginPage';
 import { useKeySequence } from './hooks/useKeySequence';
-import HeadsetHire from './components/HeadsetHire';
+
+// Lazy load components that aren't needed immediately
+const HeadsetHire = React.lazy(() => import('./components/HeadsetHire'));
+const LoginPage = React.lazy(() => import('./components/LoginPage'));
+
+// Loading component for lazy-loaded routes
+const LoadingSpinner = () => (
+  <div className="min-h-screen bg-white flex items-center justify-center">
+    <div className="text-center">
+      <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-emerald-600 mx-auto mb-4"></div>
+      <p className="text-gray-600">Loading...</p>
+    </div>
+  </div>
+);
 
 const HomePage = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -439,11 +452,13 @@ const App = () => {
   return (
     <AdminProvider>
       <Router>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/headset-hire" element={<HeadsetHire />} />
-          <Route path="/admin/login" element={<LoginPage />} />
-        </Routes>
+        <Suspense fallback={<LoadingSpinner />}>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/headset-hire" element={<HeadsetHire />} />
+            <Route path="/admin/login" element={<LoginPage />} />
+          </Routes>
+        </Suspense>
       </Router>
     </AdminProvider>
   );

@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { Lock, ArrowLeft } from 'lucide-react';
 import { useAdmin } from '../contexts/AdminContext';
 
-export const LoginPage: React.FC = () => {
+const LoginPage: React.FC = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -91,4 +91,5 @@ export const LoginPage: React.FC = () => {
       </div>
     </div>
   );
-};
+
+export default LoginPage;
