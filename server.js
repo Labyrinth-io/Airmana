@@ -1,9 +1,12 @@
+import dotenv from 'dotenv';
 import express from 'express';
 import cookieParser from 'cookie-parser';
 import cors from 'cors';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import compression from 'compression';
+
+dotenv.config();
 
 // Import API routes
 import loginHandler from './api/auth/login.js';
