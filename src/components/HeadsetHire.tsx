@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Headphones, CheckCircle, Clock, Shield, ArrowLeft, Phone, Mail, MapPin } from 'lucide-react';
+import { SITE_CONFIG, COLORS } from '../constants';
+import { Button } from './ui/Button';
 
 const HeadsetHire = () => {
   const [formData, setFormData] = useState({
@@ -84,7 +86,7 @@ const HeadsetHire = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center gap-3">
-              <div className="text-2xl font-bold text-emerald-600">AIRMANA</div>
+              <div className="text-2xl font-bold text-emerald-600">{SITE_CONFIG.name.toUpperCase()}</div>
             </div>
             
             <div className="hidden md:flex space-x-8">
@@ -92,9 +94,9 @@ const HeadsetHire = () => {
               <a href="/headset-hire" className="text-emerald-600 font-semibold">Headset Hire</a>
             </div>
 
-            <a href="https://passm8.com/airmana#upcoming-classes" className="px-6 py-2 rounded-full transition-all" style={{ backgroundColor: '#2c2e4d', color: '#f05091' }}>
-              <span className="airmana-logo">$15 Trial</span>
-            </a>
+            <Button href={SITE_CONFIG.booking.url}>
+              $15 Trial
+            </Button>
           </div>
         </div>
       </nav>
@@ -125,9 +127,9 @@ const HeadsetHire = () => {
             Professional wireless headsets for your events, workshops, and fitness classes. Crystal clear audio for unforgettable experiences.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <a href="#contact" className="px-8 py-4 rounded-full text-lg font-semibold transition-all transform hover:scale-105" style={{ backgroundColor: '#2c2e4d', color: '#f05091' }}>
-              <span className="airmana-logo">Get Quote Now</span>
-            </a>
+            <Button href="#contact" size="lg" className="transform hover:scale-105">
+              Get Quote Now
+            </Button>
           </div>
         </div>
       </section>
@@ -207,8 +209,8 @@ const HeadsetHire = () => {
                   <MapPin className="w-6 h-6 text-emerald-600" />
                   <div>
                     <p className="font-semibold text-gray-900">Location</p>
-                    <a href="https://maps.app.goo.gl/WxHD3qw6mBxAAYoW8" target="_blank" rel="noopener noreferrer" className="text-emerald-600 hover:text-emerald-700 transition-colors">
-                      Labyrinth Central, Bundaberg, Australia
+                    <a href={SITE_CONFIG.contact.mapUrl} target="_blank" rel="noopener noreferrer" className="text-emerald-600 hover:text-emerald-700 transition-colors">
+                      {SITE_CONFIG.contact.address}
                     </a>
                   </div>
                 </div>
@@ -216,8 +218,8 @@ const HeadsetHire = () => {
                   <Phone className="w-6 h-6 text-emerald-600" />
                   <div>
                     <p className="font-semibold text-gray-900">Phone</p>
-                    <a href="tel:+61413428182" className="text-emerald-600 hover:text-emerald-700 transition-colors">
-                      +61 413 428 182
+                    <a href={`tel:${SITE_CONFIG.contact.phone}`} className="text-emerald-600 hover:text-emerald-700 transition-colors">
+                      {SITE_CONFIG.contact.phone}
                     </a>
                   </div>
                 </div>
@@ -225,8 +227,8 @@ const HeadsetHire = () => {
                   <Mail className="w-6 h-6 text-emerald-600" />
                   <div>
                     <p className="font-semibold text-gray-900">Email</p>
-                    <a href="mailto:info@airmana.com.au" className="text-emerald-600 hover:text-emerald-700 transition-colors">
-                      info@airmana.com.au
+                    <a href={`mailto:${SITE_CONFIG.contact.email}`} className="text-emerald-600 hover:text-emerald-700 transition-colors">
+                      {SITE_CONFIG.contact.email}
                     </a>
                   </div>
                 </div>
@@ -345,13 +347,12 @@ const HeadsetHire = () => {
                     className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-200 outline-none transition-all"
                   ></textarea>
                 </div>
-                <button 
+                <Button
                   type="submit" 
-                  className="w-full py-3 rounded-xl font-semibold transition-all"
-                  style={{ backgroundColor: '#2c2e4d', color: '#f05091' }}
+                  className="w-full"
                 >
-                  <span className="airmana-logo">Request Quote</span>
-                </button>
+                  Request Quote
+                </Button>
               </form>
             </div>
           </div>
@@ -362,9 +363,9 @@ const HeadsetHire = () => {
       <footer className="bg-gray-900 text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <div className="text-3xl font-bold mb-4 text-emerald-400">Airmana</div>
+            <div className="text-3xl font-bold mb-4 text-emerald-400">{SITE_CONFIG.name}</div>
             <p className="text-gray-400 mb-6">Premium Headset Hire Service</p>
-            <p className="text-gray-500 text-sm">© 2025 Airmana. All rights reserved.</p>
+            <p className="text-gray-500 text-sm">© 2025 {SITE_CONFIG.name}. All rights reserved.</p>
           </div>
         </div>
       </footer>

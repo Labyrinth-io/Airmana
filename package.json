@@ -12,8 +12,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@plasmicapp/cli": "^0.1.342",
-    "@plasmicapp/react-web": "^0.2.399",
     "@types/bcryptjs": "^2.4.6",
     "@types/js-cookie": "^3.0.6",
     "bcryptjs": "^3.0.2",
