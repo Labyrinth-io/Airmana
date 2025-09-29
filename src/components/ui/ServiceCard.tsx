@@ -1,5 +1,5 @@
 import React from 'react';
-import { LucideIcon } from 'lucide-react';
+import { Video as LucideIcon } from 'lucide-react';
 import { LazyImage } from '../LazyImage';
 import { Button } from './Button';
 import { SITE_CONFIG } from '../../constants';
