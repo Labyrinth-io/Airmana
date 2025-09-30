@@ -17,7 +17,7 @@ export const Button: React.FC<ButtonProps> = ({
   className = '',
   ...props
 }) => {
-  const baseClasses = 'rounded-full transition-all font-semibold airmana-logo';
+  const baseClasses = 'rounded-full transition-all font-semibold airmana-logo inline-flex items-center justify-center whitespace-nowrap';
   
   const sizeClasses = {
     sm: 'px-3 py-2 text-sm',
@@ -46,7 +46,7 @@ export const Button: React.FC<ButtonProps> = ({
         className={classes}
         style={variantStyles[variant]}
       >
-        <span className="airmana-logo">{children}</span>
+        {children}
       </a>
     );
   }
@@ -57,7 +57,7 @@ export const Button: React.FC<ButtonProps> = ({
       style={variantStyles[variant]}
       {...props}
     >
-      <span className="airmana-logo">{children}</span>
+      {children}
     </button>
   );
 };
