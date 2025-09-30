@@ -3,8 +3,6 @@ import react from '@vitejs/plugin-react';
 
 const DEV_TARGET = process.env.DEV_API_TARGET || '';
 
-const DEV_TARGET = process.env.DEV_API_TARGET || '';
-
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
