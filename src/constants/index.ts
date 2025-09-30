@@ -34,7 +34,7 @@ export const SERVICES = [
     image: "/images/Group Fitness.webp",
     description: "Strength, conditioning, and movement training that builds both physical power and mental resilience.",
     benefits: ["Functional strength training", "Metabolic conditioning", "Movement mobility", "Community support"],
-    cta: "Start Your Fitness Journey!"
+    cta: "Start Your Fitness Journey"
   },
   {
     title: "Breathwork",
