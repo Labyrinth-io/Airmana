@@ -25,6 +25,8 @@ export default defineConfig({
         manualChunks: {
           // Separate vendor libraries into their own chunk
           vendor: ['react', 'react-dom', 'react-router-dom'],
+          // Separate UI libraries
+          ui: ['lucide-react', '@plasmicapp/react-web'],
           // Separate admin functionality
           admin: ['js-cookie', 'react-rnd']
         }
