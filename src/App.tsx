@@ -7,7 +7,7 @@ import { AdminProvider } from './contexts/AdminContext';
 import { AdminToolbar } from './components/AdminToolbar';
 import { AdminLoginModal } from './components/AdminLoginModal';
 import { useKeySequence } from './hooks/useKeySequence';
-import { LazyImage } from './components/LazyImage';
+import LazyImage from './components/LazyImage';
 import { Navigation } from './components/layout/Navigation';
 import { Footer } from './components/layout/Footer';
 import { ServiceCard } from './components/ui/ServiceCard';
