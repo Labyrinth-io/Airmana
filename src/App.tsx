@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Suspense } from 'react';
 import Prism from './components/Prism';
-import { Heart, Users, Zap, Brain, MapPin, Phone, Mail, Clock, Star, Calendar, Instagram, Facebook } from 'lucide-react';
+import { Heart, Users, Zap, Brain, MapPin, Phone, Mail, Clock, Star, Calendar } from 'lucide-react';
 import { AdminProvider } from './contexts/AdminContext';
 import { AdminToolbar } from './components/AdminToolbar';
 import { AdminLoginModal } from './components/AdminLoginModal';

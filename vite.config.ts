@@ -1,8 +1,5 @@
-import dotenv from 'dotenv';
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-
-dotenv.config();
 
 const DEV_TARGET = process.env.DEV_API_TARGET || '';
 
