@@ -8,13 +8,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     // Enable compression
-    minify: 'terser',
-    terserOptions: {
-      compress: {
-        drop_console: true,
-        drop_debugger: true,
-      },
-    },
+    minify: 'esbuild',
     // Enable code splitting and optimize chunks
     rollupOptions: {
       output: {
@@ -44,14 +38,12 @@ export default defineConfig({
     include: ['react', 'react-dom', 'react-router-dom'],
   },
   server: {
-    proxy: DEV_TARGET
-      ? {
-          '/api': {
-            target: DEV_TARGET,
-            changeOrigin: true,
-            secure: false,
-          },
-        }
-      : undefined, // disable proxy in Bolt preview to avoid ECONNREFUSED
+    proxy: {
+      '/api': {
+        target: 'http://localhost:3001',
+        changeOrigin: true,
+        secure: false,
+      },
+    },
   },
 });

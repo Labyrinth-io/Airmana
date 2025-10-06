@@ -155,9 +155,7 @@ const HomePage = () => {
             <p className="text-base md:text-lg text-gray-600 mb-6 md:mb-8 leading-relaxed max-w-4xl mx-auto">
               Recovery is a central part of the Airmana Fit experience as we provide contrast therapy options, including an infrared sauna and  ice bath, helping members reduce inflammation, restore energy, and support nervous system recovery.
             </p>
-            <p className="text-base md:text-lg text-gray-600 mb-6 md:mb-8 leading-relaxed max-w-4xl mx-auto"> With expert coaching, structured programs, and a focus on both training and recovery, Airmana Fit creates a space where you can train your mind and body, develop skills, and elevate your overall health—all while being part of a supportive, holistic community.
-
-
+            <p className="text-base md:text-lg text-gray-600 mb-6 md:mb-8 leading-relaxed max-w-4xl mx-auto"> With expert coaching, structured programs, and a focus on both training and recovery, Airmana Fit creates a space where you can train your mind and body, develop skills, and elevate your overall health—all while being part of a supportive, holistic community.</p>
           </div>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
