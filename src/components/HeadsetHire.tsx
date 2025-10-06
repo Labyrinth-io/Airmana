@@ -208,7 +208,7 @@ const HeadsetHire = () => {
                   <div>
                     <p className="font-semibold text-gray-900">Location</p>
                     <a href="https://maps.app.goo.gl/WxHD3qw6mBxAAYoW8" target="_blank" rel="noopener noreferrer" className="text-emerald-600 hover:text-emerald-700 transition-colors">
-                      Labyrinth Central, Bundaberg, Australia
+                      Airmana, Bundaberg, Australia
                     </a>
                   </div>
                 </div>
