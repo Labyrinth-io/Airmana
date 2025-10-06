@@ -150,11 +150,14 @@ const HomePage = () => {
           <div className="text-center mb-12 md:mb-16">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-6 text-gray-900">Welcome to Airmana</h2>
             <p className="text-base md:text-lg text-gray-600 mb-4 md:mb-6 leading-relaxed max-w-4xl mx-auto">
-              Located in the heart of Bundaberg Central, Airmana is more than just a wellness studio—we're a transformative community where ancient wisdom meets modern movement.
+              Airmana Fit is a dynamic Fitness Hub in the heart of Bundaberg City. Our facility offers a variety of group fitness classes, functional strength training, educational forums, martial arts and skill-based workshops for adults, teens and children - all designed to enhance strength, endurance, mobility, and overall wellbeing.
             </p>
             <p className="text-base md:text-lg text-gray-600 mb-6 md:mb-8 leading-relaxed max-w-4xl mx-auto">
-              Our holistic approach integrates four powerful pillars: dynamic group fitness, transformative breathwork, mindful meditation, and expressive dance. Each element works in harmony to create a complete wellness experience that nourishes your body, calms your mind, and ignites your spirit.
+              Recovery is a central part of the Airmana Fit experience as we provide contrast therapy options, including an infrared sauna and  ice bath, helping members reduce inflammation, restore energy, and support nervous system recovery.
             </p>
+            <p className="text-base md:text-lg text-gray-600 mb-6 md:mb-8 leading-relaxed max-w-4xl mx-auto"> With expert coaching, structured programs, and a focus on both training and recovery, Airmana Fit creates a space where you can train your mind and body, develop skills, and elevate your overall health—all while being part of a supportive, holistic community.
+
+
           </div>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
