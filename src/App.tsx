@@ -53,7 +53,7 @@ const HomePage = () => {
     {
       title: "Martial Arts",
       icon: Users,
-      image: "/images/pauldancecop.webp",
+      image: "/images/airmana fighting.webp",
       description: "Boxing and capoeira training that builds power, speed, and control.",
       benefits: ["Creative expression", "Emotional freedom", "Body confidence", "Community connection"],
       cta: "Move Your Soul"
