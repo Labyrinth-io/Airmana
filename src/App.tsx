@@ -218,7 +218,7 @@ const HomePage = () => {
                     webpSrc={service.image}
                   />
                   <div className="absolute top-4 left-4 bg-white bg-opacity-90 rounded-full p-3">
-                    <service.icon className="w-5 h-5 md:w-6 md:h-6 text-emerald-600" />
+                    <service.icon className="w-5 h-5 md:w-6 md:h-6 text-#E9BDC7" />
                   </div>
                 </div>
                 
