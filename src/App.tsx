@@ -262,7 +262,7 @@ const HomePage = () => {
               <p className="text-sm md:text-base text-gray-600">Join a welcoming community where everyone supports each other's wellness journey.</p>
             </div>
             <div className="text-center">
-              <div className="bg-white w-16 h-16 md:w-20 md:h-20 rounded-full flex items-center justify-center mx-auto mb-4 md:mb-6 shadow-lg">
+              <div className="bg-[#1e45ad] w-16 h-16 md:w-20 md:h-20 rounded-full flex items-center justify-center mx-auto mb-4 md:mb-6 shadow-lg">
                 <Brain className="w-8 h-8 md:w-10 md:h-10 text-[#e4bdc7]" />
               </div>
               <h3 className="text-lg md:text-xl font-bold mb-3 md:mb-4 text-gray-900">Holistic Integration</h3>
