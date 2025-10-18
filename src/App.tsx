@@ -61,12 +61,59 @@ const HomePage = () => {
   ];
 
   const schedule = [
-    { day: "Monday", classes: ["5:00am Group Fitness", "7:00am"] },
-    { day: "Tuesday", classes: ["7:00am Group Fitness", "10:00am Group Fitness"] },
-    { day: "Wednesday", classes: ["5:00am Group Fitness", "7:00am Group Fitness"] },
-    { day: "Thursday", classes: ["5:00am Group Fitness", "6:00am Group Fitness", "7:00am Group Fitness"] },
-    { day: "Friday", classes: ["6:00am Group Fitness", "7:00am Group Fitness", "10:00am Group Fitness"] },
-  ];
+  {
+    day: "Monday",
+    classes: [
+      "CARDIO X — 5:00 am - 5:50 am",
+      "CARDIO X — 7:00 am - 7:50 am",
+      "TOTAL STRENGTH TEENS — 3:30 pm - 4:15 pm",
+      "KIDS CAPOEIRA — 4:30 pm - 5:20 pm",
+      "CAPOEIRA — 5:30 pm - 6:20 pm",
+      "FOREX & CRYPTO TRADING — 6:30 pm - 7:30 pm",
+    ],
+  },
+  {
+    day: "Tuesday",
+    classes: [
+      "STRENGTH BUILDER — 5:00 am - 5:50 am",
+      "STRENGTH BUILDER — 7:00 am - 7:50 am",
+      "ULTRA PLEX — 5:15 pm - 6:30 pm",
+    ],
+  },
+  {
+    day: "Wednesday",
+    classes: [
+      "METCON AIRXPRESS — 5:00 am - 5:50 am",
+      "METCON AIRXPRESS — 7:00 am - 7:50 am",
+      "METCON TEENS — 3:30 pm - 4:15 pm",
+      "KIDS CAPOEIRA — 4:30 pm - 5:20 pm",
+      "CAPOEIRA — 5:30 pm - 6:20 pm",
+    ],
+  },
+  {
+    day: "Thursday",
+    classes: [
+      "FORGE — 5:00 am - 5:50 am",
+      "FORGE — 7:00 am - 7:50 am",
+      "ULTRA PLEX — 5:15 pm - 6:30 pm",
+    ],
+  },
+  {
+    day: "Friday",
+    classes: [
+      "T.G.I.F — 5:00 am - 5:50 am",
+      "T.G.I.F — 7:00 am - 7:50 am",
+    ],
+  },
+  {
+    day: "Saturday",
+    classes: [
+      "BAR-MANA — 6:00 am - 6:50 am",
+      "ULTRA PLEX — 7:00 am - 8:00 am",
+    ],
+  },
+];
+
 
   return (
     <div className="min-h-screen bg-white">
