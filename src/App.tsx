@@ -256,21 +256,21 @@ const HomePage = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-12 md:mb-16">
             <div className="text-center">
               <div className="bg-white w-16 h-16 md:w-20 md:h-20 rounded-full flex items-center justify-center mx-auto mb-4 md:mb-6 shadow-lg">
-                <Users className="w-8 h-8 md:w-10 md:h-10 text-emerald-600" />
+                <Users className="w-8 h-8 md:w-10 md:h-10 text-[#e4bdc7]" />
               </div>
               <h3 className="text-lg md:text-xl font-bold mb-3 md:mb-4 text-gray-900">Supportive Community</h3>
               <p className="text-sm md:text-base text-gray-600">Join a welcoming community where everyone supports each other's wellness journey.</p>
             </div>
             <div className="text-center">
               <div className="bg-white w-16 h-16 md:w-20 md:h-20 rounded-full flex items-center justify-center mx-auto mb-4 md:mb-6 shadow-lg">
-                <Brain className="w-8 h-8 md:w-10 md:h-10 text-emerald-600" />
+                <Brain className="w-8 h-8 md:w-10 md:h-10 text-[#e4bdc7]" />
               </div>
               <h3 className="text-lg md:text-xl font-bold mb-3 md:mb-4 text-gray-900">Holistic Integration</h3>
               <p className="text-sm md:text-base text-gray-600">Our three pillars work together to create complete mind-body transformation.</p>
             </div>
             <div className="text-center">
               <div className="bg-white w-16 h-16 md:w-20 md:h-20 rounded-full flex items-center justify-center mx-auto mb-4 md:mb-6 shadow-lg">
-                <Star className="w-8 h-8 md:w-10 md:h-10 text-emerald-600" />
+                <Star className="w-8 h-8 md:w-10 md:h-10 text-[#e4bdc7]" />
               </div>
               <h3 className="text-lg md:text-xl font-bold mb-3 md:mb-4 text-gray-900">Proven Results</h3>
               <p className="text-sm md:text-base text-gray-600">See real transformations in strength, flexibility, mental clarity, and emotional wellbeing.</p>
