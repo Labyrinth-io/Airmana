@@ -363,11 +363,6 @@ const HomePage = () => {
   </div>
 </section>
 
-
-
-
-
-
           <div className="text-center">
             <a href="https://passm8.com/airmana#upcoming-classes" className="inline-flex items-center gap-2 px-4 md:px-6 py-2 md:py-3 rounded-full text-base md:text-lg font-semibold transition-all transform hover:scale-105" style={{ backgroundColor: '#2c2e4d', color: '#f05091' }}>
               <Calendar className="w-4 h-4 md:w-5 md:h-5" />
