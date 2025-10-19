@@ -446,7 +446,7 @@ const HomePage = () => {
                   <Mail className="w-5 h-5 md:w-6 md:h-6 text-[#1e45ad] flex-shrink-0" />
                   <div>
                     <p className="text-sm md:text-base font-semibold text-[#1e45ad]">Email</p>
-                    <a href="mailto:info@airmana.com.au" className="text-sm md:text-base text-emerald-600 hover:text-emerald-700 transition-colors">
+                    <a href="mailto:info@airmana.com.au" className="text-sm md:text-base text-[#1e45ad] transition-colors">
                       info@airmana.com.au
                     </a>
                   </div>
