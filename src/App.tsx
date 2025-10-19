@@ -427,7 +427,7 @@ const HomePage = () => {
                       href="https://maps.app.goo.gl/WxHD3qw6mBxAAYoW8"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-sm md:text-base text-emerald-600 hover:text-emerald-700 transition-colors"
+                      className="text-sm md:text-base text-[#1e45ad] transition-colors"
                     >
                       8 Electra Street, Bundaberg, Australia
                     </a>
