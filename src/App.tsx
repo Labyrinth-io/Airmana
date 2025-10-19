@@ -64,7 +64,7 @@ const HomePage = () => {
   {
     day: "Monday",
     classes: [
-      "CARDIO X — 5:00 am - 5:50 am",
+      "CARDIO X - 5:00 am - 5:50 am",
       "CARDIO X — 7:00 am - 7:50 am",
       "TOTAL STRENGTH TEENS — 3:30 pm - 4:15 pm",
       "KIDS CAPOEIRA — 4:30 pm - 5:20 pm",
