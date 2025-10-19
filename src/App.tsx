@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Suspense } from 'react';
 import Prism from './components/prism';
-import { Heart, Users, Zap, Brain, MapPin, Phone, Mail, Instagram, Facebook, Clock, Star, ArrowRight, Play, Calendar, ChevronRight } from 'lucide-react';
+import { Heart, Users, Zap, Brain, MapPin, Phone, Mail, Instagram, Facebook, Star, Calendar } from 'lucide-react';
 import { AdminProvider } from './contexts/AdminContext';
 import { AdminToolbar } from './components/AdminToolbar';
 import { AdminLoginModal } from './components/AdminLoginModal';
@@ -60,65 +60,69 @@ const HomePage = () => {
     }
   ];
 
+  // IMPORTANT: keep the same " — " (em dash) separator for all entries
   const schedule = [
-  {
-    day: "Monday",
-    classes: [
-      "CARDIO X - 5:00 am - 5:50 am",
-      "CARDIO X — 7:00 am - 7:50 am",
-      "TOTAL STRENGTH TEENS — 3:30 pm - 4:15 pm",
-      "KIDS CAPOEIRA — 4:30 pm - 5:20 pm",
-      "CAPOEIRA — 5:30 pm - 6:20 pm",
-      "FOREX & CRYPTO TRADING — 6:30 pm - 7:30 pm",
-    ],
-  },
-  {
-    day: "Tuesday",
-    classes: [
-      "STRENGTH BUILDER — 5:00 am - 5:50 am",
-      "STRENGTH BUILDER — 7:00 am - 7:50 am",
-      "ULTRA PLEX — 5:15 pm - 6:30 pm",
-    ],
-  },
-  {
-    day: "Wednesday",
-    classes: [
-      "METCON AIRXPRESS — 5:00 am - 5:50 am",
-      "METCON AIRXPRESS — 7:00 am - 7:50 am",
-      "METCON TEENS — 3:30 pm - 4:15 pm",
-      "KIDS CAPOEIRA — 4:30 pm - 5:20 pm",
-      "CAPOEIRA — 5:30 pm - 6:20 pm",
-    ],
-  },
-  {
-    day: "Thursday",
-    classes: [
-      "FORGE — 5:00 am - 5:50 am",
-      "FORGE — 7:00 am - 7:50 am",
-      "ULTRA PLEX — 5:15 pm - 6:30 pm",
-    ],
-  },
-  {
-    day: "Friday",
-    classes: [
-      "T.G.I.F — 5:00 am - 5:50 am",
-      "T.G.I.F — 7:00 am - 7:50 am",
-    ],
-  },
-  {
-    day: "Saturday",
-    classes: [
-      "BAR-MANA — 6:00 am - 6:50 am",
-      "ULTRA PLEX — 7:00 am - 8:00 am",
-    ],
-  },
-];
-
+    {
+      day: "Monday",
+      classes: [
+        "CARDIO X — 5:00 am - 5:50 am",
+        "CARDIO X — 7:00 am - 7:50 am",
+        "TOTAL STRENGTH TEENS — 3:30 pm - 4:15 pm",
+        "KIDS CAPOEIRA — 4:30 pm - 5:20 pm",
+        "CAPOEIRA — 5:30 pm - 6:20 pm",
+        "FOREX & CRYPTO TRADING — 6:30 pm - 7:30 pm",
+      ],
+    },
+    {
+      day: "Tuesday",
+      classes: [
+        "STRENGTH BUILDER — 5:00 am - 5:50 am",
+        "STRENGTH BUILDER — 7:00 am - 7:50 am",
+        "ULTRA PLEX — 5:15 pm - 6:30 pm",
+      ],
+    },
+    {
+      day: "Wednesday",
+      classes: [
+        "METCON AIRXPRESS — 5:00 am - 5:50 am",
+        "METCON AIRXPRESS — 7:00 am - 7:50 am",
+        "METCON TEENS — 3:30 pm - 4:15 pm",
+        "KIDS CAPOEIRA — 4:30 pm - 5:20 pm",
+        "CAPOEIRA — 5:30 pm - 6:20 pm",
+      ],
+    },
+    {
+      day: "Thursday",
+      classes: [
+        "FORGE — 5:00 am - 5:50 am",
+        "FORGE — 7:00 am - 7:50 am",
+        "ULTRA PLEX — 5:15 pm - 6:30 pm",
+      ],
+    },
+    {
+      day: "Friday",
+      classes: [
+        "T.G.I.F — 5:00 am - 5:50 am",
+        "T.G.I.F — 7:00 am - 7:50 am",
+      ],
+    },
+    {
+      day: "Saturday",
+      classes: [
+        "BAR-MANA — 6:00 am - 6:50 am",
+        "ULTRA PLEX — 7:00 am - 8:00 am",
+      ],
+    },
+  ];
 
   return (
     <div className="min-h-screen bg-white">
       {/* Sticky Book Now Button */}
-      <a href="https://passm8.com/airmana#upcoming-classes" className="fixed bottom-4 right-4 md:bottom-6 md:right-6 px-4 md:px-6 py-2 md:py-3 text-sm md:text-base rounded-full shadow-lg z-50 font-semibold transition-all transform hover:scale-105" style={{ backgroundColor: '#2c2e4d', color: '#f05091' }}>
+      <a
+        href="https://passm8.com/airmana#upcoming-classes"
+        className="fixed bottom-4 right-4 md:bottom-6 md:right-6 px-4 md:px-6 py-2 md:py-3 text-sm md:text-base rounded-full shadow-lg z-50 font-semibold transition-all transform hover:scale-105"
+        style={{ backgroundColor: '#2c2e4d', color: '#f05091' }}
+      >
         <span className="airmana-logo">Book Now</span>
       </a>
 
@@ -129,19 +133,27 @@ const HomePage = () => {
             <div className="flex items-center gap-3">
               <div className="text-xl md:text-2xl font-bold airmana-logo">AIRMANA</div>
             </div>
-            
+
             <div className="hidden lg:flex space-x-6 xl:space-x-8 justify-center flex-1">
-              <a href="#about" className="text-gray-700 hover:text-emerald-600 transition-colors airmana-logo">About</a>
-              <a href="#services" className="text-gray-700 hover:text-emerald-600 transition-colors airmana-logo">Services</a>
-              <a href="#timetable" className="text-gray-700 hover:text-emerald-600 transition-colors airmana-logo">Timetable</a>
-              <a href="#contact" className="text-gray-700 hover:text-emerald-600 transition-colors airmana-logo">Contact</a>
+              <a href="#about" className="text-gray-300 hover:text-white transition-colors airmana-logo">About</a>
+              <a href="#services" className="text-gray-300 hover:text-white transition-colors airmana-logo">Services</a>
+              <a href="#timetable" className="text-gray-300 hover:text-white transition-colors airmana-logo">Timetable</a>
+              <a href="#contact" className="text-gray-300 hover:text-white transition-colors airmana-logo">Contact</a>
             </div>
 
             <div className="flex items-center gap-2 md:gap-4">
-              <a href="/headset-hire" className="hidden sm:block px-3 md:px-6 py-2 rounded-full transition-all text-sm md:text-base" style={{ backgroundColor: '#2c2e4d', color: '#f05091' }}>
+              <a
+                href="/headset-hire"
+                className="hidden sm:block px-3 md:px-6 py-2 rounded-full transition-all text-sm md:text-base"
+                style={{ backgroundColor: '#2c2e4d', color: '#f05091' }}
+              >
                 <span className="airmana-logo">Headset Hire</span>
               </a>
-              <a href="https://passm8.com/airmana#upcoming-classes" className="px-4 md:px-6 py-2 rounded-full transition-all text-sm md:text-base shadow-lg" style={{ backgroundColor: '#2c2e4d', color: '#f05091' }}>
+              <a
+                href="https://passm8.com/airmana#upcoming-classes"
+                className="px-4 md:px-6 py-2 rounded-full transition-all text-sm md:text-base shadow-lg"
+                style={{ backgroundColor: '#2c2e4d', color: '#f05091' }}
+              >
                 <span className="airmana-logo">Join Today</span>
               </a>
             </div>
@@ -149,47 +161,52 @@ const HomePage = () => {
         </div>
       </nav>
 
-{/* Hero Section */}
-<section className="relative text-white overflow-hidden" style={{ height: '100vh' }}>
-  <div style={{ width: '100%', height: '100%', position: 'relative', backgroundColor: '#000000' }}>
-    <Prism
-      animationType="rotate"
-      timeScale={0.5}
-      height={3.5}
-      baseWidth={5.5}
-      scale={3.6}
-      hueShift={0}
-      colorFrequency={1}
-      noise={0.1}
-      glow={2}
-      transparent={false}
-      bloom={1.5}
-    />
-    
-    {/* Airmana logo positioned below header */}
-    <div className="absolute inset-0 flex items-center justify-center z-20" style={{ paddingTop: '88px', paddingBottom: '40px', paddingLeft: '20px', paddingRight: '20px' }}>
-      <picture>
-        <source srcSet="/images/Airmanalogotransparent.webp" type="image/webp" />
-        <img 
-          src="/images/Airmanalogotransparent.webp"
-          alt="Airmana Logo"
-          className="opacity-90"
-          style={{ 
-            maxWidth: '90vw', 
-            maxHeight: 'calc(100vh - 128px)', 
-            objectFit: 'contain',
-            width: '100%',
-            height: 'auto'
-          }}
-          width="800"
-          height="600"
-          loading="eager"
-          decoding="async"
-        />
-      </picture>
-    </div>
-  </div>
-</section>
+      {/* Hero Section (guard Prism to avoid WebGL crashes) */}
+      <section className="relative text-white overflow-hidden" style={{ height: '100vh' }}>
+        <div style={{ width: '100%', height: '100%', position: 'relative', backgroundColor: '#000000' }}>
+          {typeof window !== 'undefined' && (
+            <Prism
+              animationType="rotate"
+              timeScale={0.5}
+              height={3.5}
+              baseWidth={5.5}
+              scale={3.6}
+              hueShift={0}
+              colorFrequency={1}
+              noise={0.1}
+              glow={2}
+              transparent={false}
+              bloom={1.5}
+            />
+          )}
+
+          {/* Airmana logo positioned below header */}
+          <div
+            className="absolute inset-0 flex items-center justify-center z-20"
+            style={{ paddingTop: '88px', paddingBottom: '40px', paddingLeft: '20px', paddingRight: '20px' }}
+          >
+            <picture>
+              <source srcSet="/images/Airmanalogotransparent.webp" type="image/webp" />
+              <img
+                src="/images/Airmanalogotransparent.webp"
+                alt="Airmana Logo"
+                className="opacity-90"
+                style={{
+                  maxWidth: '90vw',
+                  maxHeight: 'calc(100vh - 128px)',
+                  objectFit: 'contain',
+                  width: '100%',
+                  height: 'auto'
+                }}
+                width="800"
+                height="600"
+                loading="eager"
+                decoding="async"
+              />
+            </picture>
+          </div>
+        </div>
+      </section>
 
       {/* About Section */}
       <section id="about" className="below-fold py-12 md:py-16 lg:py-20 bg-gray-50">
@@ -202,9 +219,11 @@ const HomePage = () => {
             <p className="text-base md:text-lg text-gray-600 mb-6 md:mb-8 leading-relaxed max-w-4xl mx-auto">
               Recovery is a central part of the Airmana Fit experience as we provide contrast therapy options, including an infrared sauna and  ice bath, helping members reduce inflammation, restore energy, and support nervous system recovery.
             </p>
-            <p className="text-base md:text-lg text-gray-600 mb-6 md:mb-8 leading-relaxed max-w-4xl mx-auto"> With expert coaching, structured programs, and a focus on both training and recovery, Airmana Fit creates a space where you can train your mind and body, develop skills, and elevate your overall health—all while being part of a supportive, holistic community.</p>
+            <p className="text-base md:text-lg text-gray-600 mb-6 md:mb-8 leading-relaxed max-w-4xl mx-auto">
+              With expert coaching, structured programs, and a focus on both training and recovery, Airmana Fit creates a space where you can train your mind and body, develop skills, and elevate your overall health—all while being part of a supportive, holistic community.
+            </p>
           </div>
-          
+
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
             <div className="text-center p-4 md:p-6 bg-white rounded-xl shadow-sm">
               <div className="bg-[#2c2f4c] w-12 h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center mx-auto mb-3 md:mb-4">
@@ -250,7 +269,7 @@ const HomePage = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 md:gap-8">
             {services.map((service, index) => (
-              <div 
+              <div
                 key={index}
                 className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 lg:col-span-1"
                 onMouseEnter={() => setActiveService(index)}
@@ -268,11 +287,11 @@ const HomePage = () => {
                     <service.icon className="w-5 h-5 md:w-6 md:h-6 text-[#e4bdc7]" />
                   </div>
                 </div>
-                
+
                 <div className="p-4 md:p-6">
                   <h3 className="text-lg md:text-xl font-bold mb-3 text-gray-900">{service.title}</h3>
                   <p className="text-gray-600 mb-4 text-xs md:text-sm leading-relaxed">{service.description}</p>
-                  
+
                   <ul className="space-y-2 mb-6">
                     {service.benefits.map((benefit, idx) => (
                       <li key={idx} className="flex items-center gap-2 text-xs md:text-sm text-gray-600">
@@ -281,8 +300,12 @@ const HomePage = () => {
                       </li>
                     ))}
                   </ul>
-                  
-                  <a href="https://passm8.com/airmana#upcoming-classes" className="w-full py-2 md:py-3 rounded-xl text-sm md:text-base font-semibold transition-all block text-center" style={{ backgroundColor: '#2c2e4d', color: '#f05091' }}>
+
+                  <a
+                    href="https://passm8.com/airmana#upcoming-classes"
+                    className="w-full py-2 md:py-3 rounded-xl text-sm md:text-base font-semibold transition-all block text-center"
+                    style={{ backgroundColor: '#2c2e4d', color: '#f05091' }}
+                  >
                     <span className="airmana-logo">{service.cta}</span>
                   </a>
                 </div>
@@ -326,60 +349,64 @@ const HomePage = () => {
         </div>
       </section>
 
-    {/* Timetable Section */}
-<section id="timetable" className="below-fold py-12 md:py-16 lg:py-20">
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div className="text-center mb-12 md:mb-16">
-      <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-6 text-gray-900">
-        Weekly Timetable
-      </h2>
-      <p className="text-base md:text-lg text-gray-600">
-        Find the perfect class time that fits your schedule
-      </p>
-    </div>
+      {/* Timetable Section */}
+      <section id="timetable" className="below-fold py-12 md:py-16 lg:py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12 md:mb-16">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-6 text-gray-900">
+              Weekly Timetable
+            </h2>
+            <p className="text-base md:text-lg text-gray-600">
+              Find the perfect class time that fits your schedule
+            </p>
+          </div>
 
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 xl:grid-cols-6 gap-6">
-      {schedule.map((day, index) => (
-        <div key={index} className="bg-white rounded-xl shadow-md p-4 hover:shadow-lg transition-shadow">
-          <h1 className="text-sm md:text-base font-semibold text-center mb-4 text-white py-2 bg-indigo-700 rounded-md">
-            {day.day}
-          </h1>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 xl:grid-cols-6 gap-6">
+            {schedule.map((day, index) => (
+              <div key={index} className="bg-white rounded-xl shadow-md p-4 hover:shadow-lg transition-shadow">
+                <h1 className="text-sm md:text-base font-semibold text-center mb-4 text-white py-2 bg-indigo-700 rounded-md">
+                  {day.day}
+                </h1>
 
-          <div className="space-y-3">
-            {day.classes.map((classItem, idx) => {
-              const [title, time] = classItem.split(" — ");
-              return (
-                <div
-                  key={idx}
-                  className="rounded-lg border border-slate-200 bg-slate-50 p-3 hover:border-slate-300"
-                >
-                  <div className="font-semibold text-indigo-700 text-sm md:text-base">
-                    {title}
-                  </div>
-                  <div className="text-slate-600 text-xs md:text-sm">
-                    — {time}
-                  </div>
+                <div className="space-y-3">
+                  {day.classes.map((classItem, idx) => {
+                    const [title, time] = classItem.split(' — ');
+                    return (
+                      <div
+                        key={idx}
+                        className="rounded-lg border border-slate-200 bg-slate-50 p-3 hover:border-slate-300"
+                      >
+                        <div className="font-semibold text-indigo-700 text-sm md:text-base">
+                          {title}
+                        </div>
+                        <div className="text-slate-600 text-xs md:text-sm">
+                          — {time}
+                        </div>
+                      </div>
+                    );
+                  })}
                 </div>
-              );
-            })}
+              </div>
+            ))}
           </div>
         </div>
-      ))}
-    </div>
-  </div>
-</section>
+      </section>
 
-
-      
+      {/* CTA Section (moved into its own valid section) */}
+      <section className="py-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <a href="https://passm8.com/airmana#upcoming-classes" className="inline-flex items-center gap-2 px-4 md:px-6 py-2 md:py-3 rounded-full text-base md:text-lg font-semibold transition-all transform hover:scale-105" style={{ backgroundColor: '#2c2e4d', color: '#f05091' }}>
+            <a
+              href="https://passm8.com/airmana#upcoming-classes"
+              className="inline-flex items-center gap-2 px-4 md:px-6 py-2 md:py-3 rounded-full text-base md:text-lg font-semibold transition-all transform hover:scale-105"
+              style={{ backgroundColor: '#2c2e4d', color: '#f05091' }}
+            >
               <Calendar className="w-4 h-4 md:w-5 md:h-5" />
               <span className="airmana-logo">Book Your Classes</span>
             </a>
           </div>
         </div>
       </section>
-
 
       {/* Contact Section */}
       <section id="contact" className="below-fold py-12 md:py-16 lg:py-20">
@@ -390,13 +417,18 @@ const HomePage = () => {
               <p className="text-base md:text-lg text-gray-600 mb-6 md:mb-8">
                 Located in Bundaberg Central, easily accessible and perfectly positioned for your wellness journey.
               </p>
-              
+
               <div className="space-y-4 md:space-y-6">
                 <div className="flex items-center gap-4">
                   <MapPin className="w-5 h-5 md:w-6 md:h-6 text-[#e4bdc7] flex-shrink-0" />
                   <div>
                     <p className="text-sm md:text-base font-semibold text-gray-900">Location</p>
-                    <a href="https://maps.app.goo.gl/WxHD3qw6mBxAAYoW8" target="_blank" rel="noopener noreferrer" className="text-sm md:text-base text-emerald-600 hover:text-emerald-700 transition-colors">
+                    <a
+                      href="https://maps.app.goo.gl/WxHD3qw6mBxAAYoW8"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm md:text-base text-emerald-600 hover:text-emerald-700 transition-colors"
+                    >
                       8 Electra Street, Bundaberg, Australia
                     </a>
                   </div>
@@ -420,7 +452,7 @@ const HomePage = () => {
                   </div>
                 </div>
               </div>
-            
+
               <div className="mt-6 md:mt-8">
                 <p className="text-sm md:text-base text-gray-600 mb-4">Stay connected with our community</p>
                 <div className="flex gap-4">
@@ -433,15 +465,16 @@ const HomePage = () => {
                 </div>
               </div>
             </div>
-            
+
             <div className="bg-gray-50 rounded-2xl p-6 md:p-8">
               <h3 className="text-xl md:text-2xl font-bold mb-4 md:mb-6 text-gray-900">Get Started Today</h3>
-              <form className="space-y-4" onSubmit={(e) => {
-                e.preventDefault();
-                // Here you would integrate with Google Sheets
-                // For now, we'll redirect to the booking page
-                window.location.href = 'https://passm8.com/airmana#upcoming-classes';
-              }}>
+              <form
+                className="space-y-4"
+                onSubmit={(e) => {
+                  e.preventDefault();
+                  window.location.href = 'https://passm8.com/airmana#upcoming-classes';
+                }}
+              >
                 <div>
                   <input
                     type="text"
@@ -472,7 +505,11 @@ const HomePage = () => {
                     className="w-full px-3 md:px-4 py-2 md:py-3 text-sm md:text-base rounded-xl border border-gray-200 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-200 outline-none transition-all"
                   ></textarea>
                 </div>
-                <button type="submit" className="w-full py-2 md:py-3 text-sm md:text-base rounded-xl font-semibold transition-all" style={{ backgroundColor: '#2c2e4d', color: '#f05091' }}>
+                <button
+                  type="submit"
+                  className="w-full py-2 md:py-3 text-sm md:text-base rounded-xl font-semibold transition-all"
+                  style={{ backgroundColor: '#2c2e4d', color: '#f05091' }}
+                >
                   <span className="airmana-logo">Start My Wellness Journey</span>
                 </button>
               </form>
@@ -501,9 +538,9 @@ const HomePage = () => {
       </footer>
 
       {/* Admin Login Modal */}
-      <AdminLoginModal 
-        isOpen={showLoginModal} 
-        onClose={() => setShowLoginModal(false)} 
+      <AdminLoginModal
+        isOpen={showLoginModal}
+        onClose={() => setShowLoginModal(false)}
       />
 
       {/* Admin Toolbar */}
