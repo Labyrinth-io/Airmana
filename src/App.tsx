@@ -422,7 +422,7 @@ const HomePage = () => {
                 <div className="flex items-center gap-4">
                   <MapPin className="w-5 h-5 md:w-6 md:h-6 text-[#1e45ad] flex-shrink-0" />
                   <div>
-                    <p className="text-sm md:text-base font-semibold text-[#1e45ad]">Location</p>
+                    <p className="text-sm md:text-base font-semibold text-[#2c2f4c]">Location</p>
                     <a
                       href="https://maps.app.goo.gl/WxHD3qw6mBxAAYoW8"
                       target="_blank"
@@ -436,7 +436,7 @@ const HomePage = () => {
                 <div className="flex items-center gap-4">
                   <Phone className="w-5 h-5 md:w-6 md:h-6 text-[#1e45ad] flex-shrink-0" />
                   <div>
-                    <p className="text-sm md:text-base font-semibold text-[#1e45ad]">Phone</p>
+                    <p className="text-sm md:text-base font-semibold text-[#2c2f4c]">Phone</p>
                     <a href="tel:+61413428182" className="text-sm md:text-base text-[#1e45ad] transition-colors">
                       +61 413 428 182
                     </a>
@@ -445,7 +445,7 @@ const HomePage = () => {
                 <div className="flex items-center gap-4">
                   <Mail className="w-5 h-5 md:w-6 md:h-6 text-[#1e45ad] flex-shrink-0" />
                   <div>
-                    <p className="text-sm md:text-base font-semibold text-[#1e45ad]">Email</p>
+                    <p className="text-sm md:text-base font-semibold text-[#2c2f4c]">Email</p>
                     <a href="mailto:info@airmana.com.au" className="text-sm md:text-base text-[#1e45ad] transition-colors">
                       info@airmana.com.au
                     </a>
