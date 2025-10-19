@@ -1,0 +1,98 @@
+import React from "react";
+
+function Schedule() {
+  const schedule = [
+    {
+      day: "Monday",
+      classes: [
+        "CARDIO X — 5:00 am - 5:50 am",
+        "CARDIO X — 7:00 am - 7:50 am",
+        "TOTAL STRENGTH TEENS — 3:30 pm - 4:15 pm",
+        "KIDS CAPOEIRA — 4:30 pm - 5:20 pm",
+        "CAPOEIRA — 5:30 pm - 6:20 pm",
+        "FOREX & CRYPTO TRADING — 6:30 pm - 7:30 pm",
+      ],
+    },
+    {
+      day: "Tuesday",
+      classes: [
+        "STRENGTH BUILDER — 5:00 am - 5:50 am",
+        "STRENGTH BUILDER — 7:00 am - 7:50 am",
+        "ULTRA PLEX — 5:15 pm - 6:30 pm",
+      ],
+    },
+    {
+      day: "Wednesday",
+      classes: [
+        "METCON AIRXPRESS — 5:00 am - 5:50 am",
+        "METCON AIRXPRESS — 7:00 am - 7:50 am",
+        "METCON TEENS — 3:30 pm - 4:15 pm",
+        "KIDS CAPOEIRA — 4:30 pm - 5:20 pm",
+        "CAPOEIRA — 5:30 pm - 6:20 pm",
+      ],
+    },
+    {
+      day: "Thursday",
+      classes: [
+        "FORGE — 5:00 am - 5:50 am",
+        "FORGE — 7:00 am - 7:50 am",
+        "ULTRA PLEX — 5:15 pm - 6:30 pm",
+      ],
+    },
+    {
+      day: "Friday",
+      classes: [
+        "T.G.I.F — 5:00 am - 5:50 am",
+        "T.G.I.F — 7:00 am - 7:50 am",
+      ],
+    },
+    {
+      day: "Saturday",
+      classes: [
+        "BAR-MANA — 6:00 am - 6:50 am",
+        "ULTRA PLEX — 7:00 am - 8:00 am",
+      ],
+    },
+  ];
+
+  // 👇 Everything inside return() is what shows on your webpage
+  return (
+    <section className="py-16 bg-gray-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="text-3xl font-bold text-center mb-12 text-[#1e45ad]">
+          Weekly Class Schedule
+        </h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6">
+          {schedule.map((day, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 p-5 flex flex-col"
+            >
+              <h3 className="text-lg font-semibold text-white bg-[#1e45ad] text-center py-2 rounded-md mb-4">
+                {day.day}
+              </h3>
+
+              <div className="flex flex-col gap-3">
+                {day.classes.map((classItem, idx) => {
+                  const [title, time] = classItem.split(" — ");
+                  return (
+                    <div
+                      key={idx}
+                      className="bg-[#f9fafb] border border-gray-200 rounded-md p-3 shadow-sm hover:shadow transition-all duration-200"
+                    >
+                      <p className="text-[#1e45ad] font-semibold text-sm mb-1">{title}</p>
+                      <p className="text-gray-700 text-xs">{time}</p>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default Schedule;
