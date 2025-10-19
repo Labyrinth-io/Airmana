@@ -420,9 +420,9 @@ const HomePage = () => {
 
               <div className="space-y-4 md:space-y-6">
                 <div className="flex items-center gap-4">
-                  <MapPin className="w-5 h-5 md:w-6 md:h-6 text-[#e4bdc7] flex-shrink-0" />
+                  <MapPin className="w-5 h-5 md:w-6 md:h-6 text-[#1e45ad] flex-shrink-0" />
                   <div>
-                    <p className="text-sm md:text-base font-semibold text-gray-900">Location</p>
+                    <p className="text-sm md:text-base font-semibold text-[#1e45ad]">Location</p>
                     <a
                       href="https://maps.app.goo.gl/WxHD3qw6mBxAAYoW8"
                       target="_blank"
@@ -434,18 +434,18 @@ const HomePage = () => {
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
-                  <Phone className="w-5 h-5 md:w-6 md:h-6 text-[#e4bdc7] flex-shrink-0" />
+                  <Phone className="w-5 h-5 md:w-6 md:h-6 text-[#1e45ad] flex-shrink-0" />
                   <div>
-                    <p className="text-sm md:text-base font-semibold text-gray-900">Phone</p>
-                    <a href="tel:+61413428182" className="text-sm md:text-base text-emerald-600 hover:text-emerald-700 transition-colors">
+                    <p className="text-sm md:text-base font-semibold text-[#1e45ad]">Phone</p>
+                    <a href="tel:+61413428182" className="text-sm md:text-base text-[#1e45ad] transition-colors">
                       +61 413 428 182
                     </a>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
-                  <Mail className="w-5 h-5 md:w-6 md:h-6 text-[#e4bdc7] flex-shrink-0" />
+                  <Mail className="w-5 h-5 md:w-6 md:h-6 text-[#1e45ad] flex-shrink-0" />
                   <div>
-                    <p className="text-sm md:text-base font-semibold text-gray-900">Email</p>
+                    <p className="text-sm md:text-base font-semibold text-[#1e45ad]">Email</p>
                     <a href="mailto:info@airmana.com.au" className="text-sm md:text-base text-emerald-600 hover:text-emerald-700 transition-colors">
                       info@airmana.com.au
                     </a>
