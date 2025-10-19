@@ -522,7 +522,7 @@ const HomePage = () => {
       <footer className="below-fold bg-gray-900 text-white py-8 md:py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <div className="text-2xl md:text-3xl font-bold mb-3 md:mb-4 text-emerald-400">Airmana</div>
+            <div className="text-2xl md:text-3xl font-bold mb-3 md:mb-4 text-[#e4bdc7]">Airmana</div>
             <p className="text-sm md:text-base text-gray-400 mb-4 md:mb-6">Breathe. Move. Connect. Transform.</p>
             <div className="flex justify-center gap-4 md:gap-6 mb-6 md:mb-8">
               <a href="https://www.instagram.com/airmana_/?hl=en" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-emerald-400 transition-colors">
