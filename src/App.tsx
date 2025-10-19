@@ -326,39 +326,33 @@ const HomePage = () => {
         </div>
       </section>
 
-     {/* Timetable Section */}
-<section id="timetable" className="below-fold py-12 md:py-16 lg:py-20">
+    {/* Timetable Section */}
+<section id="timetable" className="py-16 bg-gray-50">
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div className="text-center mb-12 md:mb-16">
-      <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-6 text-gray-900">
-        Weekly Timetable
-      </h2>
-      <p className="text-base md:text-lg text-gray-600">
-        Find the perfect class time that fits your schedule
-      </p>
-    </div>
+    <h2 className="text-3xl font-bold text-center mb-12 text-[#1e45ad]">
+      Weekly Class Schedule
+    </h2>
 
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 xl:grid-cols-6 gap-6">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6">
       {schedule.map((day, index) => (
-        <div key={index} className="bg-white rounded-xl shadow-md p-4 hover:shadow-lg transition-shadow">
-          <h1 className="text-sm md:text-base font-semibold text-center mb-4 text-white py-2 bg-indigo-700 rounded-md">
+        <div
+          key={index}
+          className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 p-5 flex flex-col"
+        >
+          <h3 className="text-lg font-semibold text-white bg-[#1e45ad] text-center py-2 rounded-md mb-4">
             {day.day}
-          </h1>
+          </h3>
 
-          <div className="space-y-3">
+          <div className="flex flex-col gap-3">
             {day.classes.map((classItem, idx) => {
               const [title, time] = classItem.split(" — ");
               return (
                 <div
                   key={idx}
-                  className="rounded-lg border border-slate-200 bg-slate-50 p-3 hover:border-slate-300"
+                  className="bg-[#f9fafb] border border-gray-200 rounded-md p-3 shadow-sm hover:shadow transition-all duration-200"
                 >
-                  <div className="font-semibold text-indigo-700 text-sm md:text-base">
-                    {title}
-                  </div>
-                  <div className="text-slate-600 text-xs md:text-sm">
-                    — {time}
-                  </div>
+                  <p className="text-[#1e45ad] font-semibold text-sm mb-1">{title}</p>
+                  <p className="text-gray-700 text-xs">{time}</p>
                 </div>
               );
             })}
@@ -368,6 +362,7 @@ const HomePage = () => {
     </div>
   </div>
 </section>
+
 
 
 
