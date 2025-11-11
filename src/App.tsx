@@ -161,50 +161,28 @@ const HomePage = () => {
         </div>
       </nav>
 
-      {/* Hero Section (guard Prism to avoid WebGL crashes) */}
-      <section className="relative text-white overflow-hidden" style={{ height: '100vh' }}>
-        <div style={{ width: '100%', height: '100%', position: 'relative', backgroundColor: '#000000' }}>
-          {typeof window !== 'undefined' && (
-            <Prism
-              animationType="rotate"
-              timeScale={0.5}
-              height={3.5}
-              baseWidth={5.5}
-              scale={3.6}
-              hueShift={0}
-              colorFrequency={1}
-              noise={0.1}
-              glow={2}
-              transparent={false}
-              bloom={1.5}
+      {/* Hero Section */}
+      <section className="relative text-white overflow-hidden bg-black" style={{ height: '100vh' }}>
+        <div className="absolute inset-0 flex items-center justify-center z-20" style={{ paddingTop: '88px', paddingBottom: '40px', paddingLeft: '20px', paddingRight: '20px' }}>
+          <picture>
+            <source srcSet="/images/Airmanalogotransparent.webp" type="image/webp" />
+            <img
+              src="/images/Airmanalogotransparent.webp"
+              alt="Airmana Logo"
+              className="opacity-90"
+              style={{
+                maxWidth: '90vw',
+                maxHeight: 'calc(100vh - 128px)',
+                objectFit: 'contain',
+                width: '100%',
+                height: 'auto'
+              }}
+              width="800"
+              height="600"
+              loading="eager"
+              decoding="async"
             />
-          )}
-
-          {/* Airmana logo positioned below header */}
-          <div
-            className="absolute inset-0 flex items-center justify-center z-20"
-            style={{ paddingTop: '88px', paddingBottom: '40px', paddingLeft: '20px', paddingRight: '20px' }}
-          >
-            <picture>
-              <source srcSet="/images/Airmanalogotransparent.webp" type="image/webp" />
-              <img
-                src="/images/Airmanalogotransparent.webp"
-                alt="Airmana Logo"
-                className="opacity-90"
-                style={{
-                  maxWidth: '90vw',
-                  maxHeight: 'calc(100vh - 128px)',
-                  objectFit: 'contain',
-                  width: '100%',
-                  height: 'auto'
-                }}
-                width="800"
-                height="600"
-                loading="eager"
-                decoding="async"
-              />
-            </picture>
-          </div>
+          </picture>
         </div>
       </section>
 
